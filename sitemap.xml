@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/post/hpg-struct-alignment.html</loc>
+    <loc>http://example.com/post/hpg-sync-once.html</loc>
     
     <lastmod>2022-05-02</lastmod>
     
@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/post/hpg-sync-once.html</loc>
+    <loc>http://example.com/post/hpg-sync-pool.html</loc>
     
     <lastmod>2022-05-02</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/post/hpg-sync-pool.html</loc>
+    <loc>http://example.com/post/hpg-struct-alignment.html</loc>
     
     <lastmod>2022-05-02</lastmod>
     
@@ -107,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/post/hpg-slice.html</loc>
+    <loc>http://example.com/post/hpg-reflect.html</loc>
     
     <lastmod>2022-05-02</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/post/hpg-reflect.html</loc>
+    <loc>http://example.com/post/hpg-slice.html</loc>
     
     <lastmod>2022-05-02</lastmod>
     
@@ -331,14 +331,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/post/geerpc-day1.html</loc>
+    <loc>http://example.com/post/geerpc-day2.html</loc>
     
     <lastmod>2022-05-02</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/post/geerpc-day2.html</loc>
+    <loc>http://example.com/post/geerpc-day1.html</loc>
     
     <lastmod>2022-05-02</lastmod>
     
@@ -527,14 +527,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>http://example.com/series/index.html</loc>
     
     <lastmod>2022-05-02</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/series/index.html</loc>
+    <loc>http://example.com/tags/index.html</loc>
     
     <lastmod>2022-05-02</lastmod>
     
