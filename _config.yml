@@ -1,14 +1,14 @@
-# Hexo Configuration
+﻿# Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 
 # Site
-title: 极客兔兔
-keyword: geektutu,jiketutu,Go语言,golang,python
+title: 天书
+keyword: seefs,jiketutu,Go语言,golang,python
 description: 极客兔兔的博客，致力于分享一些技术教程和有趣的技术实践，包括但不限于 Go 语言/golang, Python, tensorflow, 分布式, 机器学习相关的内容。也可以通过搜索极客小站,jiketutu 找到我。
-author: 极客兔兔
+author: seefs
 language: zh-CN
 
-url: https://geektutu.com	
+url: http://example.com
 root: /
 permalink: post/:title.html
 
@@ -36,15 +36,15 @@ theme: geektutu
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://git.coding.net/gzdaijie/geektutu-blog.git
-  branch: coding-pages
+  repo: git@github.com:seefs/seefs.github.io.git
+  branch: main
 
 gitalk:
   client_id: 'c1fdd456a4caae5f7df0'
   client_secret: 'b2674451e21feae50520f99337ec15d2aebe7879'
   accessToken: '513dc2f1e6df8c07a12fbf1547874f54679d9712'
   repo: 'blog'
-  owner: 'geektutu'
+  owner: 'seefs'
 
 # alipay wechatpay 的二维码转换的网址，不使用二维码图片，提高加载速率。
 reward:
@@ -52,16 +52,16 @@ reward:
   wechat: wxp://f2f0qgGBlfD1nZXjvBjievxB0z0fc0W2sBq5
 
 related_links:
-- link: https://github.com/geektutu
+- link: https://github.com/seefs
   img: img/related_links/github.png
   name: Github
-- link: https://geektutu.com/feed.xml
+- link: https://seefs.com/feed.xml
   img: img/related_links/rss.jpg
   name: RSS
 - link: https://www.zhihu.com/people/gzdaijie
   img: img/related_links/zhihu.png
   name: 知乎
-- link: https://weibo.com/geektutu
+- link: https://weibo.com/seefs
   img: img/related_links/weibo.jpg
   name: 微博
 
@@ -94,9 +94,9 @@ feed:
   icon: img/icon.png
 
 index_rec:
-- link: https://geektutu.com/post/gee.html
+- link: https://seefs.com/post/gee.html
   name: 📘 七天用 Go 从零实现
-- link: https://geektutu.com/post/high-performance-go.html
+- link: https://seefs.com/post/high-performance-go.html
   name: 📘 Go 语言高性能编程
 - link: https://studygolang.com
   name: 🔗 Go 语言中文网
