@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>语言模型 | 白化天绝人 | 努力只为自己</title>
+
+  
+  <meta name="author" content="seefs">
+  
+
+  
+  <meta name="description" content="记录">
+  
+
+  
+  
+  <meta name="keywords" content="直觉">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="语言模型"/>
+
+  <meta property="og:site_name" content="白化天绝人"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="白化天绝人" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+  <link href="https://fonts.lug.ustc.edu.cn/css?family=Lato|Rubik" rel="stylesheet">
+  <script src="/js/pangu-407.min.js"></script>
+<meta name="generator" content="Hexo 7.0.0"></head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    pangu.autoSpacingPage();
+  });
+</script>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">白化天绝人</a>
+    </h1>
+    <p class="site-description">努力只为自己</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/categories">分类</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/atom.xml">订阅</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>语言模型</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2024/02/25/sense_sex_lang/" rel="bookmark">
+        <time class="entry-date published" datetime="2024-02-25T10:00:00.000Z">
+          2024-02-25
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+
+<script type="text/javascript">
+    function convertRemToPixels(rem) {    
+        return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    }
+    window.onscroll = function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > convertRemToPixels(40)) {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'visible';
+        } else {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'hidden';
+        }
+    }
+</script>
+
+
+<div id="toc" class="toc-article">
+      <div class="toc-content">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B"><span class="toc-text">语言模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E8%A8%80%E7%9A%84%E6%9C%AC%E8%B4%A8"><span class="toc-text">语言的本质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E8%A8%80%E7%9A%84%E6%A8%A1%E5%9E%8B%E4%B8%8E%E6%96%B9%E5%90%91"><span class="toc-text">语言的模型与方向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E7%85%A7%E5%AE%9E%E9%AA%8C%E4%B8%8E%E7%BB%93%E6%9E%9C"><span class="toc-text">对照实验与结果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E"><span class="toc-text">补充说明</span></a></li></ol></li></ol>
+      </div>
+</div>
+<style>
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+
+
+        <p>前面的篇幅说明了人的差异性，现在我们来验证人的通用性。。</p>
+<span id="more"></span>
+
+<h2 id="语言模型"><a href="#语言模型" class="headerlink" title="语言模型"></a>语言模型</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">性格</font>：追求差异性。</p>
+<p><font color="#3232CD">思维</font>：追求通用性。<br>验证通用性，应该有很多方法。这只是其中一种。</p>
+<h3 id="语言的本质"><a href="#语言的本质" class="headerlink" title="语言的本质"></a>语言的本质</h3><p><font color="#3232CD">语言模型</font>：在语言上，我用到了一个类似的模型。并且推测它们在原理上是相通的。<br>与性格模型相比，语言模型进一步接近了思维的本质。</p>
+<h3 id="语言的模型与方向"><a href="#语言的模型与方向" class="headerlink" title="语言的模型与方向"></a>语言的模型与方向</h3><p><font color="#3232CD">流动</font>：为了让模型代表思维的过程，假设模型是流动的。它有固定的方向，如下图。</p>
+<p><img src="/img/sense_sex/yuyan_1.png"></p>
+<p><font color="#3232CD">旧知识</font>：过去的知识中，我并不能直接适用这个模型。<br>为了适用这个模型，重新调整词语的词性分类，使它的数量和顺序更匹配。</p>
+<p><font color="#3232CD">重新分类</font>：于是，我将词性重新分类，让它匹配模型中的1~16。于是一句话即可量化为一串有顺序的数字。<br>模型的特点是入口在上，出口在下，中间过程可以循环。<br>因为循环，它可以兼容表示简化和复杂的语句。</p>
+<h3 id="对照实验与结果"><a href="#对照实验与结果" class="headerlink" title="对照实验与结果"></a>对照实验与结果</h3><p><font color="#3232CD">词语转化</font>：我们将一条语句的词语转化为第1串数字。再将第1串数字的所有数字，按照模型的方向和循环，顺序连接，作为第2串数字。</p>
+<p><font color="#3232CD">对比</font>：然后比较有无方向的数字，谁能更准确的表示语句的意思。</p>
+<p><font color="#3232CD">验证</font>：为了方便，代码略。使用的代码是简单和快速的，但相比现在的AI模型，没有参考意义。<br>代码阅读性很差，词性处理很复杂，略。</p>
+<p><font color="#3232CD">结果</font>：选取1000条数据，结果是</p>
+<p><img src="/img/sense_sex/yuyan_2.png"></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p><font color="#3232CD">原理</font>：语言和思维有着相同的原理性特征，他们也有固定的顺序。<br>并且这个顺序灵活，不容易被认识。而且，性格的差异也是因为思维的差异引起。</p>
+<h3 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h3><p><font color="#3232CD">词语分类</font>：将词语重新分类，是一种耗时的工作。原理上，是基于性格和思维的基本特征重新分类，见下图。</p>
+<p><img src="/img/sense_sex/yuyan_3.png"></p>
+<p><font color="#3232CD">初步分类</font>：另外，我使用开源数据，仅仅通过替换，即可得到初步的分类，见下表。<br>其中，类型名词–2468类型，比较接近，不容易区分，未详细处理。</p>
+<p><img src="/img/sense_sex/yuyan_4.png"></p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/直觉/">直觉</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+	<section id="comment" class="comment">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'kidhaibara';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Deployed by <a href="https://github.com/kaedea/notion-down" target="_blank">notion-down</a> and
+    Theme by <a href="https://github.com/kaedea/hexo-theme-hacker" target="_blank">hexo-theme-hacker</a>
+    </br>
+    
+    &copy; 2024 seefs
+    
+  </p>
+</footer>
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'G-J38N5N288S', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </div>
+</div>
+</body>
+</html>
