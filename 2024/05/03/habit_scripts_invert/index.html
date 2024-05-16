@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>下载我的脚本文件 | Mql5 Scripts</title>
+  <title>平仓并反单脚本 | Mql5 Scripts</title>
 
   
   <meta name="author" content="seefss">
@@ -21,7 +21,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <meta property="og:title" content="下载我的脚本文件"/>
+  <meta property="og:title" content="平仓并反单脚本"/>
 
   <meta property="og:site_name" content="Mql5 Scripts"/>
 
@@ -74,13 +74,13 @@
 
   
     
-    <h3 class="article-title"><span>下载我的脚本文件</span></h3>
+    <h3 class="article-title"><span>平仓并反单脚本</span></h3>
     
   
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="/2024/05/03/habit_market_install/" rel="bookmark">
+      <a href="/2024/05/03/habit_scripts_invert/" rel="bookmark">
         <time class="entry-date published" datetime="2024-05-03T10:00:00.000Z">
           2024-05-03
         </time>
@@ -113,7 +113,7 @@
 
 <div id="toc" class="toc-article">
       <div class="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%88%91%E7%9A%84%E8%84%9A%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="toc-text">下载我的脚本文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDzip"><span class="toc-text">下载zip</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B3%E4%BB%93%E5%B9%B6%E5%8F%8D%E5%8D%95%E8%84%9A%E6%9C%AC"><span class="toc-text">平仓并反单脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%8A%A8%E5%8F%8D%E5%8D%95"><span class="toc-text">主动反单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A2%AB%E5%8A%A8%E5%8F%8D%E5%8D%95"><span class="toc-text">被动反单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A2%AB%E5%8A%A8%E9%97%B4%E9%9A%94%E5%8F%8D%E5%8D%95"><span class="toc-text">被动间隔反单</span></a></li></ol></li></ol>
       </div>
 </div>
 <style>
@@ -125,11 +125,18 @@
 
 
 
-        <p>下载我的脚本文件。</p>
+        <p>平仓并反单脚本。</p>
 <span id="more"></span>
 
-<h2 id="下载我的脚本文件"><a href="#下载我的脚本文件" class="headerlink" title="下载我的脚本文件"></a>下载我的脚本文件</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">下载我的脚本文件</font>：<br>下载后请用IDE中的，文件夹“scripts”，右键编译。<br>从自带的代码库中下载不用编译，但copy需要编译。</p>
-<h3 id="下载zip"><a href="#下载zip" class="headerlink" title="下载zip"></a>下载zip</h3><p><a href="https://seefs.github.io/zip/mt5_scripts_20240516.zip"><font color="#99CC32">下载地址➬</font></a></p>
+<h2 id="平仓并反单脚本"><a href="#平仓并反单脚本" class="headerlink" title="平仓并反单脚本"></a>平仓并反单脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">主动反单</font>：应该场景有限，在很复杂的行情。</p>
+<p><font color="#3232CD">被动反单</font>：</p>
+<p><font color="#3232CD">被动间隔反单</font>：</p>
+<h3 id="主动反单"><a href="#主动反单" class="headerlink" title="主动反单"></a>主动反单</h3><p><font color="#3232CD">主动反单</font>：应该赢利中，才考虑反单。亏损中多认怂吧。<br>应用场景：多空分界点，不想确认直接反。<br>场景1：逆势赚够。<br>场景2：回调，遇到大周期均线支撑。<br>场景3：手动忙不过来。</p>
+<h3 id="被动反单"><a href="#被动反单" class="headerlink" title="被动反单"></a>被动反单</h3><p><font color="#3232CD">风险反单</font>：<br>场景1：行情背离散户持仓。<br>场景2：明显诱多诱空行情。</p>
+<p><font color="#3232CD">回调反单</font>：场景太少，先不做功能<br>场景1：早盘突破后，止赢2开始回调。<br>场景2：右侧下跌后，回调1开始继续跌。<br>场景3：早盘下跌2后，有建仓信号，回调反单。<br>场景4：早盘突破3后，取消反单。</p>
+<p><font color="#3232CD">震荡反单</font>：先不做<br>场景1：等高不等低。<br>场景2：等低不等高。</p>
+<h3 id="被动间隔反单"><a href="#被动间隔反单" class="headerlink" title="被动间隔反单"></a>被动间隔反单</h3><p><font color="#3232CD">被动间隔反单</font>：有必要做<br>应用场景：自动止赢，并间隔一点开stop单。</p>
+<p>Serial:Mql5\Scripts\_OrderOpenInvert\Inv10_PreClose_5_5.mq5<br>Serial:Mql5\Scripts\_OrderOpenInvert\Inv15_PreClose_5_5.mq5<br>Serial:Mql5\Scripts\_OrderOpenInvert\Inv10_PreClose_5_10.mq5<br>Serial:Mql5\Scripts\_OrderOpenInvert\Inv15_PreClose_5_10.mq5</p>
 
       
     </div>
@@ -153,7 +160,7 @@
 
     <span class="post-tags">
       <i class="icon-tags"></i>
-        <a href="/tags/下载/">下载</a>
+        <a href="/tags/反单/">反单</a>
     </span>
     
 

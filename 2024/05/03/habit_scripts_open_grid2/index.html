@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>下载我的脚本文件 | Mql5 Scripts</title>
+  <title>双向批量开仓脚本 | Mql5 Scripts</title>
 
   
   <meta name="author" content="seefss">
@@ -21,7 +21,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <meta property="og:title" content="下载我的脚本文件"/>
+  <meta property="og:title" content="双向批量开仓脚本"/>
 
   <meta property="og:site_name" content="Mql5 Scripts"/>
 
@@ -74,13 +74,13 @@
 
   
     
-    <h3 class="article-title"><span>下载我的脚本文件</span></h3>
+    <h3 class="article-title"><span>双向批量开仓脚本</span></h3>
     
   
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="/2024/05/03/habit_market_install/" rel="bookmark">
+      <a href="/2024/05/03/habit_scripts_open_grid2/" rel="bookmark">
         <time class="entry-date published" datetime="2024-05-03T10:00:00.000Z">
           2024-05-03
         </time>
@@ -113,7 +113,7 @@
 
 <div id="toc" class="toc-article">
       <div class="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E6%88%91%E7%9A%84%E8%84%9A%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="toc-text">下载我的脚本文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDzip"><span class="toc-text">下载zip</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E6%89%B9%E9%87%8F%E5%BC%80%E4%BB%93%E8%84%9A%E6%9C%AC"><span class="toc-text">双向批量开仓脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E5%BC%80limit%E5%8D%95"><span class="toc-text">双向开limit单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E5%BC%80stop%E5%8D%95"><span class="toc-text">双向开stop单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E5%BC%80StopLimit%E5%8D%95"><span class="toc-text">双向开StopLimit单</span></a></li></ol></li></ol>
       </div>
 </div>
 <style>
@@ -125,11 +125,27 @@
 
 
 
-        <p>下载我的脚本文件。</p>
+        <p>比较有用。</p>
 <span id="more"></span>
 
-<h2 id="下载我的脚本文件"><a href="#下载我的脚本文件" class="headerlink" title="下载我的脚本文件"></a>下载我的脚本文件</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">下载我的脚本文件</font>：<br>下载后请用IDE中的，文件夹“scripts”，右键编译。<br>从自带的代码库中下载不用编译，但copy需要编译。</p>
-<h3 id="下载zip"><a href="#下载zip" class="headerlink" title="下载zip"></a>下载zip</h3><p><a href="https://seefs.github.io/zip/mt5_scripts_20240516.zip"><font color="#99CC32">下载地址➬</font></a></p>
+<h2 id="双向批量开仓脚本"><a href="#双向批量开仓脚本" class="headerlink" title="双向批量开仓脚本"></a>双向批量开仓脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">双向开limit单</font>：</p>
+<p><font color="#3232CD">双向开stop单</font>：</p>
+<p><font color="#3232CD">双向开StopLimit单</font>：</p>
+<h3 id="双向开limit单"><a href="#双向开limit单" class="headerlink" title="双向开limit单"></a>双向开limit单</h3><p><font color="#3232CD">双向开limit单</font>：<br>应用场景：可以试下震荡行情。<br>止赢止损：</p>
+<p>Serial:Mql5\Scripts\_OrderGridOpenEx\OpenPairsLimitOrder.mq5</p>
+<h3 id="双向开stop单"><a href="#双向开stop单" class="headerlink" title="双向开stop单"></a>双向开stop单</h3><p><font color="#3232CD">双向开stop单</font>：<br>应用场景：大单边行情可用。</p>
+<p>(多次点次有问题，下次再修改下)<br>(带止赢的单子，仓位应该加大，下次改)</p>
+<p>Serial:Mql5\Scripts\_OrderGridOpenEx\OpenPairsStopOrder.mq5</p>
+<p><font color="#3232CD">操作视频</font>：</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
+src="//v.kuaishou.com/AEixTp" scrolling="no" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;">
+</iframe></div>
+
+
+<p><font color="#3232CD">扩展</font>：<br>考虑：仓位按三角形平铺。赢利方法要做细。</p>
+<h3 id="双向开StopLimit单"><a href="#双向开StopLimit单" class="headerlink" title="双向开StopLimit单"></a>双向开StopLimit单</h3><p><font color="#3232CD">双向开StopLimit单</font>：<br>应用场景：没用过。可能会用在震荡上行或荡下行行情。</p>
+<p>Serial:Mql5\Scripts\_OrderGridOpenEx\OpenPairsStopLimitOrder.mq5</p>
 
       
     </div>
@@ -153,7 +169,7 @@
 
     <span class="post-tags">
       <i class="icon-tags"></i>
-        <a href="/tags/下载/">下载</a>
+        <a href="/tags/开仓/">开仓</a>
     </span>
     
 

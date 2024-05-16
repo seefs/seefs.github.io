@@ -143,20 +143,8 @@
 <p>(测试)(先不写没收益的脚本)<br>减仓1单：可能比点订单右侧的叉子快。</p>
 <p>(长短结合)(先不考虑)<br>小单平仓：平掉0.3手以下单子，如0.3为最大仓位。</p>
 <p>预平仓：参考后面预平仓设置。</p>
-<p><font color="#3232CD">MT5一键开仓</font>：参考脚本。在代码库下载，时间是2021.06.30</p>
-<p>MT5一键开仓：没什么用<br>Serial:Mql5\Scripts\_OrderOpen\OpenBuy.mq5<br>Serial:Mql5\Scripts\_OrderOpen\OpenSell.mq5</p>
-<p><font color="#3232CD">OpenSellStopOrder</font>：参考脚本。在代码库下载，时间是2017.06.05</p>
-<p>Limit：<br>Serial:Mql5\Scripts\_OrderOpen\OpenBuyLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpen\OpenSellLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpen\OpenBuySellLimitOrders.mq5</p>
-<p>Stop：<br>Serial:Mql5\Scripts\_OrderOpen\OpenBuyStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpen\OpenSellStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpen\OpenBuySellStopOrders.mq5</p>
-<p>StopLimit：<br>Serial:Mql5\Scripts\_OrderOpen\OpenBuyStopLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpen\OpenSellStopLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpen\OpenBuySellStopLimitOrders.mq5</p>
-<p><font color="#3232CD">网格开仓–反转</font>：回调时下单降低成本。<br>&#x2F;&#x2F;——使用场景：超预期机会、回调趋稳、行情尾部(虽说不要猜底)<br>&#x2F;&#x2F;——–先空后多行情。也可以考虑这样操作，如$4以内用Limit，以外用Stop。<br>&#x2F;&#x2F;——考虑是否带止赢止损。<br>&#x2F;&#x2F;——–短线，建议带止赢止损。</p>
-<p>平铺下单：从 -$4处 向内平铺$2，再次点击再向内平铺。<br>Serial:Mql5\Scripts\_OrderGridOpen\OpenBuyLimitOrder_4In2.mq5    # 每次操作仓位1%，自动计算间隔<br>Serial:Mql5\Scripts\_OrderGridOpen\OpenSellLimitOrder_4In2.mq5   # 每次操作仓位1%，自动计算间隔<br>平铺下单：从 -$4处 向外平铺$2，再次点击再外内平铺。<br>Serial:Mql5\Scripts\_OrderGridOpen\OpenBuyLimitOrder_4Out2.mq5   # 每次操作仓位1%，自动计算间隔<br>Serial:Mql5\Scripts\_OrderGridOpen\OpenSellLimitOrder_4Out2.mq5  # 每次操作仓位1%，自动计算间隔<br>平铺下单：加仓。将上面的仓位重复一遍，有时间再作仓位上限处理。(不要反复点，翻倍不能失误) ($10平铺有10%，不建议加仓)</p>
-<p><font color="#3232CD">网格开仓–顺势</font>：重大消息行情。小行情尽量别用，容易回落到原价。<br>&#x2F;&#x2F;——使用场景：重大消息行情、风险开单<br>&#x2F;&#x2F;——在最后30秒内开单。<br>&#x2F;&#x2F;——预估波动范围在$10、$5以上，并评估上下拉的风险。<br>&#x2F;&#x2F;——–被机构控盘，考虑$10。<br>&#x2F;&#x2F;——–波浪尾部，考虑$5或者观望。<br>&#x2F;&#x2F;——考虑是否带止赢，止损必须带。带止赢单子不知道会不会滑点。<br>&#x2F;&#x2F;——–先用止赢的看效果。比如存在利空反涨情况。<br>&#x2F;&#x2F;——考虑降风险。<br>&#x2F;&#x2F;——–只开正负$4以外的单子。</p>
-<p>平铺下单：从 -$4处 向内平铺$2，再次点击再向内平铺。<br>Serial:Mql5\Scripts\_OrderGridOpen\OpenBuyStopOrder_4In2.mq5<br>Serial:Mql5\Scripts\_OrderGridOpen\OpenSellStopOrder_4In2.mq5<br>平铺下单：从 -$4处 向外平铺$2，再次点击再外内平铺。<br>Serial:Mql5\Scripts\_OrderGridOpen\OpenBuyStopOrder_4Out2.mq5<br>Serial:Mql5\Scripts\_OrderGridOpen\OpenSellStopOrder_4Out2.mq5</p>
-<p><font color="#3232CD">网格开仓–其他</font>：</p>
-<p>平铺下单：StopLimit。<br>&#x2F;&#x2F;——不配合均线很难做<br>&#x2F;&#x2F;——最好不带止损，因为偏长线。改成止损止赢10可能好点<br>Serial:Mql5\Scripts\_OrderGridOpenEx\OpenBuyStopLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridOpenEx\OpenSellStopLimitOrder.mq5</p>
-<p>平铺下单：Pairs。<br>&#x2F;&#x2F;——双向开limit单，震荡行情可用。<br>Serial:Mql5\Scripts\_OrderGridOpenEx\OpenPairsLimitOrder.mq5<br>&#x2F;&#x2F;——双向开stop单，大单边行情可用。<br>Serial:Mql5\Scripts\_OrderGridOpenEx\OpenPairsStopOrder.mq5<br>&#x2F;&#x2F;——双向开stopLimit单，震荡上行或荡下行行情可用。<br>Serial:Mql5\Scripts\_OrderGridOpenEx\OpenPairsStopLimitOrder.mq5</p>
 <p><font color="#3232CD">网格开仓–设置</font>：</p>
+<p>平铺下单：加仓。将上面的仓位重复一遍，有时间再作仓位上限处理。(不要反复点，翻倍不能失误) ($10平铺有10%，不建议加仓)</p>
 <p>平铺下单：加仓。将之前的仓位重复一遍。<br>&#x2F;&#x2F;——加仓方法。<br>&#x2F;&#x2F;——–先 4Int2，再 repeat，再 4Out2。这种组合方式可能考虑当前价格风险小一点。<br>&#x2F;&#x2F;——–先 4Int2，再 repeat，再 4Int2。这种组合方式可能考虑中间价格风险小一点。<br>&#x2F;&#x2F;——犯错。不要反复点，失误会翻倍<br>&#x2F;&#x2F;——–有时间再作仓位上限处理。最好按比例加仓如1%。脚本更少。<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatBuyLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatSellLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatPairsLimitOrder.mq5<br>平铺下单：加仓。<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatBuyStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatSellStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatPairsStopOrder.mq5<br>平铺下单：修改止赢止损。<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_20_20.mq5	   # 止损 -2、止赢 +2<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_20_40.mq5	   # 止损 -2、止赢 +4，长线这样做吧<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_10_30.mq5	   # 止损 -1、止赢 +3<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_0_20.mq5	   # 没有止损</p>
 <p><font color="#3232CD">锁单换仓</font>：尽量做到自动解锁。应该做EA，我现在不会。<br>研究怎么锁单，让脚本处理</p>
 <p>Serial:Mql5\Scripts\_OrderLock\</p>
@@ -167,26 +155,7 @@
 <p>赢利锁仓：整点快速盈利锁仓。<br>Serial:Mql5\Scripts\_OrderLock\</p>
 <p>隔夜赢利锁仓：预测会向上挖坑。<br>Serial:Mql5\Scripts\_OrderLock\</p>
 <p>无方向锁仓：在成本区上下成对锁仓。<br>Serial:Mql5\Scripts\_OrderLock\</p>
-<p><font color="#3232CD">反单</font>：手动忙不过来。应该赢利中，才考虑反单。亏损中多认怂吧。</p>
-<p>风险反单：止赢1。确认回调，原单准备平。这是有很大阻力。<br>Serial:Mql5\Scripts\_OrderLock<br>风险反单：止赢2。确认回调，原单准备平。突破超过3，取消反单。<br>Serial:Mql5\Scripts\_OrderLock\</p>
-<p>等高反单：只有一边能确认价位。另一边要盯盘。<br>等低反单：只有一边能确认价位。另一边要盯盘。<br>Serial:Mql5\Scripts\_OrderLock\</p>
-<p>等仓反单：让得早反。<br>Serial:Mql5\Scripts\_OrderLock\</p>
-<p>风险反单：行情背离 + 想跟随时，考虑风险反单。<br>Serial:Mql5\Scripts\_OrderLock\</p>
-<p>双边反单：<br>&#x2F;&#x2F;——应该赚了才反单，先不考虑<br>Serial:Mql5\Scripts\_OrderOpenInvert\PreClosePairs_5_5_Inv10.mq5<br>Serial:Mql5\Scripts\_OrderOpenInvert\PreClosePairs_5_5_Inv15.mq5<br>Serial:Mql5\Scripts\_OrderOpenInvert\PreClosePairs_5_10_Inv10.mq5<br>Serial:Mql5\Scripts\_OrderOpenInvert\PreClosePairs_5_10_Inv15.mq5</p>
-<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p><font color="#3232CD">设置</font>：参考脚本。在代码库下载，时间是2017.05.03</p>
-<p>修改止赢止损：<br>Serial:Mql5\Scripts\_OrderSetting\Modify_SL_TP.mq5</p>
-<p><font color="#3232CD">默认设置</font>：单笔不可亏损过大。<br>&#x2F;&#x2F;——为何出现止损不统一情况，没搞懂。止损相差0.2可能是上一个脚本没执行完<br>锁定设置：点平仓不会平仓。(换成多或空单减仓功能)<br>锁定设置：点Update不会更新，避免全部平仓。(保证每个单都有参数)</p>
-<p>初次设置：以当前价，更新设置。(必须未设置过，注意先clear)<br>Serial:Mql5\Scripts\_OrderSetting\InitPairs_20_20.mq5    # 止损 -2、止赢 +2 (进场确认)<br>Serial:Mql5\Scripts\_OrderSetting\InitPairs_30_60.mq5    # 止损 -3、止赢 +6<br>Serial:Mql5\Scripts\_OrderSetting\InitPairs_50_100.mq5   # 止损 -5、止赢 +10 (追求利润)<br>初次设置：参考有参数的第一单，同步设置。<br>Serial:Mql5\Scripts\_OrderSetting\InitPairs_By_First.mq5</p>
-<p>快速设置：双开单(可以反复设置)<br>&#x2F;&#x2F;——双向开单。注意开 1个0.1手 比开 10个0.01手 快。<br>&#x2F;&#x2F;——8:28前取消设置(Clear脚本)。8:28开始设置(Init脚本)。8:30前有需要请反复设置(Update脚本)。<br>&#x2F;&#x2F;——大波动前反复设置，是为了不被止损。<br>&#x2F;&#x2F;——如果是大单边就赢利，如果是上下拉就亏损。<br>&#x2F;&#x2F;——波动完回调前再次反复设置，等于止赢，脚本已加上赢利时不允许改小止损。<br>Serial:Mql5\Scripts\_OrderSetting\UpdatePairs_20_0.mq5     # 止损 -2、止赢 无</p>
-<p>快速设置：急调止赢(可以反复设置)<br>Serial:Mql5\Scripts\_OrderSetting\UpdatePairs_0_20.mq5     # 止损 无、止赢 +2 (配合Move，堵单边+4 +6)</p>
-<p>设置微调：(有利方向)<br>Serial:Mql5\Scripts\_OrderSetting\MovePairs_2_0.mq5      # 止损 -0.2，只能减(可先用Update调)<br>Serial:Mql5\Scripts\_OrderSetting\MovePairs_0_2.mq5      # 止赢 +0.2，只能加<br>Serial:Mql5\Scripts\_OrderSetting\MovePairs_0_10.mq5     # 止赢 +1.0</p>
-<p>设置微调：(不利方向)<br>Serial:Mql5\Scripts\_OrderSetting\DecreasePairs_2_0.mq5  # 止损 -0.2<br>Serial:Mql5\Scripts\_OrderSetting\DecreasePairs_0_2.mq5  # 止赢 -0.2</p>
-<p>保护利润：止损到开仓位置，或一半利润(多次)<br>Serial:Mql5\Scripts\_OrderSetting\ProtectPairs_10_0.mq5     # 止损 -1.0 (不要超过当前价)</p>
-<p>取消设置：(主要是调试用)(可以反复设置)<br>Serial:Mql5\Scripts\_OrderSetting\ClearPairs_0_0.mq5<br>Serial:Mql5\Scripts\_OrderSetting\ClearPairs_0_50.mq5    # 大止赢+5.0，点2次+10.0，点3次+15.0。</p>
-<p><font color="#3232CD">预平仓设置</font>：考虑4种详情应用场景，最好回测效果。</p>
-<p>停顿预平仓：(去吃饭)。设置止赢+4，止损-2。(用Init + Move两次实现，不专门写脚本)<br>进攻预平仓：(反攻中上涨无力)。设置止赢+2，止损-1。(用Init + Move 2_0*5次实现)</p>
-<p>退出预平仓：(准备出)达到赢利预期且横盘时。设置止赢+1，止损-0.5。将会在短期波动中平仓。<br>&#x2F;&#x2F;——反方向下错单，也可用这个。快回本时，可能会急速反转。<br>Serial:Mql5\Scripts\_OrderSetting\PreClosePairs_5_10.mq5<br>认错预平仓：认错预平仓(试单或侥幸回本、冒险跟随)。或者只想赢利$1。<br>Serial:Mql5\Scripts\_OrderSetting\PreClosePairs_10_10.mq5<br>&#x2F;&#x2F;——早盘波动小，止赢0.5。<br>&#x2F;&#x2F;——止赢被扫，通常是反转信号。<br>Serial:Mql5\Scripts\_OrderSetting\PreClosePairs_5_5.mq5</p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p><font color="#3232CD">账户分析</font>：</p>
+<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p><font color="#3232CD">账户分析</font>：</p>
 <p>MAX_LOT：最大手数，CreateTLabel<br>Serial:Mql5\Scripts\_Analyze\MAX_LOT.mq5</p>
 <p><font color="#3232CD">形态分析</font>：</p>
 <p>单边形态：早上进场。统计所有的单边形态。<br>Serial:Mql5\Scripts\_Analyze\</p>
@@ -215,8 +184,8 @@
 <h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD">随机试验</font>：</p>
 <p>全多：<br>全空：<br>只做反转：只反转一次。错误后再反转。<br>只做跟随：只做N形，1~2次。<br>贪心：追求更高点。<br>启动点：寻找大浪和小浪的启动点，否则概率太低。<br>自动解锁：<br>Serial:Mql5\Scripts\_Draw\</p>
 <p><font color="#3232CD">回测信号</font>：看效果。<br>3分信号：<br>早上反转信号：<br>整点风险单：<br>N字信号：最低点升高做多。</p>
-<h3 id="EA-1"><a href="#EA-1" class="headerlink" title="EA"></a>EA</h3><p><a href="https://seefsi.github.io/2023/11/06/attitude_predict_EA"><font color="#99CC32">EA参考➬</font></a></p>
-<h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p><a href="https://seefsi.github.io/2024/04/29/habit_chart_believe#%E8%84%9A%E6%9C%AC"><font color="#99CC32">短线要领–脚本➬</font></a></p>
+<h3 id="EA-1"><a href="#EA-1" class="headerlink" title="EA"></a>EA</h3><p><a href="https://seefs.github.io/2023/11/06/attitude_predict_EA"><font color="#99CC32">EA参考➬</font></a></p>
+<h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p><a href="https://seefs.github.io/2024/04/29/habit_chart_believe#%E8%84%9A%E6%9C%AC"><font color="#99CC32">短线要领–脚本➬</font></a></p>
 <h3 id="指标"><a href="#指标" class="headerlink" title="指标"></a>指标</h3><p>震荡指标：最好明确给出左右。左空右多。<br>Serial:Mql5\Scripts\_Other\</p>
 <h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p><font color="#3232CD">测试</font>：</p>
 <p>开仓Stop下单：仓位0.01手<br>Serial:Mql5\Scripts\_OrderGridTest\OpenBuyStopOrder_test.mq5<br>Serial:Mql5\Scripts\_OrderGridTest\OpenSellStopOrder_test.mq5</p>
