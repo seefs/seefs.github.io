@@ -2,9 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seefs.github.io/2024/05/03/habit_scripts_close/</loc>
+    
+    <lastmod>2024-05-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seefs.github.io/2023/11/17/habit_market/</loc>
+    
+    <lastmod>2024-05-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seefs.github.io/2024/05/03/habit_market_other/</loc>
+    
+    <lastmod>2024-05-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seefs.github.io/2024/05/03/habit_scripts_open/</loc>
+    
+    <lastmod>2024-05-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seefs.github.io/2024/05/03/habit_market_script/</loc>
     
-    <lastmod>2024-05-15</lastmod>
+    <lastmod>2024-05-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seefs.github.io/2024/05/03/habit_market_scripts_close/</loc>
+    
+    <lastmod>2024-05-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seefs.github.io/2024/05/03/habit_market_scripts_open/</loc>
+    
+    <lastmod>2024-05-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seefs.github.io/2024/05/03/habit_market_install/</loc>
+    
+    <lastmod>2024-05-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seefs.github.io/2023/11/17/custom_market/</loc>
+    
+    <lastmod>2024-05-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seefs.github.io/about/index.html</loc>
+    
+    <lastmod>2024-05-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -29,15 +110,6 @@
   </url>
   
   <url>
-    <loc>https://seefs.github.io/2023/11/17/habit_market/</loc>
-    
-    <lastmod>2024-05-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://seefs.github.io/2024/05/03/habit_market_base/</loc>
     
     <lastmod>2024-05-03</lastmod>
@@ -50,15 +122,6 @@
     <loc>https://seefs.github.io/2024/05/03/habit_market_strategy/</loc>
     
     <lastmod>2024-05-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seefs.github.io/about/index.html</loc>
-    
-    <lastmod>2024-05-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -90,6 +153,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://seefs.github.io/tags/Scripts/</loc>
+    <lastmod>2024-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://seefs.github.io/tags/%E7%A8%8B%E5%BA%8F%E5%8C%96/</loc>

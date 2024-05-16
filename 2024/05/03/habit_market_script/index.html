@@ -136,14 +136,7 @@
 <p><font color="#3232CD">脚本类型</font>：<br>操作：<br>设置：单边必止损，震荡必止赢。亏损必锁单，众亏必反单。<br>分析：打破规律，了解常用技术的弱点。尊重基础分析与数据统计。了解真实的被控制行情。<br>指标：自研形态码。<br>策略：<br>EA：</p>
 <h3 id="脚本目录"><a href="#脚本目录" class="headerlink" title="脚本目录"></a>脚本目录</h3><p><font color="#3232CD">脚本目录</font>：</p>
 <p>&#x2F;&#x2F; 脚本 (默认下载目录，整理过的，会移动新目录)<br>Serial:Mql5\Scripts\Downloads<br>&#x2F;&#x2F; 脚本–操作<br>Serial:Mql5\Scripts\_OrderOpen<br>Serial:Mql5\Scripts\_OrderClose<br>Serial:Mql5\Scripts\_OrderSetting<br>&#x2F;&#x2F; 脚本–分析回测<br>Serial:Mql5\Scripts\_Analyze<br>&#x2F;&#x2F; 脚本–画图辅助<br>Serial:Mql5\Scripts\_Draw<br>&#x2F;&#x2F; 脚本–其他<br>Serial:Mql5\Scripts\_Other<br>&#x2F;&#x2F; EA交易<br>&#x2F;&#x2F; 指标<br>Serial:Mql5\Scripts\_Other\</p>
-<h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p><font color="#3232CD">平仓1</font>：参考脚本。在代码库下载，时间是2019.05.25</p>
-<p>平仓所有多单：如果当前窗口是XAUUSD，那么只关闭XAUUSD的 buy 订单。<br>Serial:Mql5\Scripts\_OrderClose\CloseAllBuy.mq5</p>
-<p>平仓所有空单：如果当前窗口是XAUUSD，那么只关闭XAUUSD的 sell 订单。<br>Serial:Mql5\Scripts\_OrderClose\CloseAllSell.mq5</p>
-<p>平仓所有多单和空单：如果当前窗口是XAUUSD，那么只关闭XAUUSD的 buy + sell 订单。<br>&#x2F;&#x2F;——用我提供的脚本，有做修改，原脚本会关闭所有品种订单，如XAUUSD和EURUSD。<br>Serial:Mql5\Scripts\_OrderClose\CloseAllPairs.mq5</p>
-<p><font color="#3232CD">平仓2</font>：扩展功能</p>
-<p>平仓订单：只删除当前窗口的 stop + limit 订单。(未成交的订单)<br>Serial:Mql5\Scripts\_OrderClose\RemoveAllStopLimitOrder.mq5</p>
-<p>平仓订单：只删除当前窗口的 stop + limit + buy + sell 订单。<br>Serial:Mql5\Scripts\_OrderClose\RemoveAllOrder.mq5</p>
-<p><font color="#3232CD">减仓</font>：按价减仓，或按量减仓。</p>
+<h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p><font color="#3232CD">减仓</font>：按价减仓，或按量减仓。</p>
 <p>(加仓后减新仓)<br>逆势减仓：逆势用不上减仓，一般全平。<br>顺势减仓：平掉2美金以内的单子，包括亏损。(行情大时考虑自动平)(应该只用第3个就行)<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllPairs.mq5</p>
 <p>(反转后减旧仓)<br>逆势反转：平掉2美金以上的单子。如锁仓时发现或觉得要转势，先平赢利单子。<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllPairs.mq5</p>
 <p>(赢利减仓，亏损减仓)<br>顺势反转：震荡遇阻先减部分仓位，再遇阻赢利锁仓。<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllPairs.mq5</p>
