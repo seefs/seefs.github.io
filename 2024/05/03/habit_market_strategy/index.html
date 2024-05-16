@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>策略类型 | Mql5 Scripts</title>
+
+  
+  <meta name="author" content="seefss">
+  
+
+  
+  <meta name="description" content="Help Documentation">
+  
+
+  
+  <meta name="keywords" content="Mql5,mt5,Scripts">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="策略类型"/>
+
+  <meta property="og:site_name" content="Mql5 Scripts"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Mql5 Scripts" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+  <link href="https://fonts.lug.ustc.edu.cn/css?family=Lato|Rubik" rel="stylesheet">
+  <script src="/js/pangu-407.min.js"></script>
+<meta name="generator" content="Hexo 7.2.0"></head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    pangu.autoSpacingPage();
+  });
+</script>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Mql5 Scripts</a>
+    </h1>
+    <p class="site-description">Losses must be controlled</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/categories">分类</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/atom.xml">订阅</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>策略类型</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2024/05/03/habit_market_strategy/" rel="bookmark">
+        <time class="entry-date published" datetime="2024-05-03T10:00:00.000Z">
+          2024-05-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+
+<script type="text/javascript">
+    function convertRemToPixels(rem) {    
+        return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    }
+    window.onscroll = function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > convertRemToPixels(40)) {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'visible';
+        } else {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'hidden';
+        }
+    }
+</script>
+
+
+<div id="toc" class="toc-article">
+      <div class="toc-content">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AD%96%E7%95%A5%E7%B1%BB%E5%9E%8B"><span class="toc-text">策略类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%AD%E7%BA%BF%E7%B1%BB"><span class="toc-text">短线类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%8B%E5%8A%BF%E7%B1%BB"><span class="toc-text">趋势类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%87%E8%8D%A1%E8%B6%8B%E5%8A%BF%E7%B1%BB"><span class="toc-text">震荡趋势类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%B7%E6%A0%BC%E7%B1%BB"><span class="toc-text">价格类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E7%9C%8B%E5%A5%BD%E7%B1%BB"><span class="toc-text">不看好类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%B1%BB"><span class="toc-text">测试类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%86%E5%90%91%E7%B1%BB"><span class="toc-text">逆向类</span></a></li></ol></li></ol>
+      </div>
+</div>
+<style>
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+
+
+        <p>短线类、趋势类、价格类、测试类。</p>
+<span id="more"></span>
+<h2 id="策略类型"><a href="#策略类型" class="headerlink" title="策略类型"></a>策略类型</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">策略类型</font>：累积做交易试验，统计哪种策略该重复和继续，哪种策略行不通。<br>短线类：<br>趋势类：<br>价格类：<br>测试类：</p>
+<p><font color="#3232CD">策略未确定</font>：如果当天不确定用哪种策略，可每种策略各选一天，这样有助于成长。<br>如果用固定策略，可避免因策略不合适强迫交易。<br>如果水平太差，也可一周全用默认选项。</p>
+<p><font color="#3232CD">习惯未确定</font>：小仓炼习惯，大仓炼心情。<br>习惯是基础。所以心情越差越喜欢炼心情？运气越好越喜欢炼习惯？</p>
+<h3 id="短线类"><a href="#短线类" class="headerlink" title="短线类"></a>短线类</h3><p><font color="#3232CD">M1信号N字</font>：从拐点开始出现N字信号，再回调入场，可能回调有点强，不怕。<br>目标：0&#x2F;20次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M1信号诱多左</font>：M5刚刚突破，N字没有新高<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#FF2400">M1信号诱多右</font>：趋势线左侧高点横盘，后面直接突破趋势线，可跟入<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#FF2400">M5双顶</font>：M15在中性上，可能多转空、空转多<br>目标：0&#x2F;20次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M5次双顶</font>：M15在阻力位置<br>目标：0&#x2F;20次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M5均线转折点</font>：震荡行情中，多转空、空转多<br>目标：0&#x2F;10次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M5均线突破</font>：震荡行情中，突破后又回调<br>目标：0&#x2F;10次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M15支撑</font>：震荡行情中，M15中找入场点，M1中找出场点<br>目标：0&#x2F;10次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M30诱多诱空左</font>：不进，可能会砸盘<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M30诱多诱空右</font>：试下跟进<br>目标：0&#x2F;3次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M30信号十字</font>：隔天操作，若昨天行情不稳定未必都赚钱，今天可能比较顺<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M30隔天操作顺势</font>：抄底+砸盘+抄底，M5+H2转势信号<br>目标：0&#x2F;10次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M30隔天操作转势</font>：抄底+砸盘+抄底，一定要有亏钱，或赚太多，不到美盘不做<br>目标：0&#x2F;3次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">H2顺势支撑</font>：V形反转<br>目标：0&#x2F;10次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">H2转势支撑左</font>：回落到M5均线<br>目标：0&#x2F;3次，当前：0&#x2F;0次</p>
+<p><font color="#FF2400">H2转势支撑右</font>：M支撑–双顶进，M1不破不出，移动止损出场<br>目标：0&#x2F;10次，当前：0&#x2F;0次</p>
+<p><font color="#FF2400">H2转势阻力右</font>：M支撑转W阻力，吃一波就跑，再入场；可能做笼子，不进场错过一大波。<br>目标：0&#x2F;10次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">H4中长线</font>：<br>目标：0&#x2F;10次，当前：0&#x2F;0次</p>
+<h3 id="趋势类"><a href="#趋势类" class="headerlink" title="趋势类"></a>趋势类</h3><p>趋势类都可以参考：<a href="https://seefsi.github.io/2023/11/06/attitude_predict_method2#%E8%B6%8B%E5%8A%BF%E8%B7%9F%E9%9A%8F"><font color="#99CC32">趋势跟随➬</font></a></p>
+<p><font color="#FF2400">突破跟随</font>：不用管原方向和原计划<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#FF2400">顺势跟随</font>：配合剥头皮的右侧机会做长线<br>目标：0&#x2F;10次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">转势跟随</font>：抄底要抄稳定行情，均匀走势；回调过半可入；<br>目标：0&#x2F;2次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">转势反弹右侧跟踪拐点</font>：高点横盘后再突破又回落到横盘位置下<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">顺势回调右</font>：连续阴跌<br>目标：0&#x2F;10次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">转势H1趋势线左</font>：阻力转支撑，不知道目标位在哪<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">转势H1趋势线右</font>：阻力转支撑，不知道目标位在哪<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<h3 id="震荡趋势类"><a href="#震荡趋势类" class="headerlink" title="震荡趋势类"></a>震荡趋势类</h3><p>震荡趋势类参考：<a href="https://seefsi.github.io/2023/11/06/attitude_predict_method2#%E4%BD%8E%E4%BD%8D%E5%80%92V%E5%BD%A2"><font color="#99CC32">低位倒V形➬</font></a></p>
+<p><font color="#FF2400">M15低位倒V形</font>：双顶入场，次双顶入场，多重信号同步，最好限价入场。<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#FF2400">M15活盘跟进</font>：短期利尽，回归趋势出现稳定行情。<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M1切线回归</font>：切线背离、切线加速度<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#FF2400">M5震荡</font>：选定一个方向，不停低多或高空，见好就收，不能等到确认信号。<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#FF2400">全天震荡</font>：猜不到方向，按震荡行情做。<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<h3 id="价格类"><a href="#价格类" class="headerlink" title="价格类"></a>价格类</h3><p>价格类都可以参考：<a href="https://seefsi.github.io/2023/11/06/attitude_predict_method2#%E6%9C%80%E9%AB%98%E7%82%B9"><font color="#99CC32">最高点和次高点➬</font></a>：</p>
+<p><font color="#3232CD">M30空头全天最高点</font>：<br>目标：0&#x2F;3次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M30空头全天最低点</font>：<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M30多头全天最低点</font>：<br>目标：0&#x2F;3次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M30多头全天最高点</font>：<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M1复仓区间</font>：选择单方向，早点进场<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">M5上台阶</font>：只能选择，无法跟随<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">D1全天最佳机会</font>：顺势做单边，震荡做两边<br>目标：0&#x2F;3次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">H4半天最佳机会</font>：顺势做单边，震荡做两边<br>目标：0&#x2F;3次，当前：0&#x2F;0次</p>
+<h3 id="不看好类"><a href="#不看好类" class="headerlink" title="不看好类"></a>不看好类</h3><p><font color="#3232CD">顺势V型左</font>：震荡位置突破预测<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">顺势V型右</font>：回到震荡位置，美盘前等确认信号<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<h3 id="测试类"><a href="#测试类" class="headerlink" title="测试类"></a>测试类</h3><p><font color="#3232CD">过夜单</font>：晚上12点以后转势，可能会连着明天上午一波行情。<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">风险单</font>：<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">突破单</font>：突破后每$1限价入一次单，止损先小后大。<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">临时单</font>：先观察10分钟。<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<h3 id="逆向类"><a href="#逆向类" class="headerlink" title="逆向类"></a>逆向类</h3><p><font color="#3232CD">不稳定行情左</font>：转势+突破必出<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">不稳定行情右</font>：顺势+反人性操作，跟单入场被坑+反单<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">被坑行情确认</font>：假转势+支撑变阻力，1个位置被坑来回次数越多越确定<br>目标：0&#x2F;5次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">不稳定行情左</font>：突破必出<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">小错入场</font>：看不到底，小错比错过好；跟不如送<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">针对入场</font>：别做被针对的一方<br>目标：0&#x2F;1次，当前：0&#x2F;0次</p>
+<p><font color="#3232CD">冲动入场</font>：没有多信号共振，没有大周期找机会，方向不稳<br>目标：0&#x2F;0次，当前：0&#x2F;0次</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/程序化/">程序化</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+	<section id="comment" class="comment">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'kidhaibara';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Deployed by <a href="https://github.com/kaedea/notion-down" target="_blank">notion-down</a> and
+    Theme by <a href="https://github.com/kaedea/hexo-theme-hacker" target="_blank">hexo-theme-hacker</a>
+    </br>
+    
+    &copy; 2024 seefss
+    
+  </p>
+</footer>
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'G-J38N5N288S', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </div>
+</div>
+</body>
+</html>
