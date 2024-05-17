@@ -6,7 +6,7 @@
   <link href="https://seefs.github.io/atom.xml" rel="self"/>
   
   <link href="https://seefs.github.io/"/>
-  <updated>2024-05-16T12:03:35.645Z</updated>
+  <updated>2024-05-16T13:04:05.191Z</updated>
   <id>https://seefs.github.io/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>介绍论坛上已有脚本</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_market_exist/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_market_exist/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-16T12:03:35.645Z</updated>
-    
-    <content type="html"><![CDATA[<p>脚本学习。</p><span id="more"></span><h2 id="脚本学习"><a href="#脚本学习" class="headerlink" title="脚本学习"></a>脚本学习</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本分类</font>：<br>EA交易：<br>指标：<br>脚本：</p><p><font color="#3232CD">功能分类</font>：<br>操作：<br>画图辅助：<br>分析：回测<br>EA：</p><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p><font color="#3232CD">OpenSellPosition_X</font>：学一下输入参数<br>时间：2014.01.10</p><p><font color="#3232CD">setselllimitorder</font>：set limit<br>时间：2014.01.20<br>setselllimitorder.mq5：</p><p><font color="#3232CD">InvertPosition</font>：以当前价位开反向单<br>时间：2014.01.20<br>invertposition.mq5：</p><p><font color="#3232CD">一触取消其它</font>：当一个挂单被触发, 脚本删除所有(!)当前符号剩余订单并退出<br>时间：2014.02.10<br>oncecancelotherscript.mq5：</p><p><font color="#3232CD">围绕当前价位平铺订单</font>：一个脚本来创建平铺的买、卖挂单<br>时间：2014.06.11<br>announcementstrategy.mq5：会把已有单子平仓，可能代码过时。</p><p><font color="#3232CD">空头挂单</font>：当您将此脚本拖拽进图表, 它将计算价格当前价格并据此价格判断是否放置 Sell Stop 或 Sell Limit 挂单。<br>时间：2015.02.06<br>sellorder.mq5：</p><p><font color="#3232CD">Modify SL TP</font>：修改止赢止损。<br>时间：2017.05.03<br>Modify_SL_TP.mq5：</p><p><font color="#3232CD">OpenSellStopOrder</font>：用于设置止损卖出(SellStop)挂单的脚本程序。<br>时间：2017.06.05<br>OpenSellStopOrder.mq5：<br>一套操作。</p><p><font color="#3232CD">CloseOrdersBySymbolByType</font>：本脚本程序在当前交易品种中根据设置中指定的类型删除所有订单<br>时间：2017.06.05<br>CloseOrdersBySymbolByType.mq5：</p><p><font color="#3232CD">MAX_LOT</font>：本脚本程序计算使用存款中的全部可用保证金来建立仓位的最大手数。<br>时间：2017.06.05<br>MAX_LOT.mq5：<br>修改功能，平铺订单。</p><p><font color="#3232CD">AutoSLTP</font>：为所有开启的订单设置止损和获利的辅助工具。交易品种设置，仓位类型，止损和获利是在外部文件中指定的.<br>时间：2017.11.16<br>AutoSLTP.mq5：</p><p><font color="#3232CD">一键平仓</font>：速度不够快。<br>时间：2019.05.25。<br>CloseAllBuy.mq5：平当前图表品种的多单。<br>CloseAllSell.mq5：平当前图表品种的空单。<br>CloseAllPairs.mq5：平所有品种的多单和空单。</p><p><font color="#3232CD">六类挂单一键取消脚本</font>：<br>时间：2021.06.23<br>six pend cancel.mq5：</p><p><font color="#3232CD">MT5一键开仓</font>：<br>时间：2021.06.30<br>OpenBuy.mq5：<br>OpenSell.mq5：</p><h3 id="画图辅助"><a href="#画图辅助" class="headerlink" title="画图辅助"></a>画图辅助</h3><p><font color="#3232CD">Widescreenshooter</font>：本脚本自动计算图片文件的宽度并调整图表的最小 最大值以适应截图的边界<br>时间：2014.02.03<br>wideshooter.mq5：</p><p><font color="#3232CD">蜡烛统计 2</font>：此为 蜡烛统计 脚本的修改版。计算一系列牛市和熊市柱线的数量。作为图表显示。保存结果图表的截屏。使用了 CGraphic 类。<br>时间：2018.01.29<br>Statistics of candles 2.mq5：</p><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p><font color="#3232CD">输出历史数据</font>：此脚本目的是输出历史数据为指定格式, 转换用于外部程序分析<br>时间：2014.01.23<br>history_in_mathcad.mq5：</p><p><font color="#3232CD">ytg_Percent_Lot</font>：此脚本使用指定的资金风险百分比计算下单交易量<br>时间：2014.01.24<br>ytg_percent_lot.mq5：</p><p><font color="#3232CD">YURAZ_CreateCSV_HistoryFile_From_MT5_For_MT4</font>：我发现一些交易商并未提供完整的历史数据<br>时间：2014.01.24<br>yuraz_create_history_csv_from_mt5_for_mt4.mq5：</p><p><font color="#3232CD">保存和显示测试图表对象</font>：回测。本脚本的作用就是先保存测试图表上的对象，然后再新的图表上显示出来。<br>时间：2018.02.15<br>SaveAndShowTestingChartObjects.mq5：</p><h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD">简单 EA</font>：最简单的买卖机器人!<br>时间：2014.06.16<br>simple.mq5：</p><p><font color="#3232CD">情绪EA交易</font>：利用市场开启时情绪变化进行交易的机器人<br>时间：2016.02.11<br>sentiment_ea.mq5：</p><p><font color="#3232CD">自动交易员</font>：自动交易员 EA 设计用于启用 禁用 MT5 终端的 自动交易 按钮, 并将终端内当前已开仓位平仓<br>时间：2016.07.27<br>AutoTraderRus.mq5：</p><p><font color="#3232CD">定时交易</font>：自动交易员 EA 设计用于启用 禁用 MT5 终端的 自动交易 按钮, 并将终端内当前已开仓位平仓<br>时间：2017.01.25<br>timer_trade.mq5：</p><p><font color="#3232CD">多手数剥头皮EA交易</font>：<br>时间：2017.02.06<br>timer_trade.mq5：</p><p><font color="#3232CD">反向交易</font>：建立于之前关闭仓位相反的仓位，使用同样的交易量。它工作于任意交易品种和幻数，<br>时间：2017.11.16<br>Opposite trade.mq5：</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;脚本学习。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="脚本" scheme="https://seefs.github.io/categories/%E8%84%9A%E6%9C%AC/"/>
-    
-    
-    <category term="论坛" scheme="https://seefs.github.io/tags/%E8%AE%BA%E5%9D%9B/"/>
-    
-  </entry>
   
   <entry>
     <title>下载我的脚本文件</title>
@@ -59,21 +38,23 @@
   </entry>
   
   <entry>
-    <title>其他</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_market_other/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_market_other/</id>
+    <title>介绍论坛上已有脚本</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_exist/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_exist/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-16T12:05:10.530Z</updated>
+    <updated>2024-05-16T12:03:35.645Z</updated>
     
-    <content type="html"><![CDATA[<p>其他。</p><span id="more"></span><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">其他</font>：<br>EA交易：<br>指标：<br>脚本：</p><h3 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h3><p><font color="#3232CD">其他</font>：</p><h3 id="发布视频"><a href="#发布视频" class="headerlink" title="发布视频"></a>发布视频</h3><p><font color="#3232CD">其他</font>：</p><p>&#x2F;&#x2F; close<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/APCqxQ">https://v.kuaishou.com/APCqxQ</a></p><p><video src="/2020/07/29/hello-ultrafisher/logo.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;其他。&lt;/p&gt;</summary>
+    <content type="html"><![CDATA[<p>脚本学习。</p><span id="more"></span><h2 id="脚本学习"><a href="#脚本学习" class="headerlink" title="脚本学习"></a>脚本学习</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本分类</font>：<br>EA交易：<br>指标：<br>脚本：</p><p><font color="#3232CD">功能分类</font>：<br>操作：<br>画图辅助：<br>分析：回测<br>EA：</p><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p><font color="#3232CD">OpenSellPosition_X</font>：学一下输入参数<br>时间：2014.01.10</p><p><font color="#3232CD">setselllimitorder</font>：set limit<br>时间：2014.01.20<br>setselllimitorder.mq5：</p><p><font color="#3232CD">InvertPosition</font>：以当前价位开反向单<br>时间：2014.01.20<br>invertposition.mq5：</p><p><font color="#3232CD">一触取消其它</font>：当一个挂单被触发, 脚本删除所有(!)当前符号剩余订单并退出<br>时间：2014.02.10<br>oncecancelotherscript.mq5：</p><p><font color="#3232CD">围绕当前价位平铺订单</font>：一个脚本来创建平铺的买、卖挂单<br>时间：2014.06.11<br>announcementstrategy.mq5：会把已有单子平仓，可能代码过时。</p><p><font color="#3232CD">空头挂单</font>：当您将此脚本拖拽进图表, 它将计算价格当前价格并据此价格判断是否放置 Sell Stop 或 Sell Limit 挂单。<br>时间：2015.02.06<br>sellorder.mq5：</p><p><font color="#3232CD">Modify SL TP</font>：修改止赢止损。<br>时间：2017.05.03<br>Modify_SL_TP.mq5：</p><p><font color="#3232CD">OpenSellStopOrder</font>：用于设置止损卖出(SellStop)挂单的脚本程序。<br>时间：2017.06.05<br>OpenSellStopOrder.mq5：<br>一套操作。</p><p><font color="#3232CD">CloseOrdersBySymbolByType</font>：本脚本程序在当前交易品种中根据设置中指定的类型删除所有订单<br>时间：2017.06.05<br>CloseOrdersBySymbolByType.mq5：</p><p><font color="#3232CD">MAX_LOT</font>：本脚本程序计算使用存款中的全部可用保证金来建立仓位的最大手数。<br>时间：2017.06.05<br>MAX_LOT.mq5：<br>修改功能，平铺订单。</p><p><font color="#3232CD">AutoSLTP</font>：为所有开启的订单设置止损和获利的辅助工具。交易品种设置，仓位类型，止损和获利是在外部文件中指定的.<br>时间：2017.11.16<br>AutoSLTP.mq5：</p><p><font color="#3232CD">一键平仓</font>：速度不够快。<br>时间：2019.05.25。<br>CloseAllBuy.mq5：平当前图表品种的多单。<br>CloseAllSell.mq5：平当前图表品种的空单。<br>CloseAllPairs.mq5：平所有品种的多单和空单。</p><p><font color="#3232CD">六类挂单一键取消脚本</font>：<br>时间：2021.06.23<br>six pend cancel.mq5：</p><p><font color="#3232CD">MT5一键开仓</font>：<br>时间：2021.06.30<br>OpenBuy.mq5：<br>OpenSell.mq5：</p><h3 id="画图辅助"><a href="#画图辅助" class="headerlink" title="画图辅助"></a>画图辅助</h3><p><font color="#3232CD">Widescreenshooter</font>：本脚本自动计算图片文件的宽度并调整图表的最小 最大值以适应截图的边界<br>时间：2014.02.03<br>wideshooter.mq5：</p><p><font color="#3232CD">蜡烛统计 2</font>：此为 蜡烛统计 脚本的修改版。计算一系列牛市和熊市柱线的数量。作为图表显示。保存结果图表的截屏。使用了 CGraphic 类。<br>时间：2018.01.29<br>Statistics of candles 2.mq5：</p><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p><font color="#3232CD">输出历史数据</font>：此脚本目的是输出历史数据为指定格式, 转换用于外部程序分析<br>时间：2014.01.23<br>history_in_mathcad.mq5：</p><p><font color="#3232CD">ytg_Percent_Lot</font>：此脚本使用指定的资金风险百分比计算下单交易量<br>时间：2014.01.24<br>ytg_percent_lot.mq5：</p><p><font color="#3232CD">YURAZ_CreateCSV_HistoryFile_From_MT5_For_MT4</font>：我发现一些交易商并未提供完整的历史数据<br>时间：2014.01.24<br>yuraz_create_history_csv_from_mt5_for_mt4.mq5：</p><p><font color="#3232CD">保存和显示测试图表对象</font>：回测。本脚本的作用就是先保存测试图表上的对象，然后再新的图表上显示出来。<br>时间：2018.02.15<br>SaveAndShowTestingChartObjects.mq5：</p><h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD">简单 EA</font>：最简单的买卖机器人!<br>时间：2014.06.16<br>simple.mq5：</p><p><font color="#3232CD">情绪EA交易</font>：利用市场开启时情绪变化进行交易的机器人<br>时间：2016.02.11<br>sentiment_ea.mq5：</p><p><font color="#3232CD">自动交易员</font>：自动交易员 EA 设计用于启用 禁用 MT5 终端的 自动交易 按钮, 并将终端内当前已开仓位平仓<br>时间：2016.07.27<br>AutoTraderRus.mq5：</p><p><font color="#3232CD">定时交易</font>：自动交易员 EA 设计用于启用 禁用 MT5 终端的 自动交易 按钮, 并将终端内当前已开仓位平仓<br>时间：2017.01.25<br>timer_trade.mq5：</p><p><font color="#3232CD">多手数剥头皮EA交易</font>：<br>时间：2017.02.06<br>timer_trade.mq5：</p><p><font color="#3232CD">反向交易</font>：建立于之前关闭仓位相反的仓位，使用同样的交易量。它工作于任意交易品种和幻数，<br>时间：2017.11.16<br>Opposite trade.mq5：</p>]]></content>
     
     
+    <summary type="html">&lt;p&gt;脚本学习。&lt;/p&gt;</summary>
     
     
-    <category term="脚本" scheme="https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+    <category term="脚本" scheme="https://seefs.github.io/categories/%E8%84%9A%E6%9C%AC/"/>
+    
+    
+    <category term="论坛" scheme="https://seefs.github.io/tags/%E8%AE%BA%E5%9D%9B/"/>
     
   </entry>
   
@@ -122,9 +103,9 @@
     <link href="https://seefs.github.io/2024/05/03/habit_scripts_close/"/>
     <id>https://seefs.github.io/2024/05/03/habit_scripts_close/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-16T13:14:12.311Z</updated>
+    <updated>2024-05-17T09:39:31.473Z</updated>
     
-    <content type="html"><![CDATA[<p>mt5电脑软件已经自带一键平仓，用脚本不一定快。因为用脚本是一个个的平仓，有时较慢。</p><span id="more"></span><h2 id="平仓脚本"><a href="#平仓脚本" class="headerlink" title="平仓脚本"></a>平仓脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">第1组平仓脚本</font>：第1组是论坛上的脚本。在代码库下载，时间是2019.05.25。<br>功能同mt5电脑软件，批量操作–所有持仓平仓。</p><p><font color="#3232CD">第2组平仓脚本</font>：第2组脚本是用mt5 帮助文档中的脚本，修改而成。<br>功能同mt5电脑软件，批量操作–删除所有订单。</p><h3 id="第1组平仓脚本"><a href="#第1组平仓脚本" class="headerlink" title="第1组平仓脚本"></a>第1组平仓脚本</h3><p><font color="#3232CD">平仓所有多单</font>：仅关闭当前窗口相同品种的订单。</p><p>Serial:Mql5\Scripts\_OrderClose\CloseAllBuy.mq5</p><p><font color="#3232CD">平仓所有空单</font>：仅关闭当前窗口相同品种的订单。</p><p>Serial:Mql5\Scripts\_OrderClose\CloseAllSell.mq5</p><p><font color="#3232CD">平仓所有多单和空单</font>：仅关闭当前窗口相同品种的订单。<br>备注：论坛上原脚本会关闭所有品种的订单。</p><p>Serial:Mql5\Scripts\_OrderClose\CloseAllPairs.mq5</p><p><font color="#3232CD">操作视频</font>：</p><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://www.kuaishou.com/short-video/3xgkd32gndx7w7m?fid=4038014158&cc=share_copylink&followRefer=151&shareMethod=TOKEN&docId=10&kpn=NEBULA&subBiz=BROWSE_SLIDE_PHOTO&photoId=3xgkd32gndx7w7m&shareId=17904659499709&shareToken=X5sbDB0cRibzgIt&shareResourceType=PHOTO_SELF&userId=3xxshx7fc2x25nm&shareType=2&et=1_a%252F2007163471933357169_p0&shareMode=APP&originShareId=17904659499709&appType=21&shareObjectId=5250915820376037368&shareUrlOpened=0&timestamp=1715841618111&utm_source=app_share&utm_medium=app_share&utm_campaign=app_share&location=app_share" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></div><p><font color="#3232CD">操作视频</font>：</p><video id="video" controls="" preload="none" allowfullscreen="true" position= "absolute" width="100%" poster="你的URL"><source id="mp4" src="https://v.kuaishou.com/APCqxQ" type="video/mp4" ></video><h3 id="第2组平仓脚本"><a href="#第2组平仓脚本" class="headerlink" title="第2组平仓脚本"></a>第2组平仓脚本</h3><p><font color="#3232CD">删除stop + limit 订单</font>：仅关闭当前窗口相同品种的 stop + limit 订单。</p><p>Serial:Mql5\Scripts\_OrderClose\RemoveAllStopLimitOrder.mq5</p><p><font color="#3232CD">删除所有订单</font>：关闭当前窗口相同品种的 stop + limit订单，和持仓的  buy + sell 订单。</p><p>Serial:Mql5\Scripts\_OrderClose\RemoveAllOrder.mq5</p>]]></content>
+    <content type="html"><![CDATA[<p>mt5电脑软件已经自带一键平仓，用脚本不一定快。因为用脚本是一个个的平仓，有时较慢。</p><span id="more"></span><h2 id="平仓脚本"><a href="#平仓脚本" class="headerlink" title="平仓脚本"></a>平仓脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">第1组平仓脚本</font>：第1组是论坛上的脚本。在代码库下载，时间是2019.05.25。<br>功能同mt5电脑软件，批量操作–所有持仓平仓。</p><p><font color="#3232CD">第2组平仓脚本</font>：第2组脚本是用mt5 帮助文档中的脚本，修改而成。<br>功能同mt5电脑软件，批量操作–删除所有订单。</p><h3 id="第1组平仓脚本"><a href="#第1组平仓脚本" class="headerlink" title="第1组平仓脚本"></a>第1组平仓脚本</h3><p><font color="#3232CD">平仓所有多单</font>：仅关闭当前窗口相同品种的订单。</p><p>Serial:Mql5\Scripts\_OrderClose\CloseAllBuy.mq5</p><p><font color="#3232CD">平仓所有空单</font>：仅关闭当前窗口相同品种的订单。</p><p>Serial:Mql5\Scripts\_OrderClose\CloseAllSell.mq5</p><p><font color="#3232CD">平仓所有多单和空单</font>：仅关闭当前窗口相同品种的订单。<br>备注：论坛上原脚本会关闭所有品种的订单。</p><p>Serial:Mql5\Scripts\_OrderClose\CloseAllPairs.mq5</p><p><font color="#3232CD">操作视频</font>：</p><div style="position: relative; width: 100%; height: 0; padding-bottom: 50%;"><iframe src="https://www.kuaishou.com/short-video/3xgkd32gndx7w7m?fid=4038014158"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></div><p><font color="#3232CD">操作视频</font>：</p><video id="video" controls="" preload="none" allowfullscreen="true" position= "absolute" width="100%" poster="https://v.kuaishou.com/APCqxQ"><source id="mp4" src="https://v.kuaishou.com/APCqxQ" type="video/mp4" ></video>    <p><font color="#3232CD">操作视频</font>：</p><video id="video" controls="" preload="none" allowfullscreen="true" position= "absolute" width="100%" poster="https://www.kuaishou.com/short-video/3xgkd32gndx7w7m?fid=4038014158"><source id="mp4" src="https://www.kuaishou.com/short-video/3xgkd32gndx7w7m?fid=4038014158" type="video/mp4" ></video><h3 id="第2组平仓脚本"><a href="#第2组平仓脚本" class="headerlink" title="第2组平仓脚本"></a>第2组平仓脚本</h3><p><font color="#3232CD">删除stop + limit 订单</font>：仅关闭当前窗口相同品种的 stop + limit 订单。</p><p>Serial:Mql5\Scripts\_OrderClose\RemoveAllStopLimitOrder.mq5</p><p><font color="#3232CD">删除所有订单</font>：关闭当前窗口相同品种的 stop + limit订单，和持仓的  buy + sell 订单。</p><p>Serial:Mql5\Scripts\_OrderClose\RemoveAllOrder.mq5</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;mt5电脑软件已经自带一键平仓，用脚本不一定快。因为用脚本是一个个的平仓，有时较慢。&lt;/p&gt;</summary>
@@ -135,27 +116,6 @@
     
     
     <category term="平仓" scheme="https://seefs.github.io/tags/%E5%B9%B3%E4%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单个开仓脚本</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_scripts_open/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_scripts_open/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-16T12:14:12.304Z</updated>
-    
-    <content type="html"><![CDATA[<p>单个开仓脚本基本用不上，也就不拍操作视频了。</p><span id="more"></span><h2 id="单个开仓脚本"><a href="#单个开仓脚本" class="headerlink" title="单个开仓脚本"></a>单个开仓脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">MT5一键开仓</font>：这个是论坛上的脚本。在代码库下载，时间是2019.05.25。</p><p><font color="#3232CD">第2组开仓脚本</font>：这个是论坛上的脚本。在代码库下载，时间是2017.06.05。</p><h3 id="MT5一键开仓"><a href="#MT5一键开仓" class="headerlink" title="MT5一键开仓"></a>MT5一键开仓</h3><p><font color="#3232CD">单个Buy 或 Sell</font>：参考脚本。在代码库下载，时间是2021.06.30</p><p>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuy.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenSell.mq5</p><h3 id="第2组开仓脚本"><a href="#第2组开仓脚本" class="headerlink" title="第2组开仓脚本"></a>第2组开仓脚本</h3><p><font color="#3232CD">Limit 开仓</font>：</p><p>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuyLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenSellLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuySellLimitOrders.mq5</p><p><font color="#3232CD">Stop 开仓</font><br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuyStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenSellStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuySellStopOrders.mq5</p><p><font color="#3232CD">StopLimit 开仓</font></p><p>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuyStopLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenSellStopLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuySellStopLimitOrders.mq5</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;单个开仓脚本基本用不上，也就不拍操作视频了。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="脚本" scheme="https://seefs.github.io/categories/%E8%84%9A%E6%9C%AC/"/>
-    
-    
-    <category term="开仓" scheme="https://seefs.github.io/tags/%E5%BC%80%E4%BB%93/"/>
     
   </entry>
   
@@ -177,6 +137,46 @@
     
     
     <category term="反单" scheme="https://seefs.github.io/tags/%E5%8F%8D%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>其他</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_other/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_other/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-05-16T12:05:10.530Z</updated>
+    
+    <content type="html"><![CDATA[<p>其他。</p><span id="more"></span><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">其他</font>：<br>EA交易：<br>指标：<br>脚本：</p><h3 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h3><p><font color="#3232CD">其他</font>：</p><h3 id="发布视频"><a href="#发布视频" class="headerlink" title="发布视频"></a>发布视频</h3><p><font color="#3232CD">其他</font>：</p><p>&#x2F;&#x2F; close<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/APCqxQ">https://v.kuaishou.com/APCqxQ</a></p><p><video src="/2020/07/29/hello-ultrafisher/logo.mp4" position= "absolute" width="100%" height="100%" controls="controls"></video></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;其他。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="脚本" scheme="https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>单个开仓脚本</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_scripts_open/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_scripts_open/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-05-16T12:14:12.304Z</updated>
+    
+    <content type="html"><![CDATA[<p>单个开仓脚本基本用不上，也就不拍操作视频了。</p><span id="more"></span><h2 id="单个开仓脚本"><a href="#单个开仓脚本" class="headerlink" title="单个开仓脚本"></a>单个开仓脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">MT5一键开仓</font>：这个是论坛上的脚本。在代码库下载，时间是2019.05.25。</p><p><font color="#3232CD">第2组开仓脚本</font>：这个是论坛上的脚本。在代码库下载，时间是2017.06.05。</p><h3 id="MT5一键开仓"><a href="#MT5一键开仓" class="headerlink" title="MT5一键开仓"></a>MT5一键开仓</h3><p><font color="#3232CD">单个Buy 或 Sell</font>：参考脚本。在代码库下载，时间是2021.06.30</p><p>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuy.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenSell.mq5</p><h3 id="第2组开仓脚本"><a href="#第2组开仓脚本" class="headerlink" title="第2组开仓脚本"></a>第2组开仓脚本</h3><p><font color="#3232CD">Limit 开仓</font>：</p><p>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuyLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenSellLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuySellLimitOrders.mq5</p><p><font color="#3232CD">Stop 开仓</font><br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuyStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenSellStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuySellStopOrders.mq5</p><p><font color="#3232CD">StopLimit 开仓</font></p><p>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuyStopLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenSellStopLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderOpenDemo\OpenBuySellStopLimitOrders.mq5</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;单个开仓脚本基本用不上，也就不拍操作视频了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="脚本" scheme="https://seefs.github.io/categories/%E8%84%9A%E6%9C%AC/"/>
+    
+    
+    <category term="开仓" scheme="https://seefs.github.io/tags/%E5%BC%80%E4%BB%93/"/>
     
   </entry>
   
