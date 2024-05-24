@@ -133,11 +133,11 @@
 <p><font color="#3232CD">双向开StopLimit单</font>：</p>
 <p><font color="#3232CD">扩展</font>：赢利的方法要做细。考虑如何扩展功能。<br>扩展1：仓位按三角形平铺。<br>扩展2：增加自动补充功能。不停的手动补充，可能等于EA的效果。单边行情不要补充。</p>
 <h3 id="双向开limit单"><a href="#双向开limit单" class="headerlink" title="双向开limit单"></a>双向开limit单</h3><p><font color="#3232CD">1. 双向开limit单</font>：<br>Scripts\_OrderGridOpenP\OpenPairsLimitOrder.mq5</p>
-<p>应用场景：可以试下震荡行情。<br>场景1：行情有分歧时使用。<br>场景2：反转初期。<br>止赢止损：止损+2, 止赢+3。(根据需要自动调整)<br>功能说明：<br>参数1：从上下0.5开始，间隔0.4开单。<br>仓位说明：需要控制仓位。<br>仓位1：$10000, $2<em>3次, 手数是0.05</em>10<em>3&#x3D;1.5手。还算正常。<br>仓位2：$1000, $2</em>3次, 手数是…<br>仓位2：$100, $2*3次, 手数是…</p>
+<p>应用场景：可以试下震荡行情。<br>场景1：行情有分歧时使用。<br>场景2：反转初期。<br>止赢止损：止损+2, 止赢+3。(根据需要自动调整)<br>功能说明：<br>参数1：从上下0.5开始，间隔0.4开单。<br>仓位说明：多次点击总仓位会变大。参考另一篇修改仓位的文章。</p>
 <p><font color="#3232CD">2. 不带止损或止赢</font>：<br>Scripts\_OrderGridOpenP\OpenPairsLimitOrder_0_0.mq5<br>Scripts\_OrderGridOpenP\OpenPairsLimitOrder_0_10.mq5</p>
 <p>应用场景：行情混乱<br>功能说明：待验证效果。</p>
 <h3 id="双向开stop单"><a href="#双向开stop单" class="headerlink" title="双向开stop单"></a>双向开stop单</h3><p><font color="#3232CD">3. 双向开stop单</font>：<br>Scripts\_OrderGridOpenP\OpenPairsStopOrder.mq5</p>
-<p>应用场景：大单边行情可用。<br>止赢止损：止损+2, 止赢+3。(根据需要自动调整)<br>功能说明：<br>参数1：从上下0.5开始，间隔0.2开单。这个更密集。<br>仓位说明：需要控制总仓位。(带止赢仓位默认双倍)<br>仓位1：$10000, $2<em>3次, 手数是0.05</em>10<em>3&#x3D;1.5手。还算正常。<br>仓位2：$1000, $2</em>3次, 手数是…<br>仓位2：$100, $2*3次, 手数是…</p>
+<p>应用场景：大单边行情可用。<br>场景1：最佳行情启动时下单<br>止赢止损：止损+2, 止赢+3。(根据需要自动调整)<br>功能说明：<br>参数1：从上下0.5开始，间隔0.2开单。这个更密集。<br>仓位说明：多次点击总仓位会变大。参考另一篇修改仓位的文章。</p>
 <p><font color="#3232CD">操作视频</font>：(手机请点全屏播放)</p>
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
 src="https://www.kuaishou.com/short-video/3xgbdjqyuu2u92g" scrolling="no" border="0" 
@@ -147,7 +147,7 @@ frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolu
 
 
 <p><font color="#3232CD">4. 不带止损或止赢</font>：<br>Scripts\_OrderGridOpenP\OpenPairsStopOrder_0_0.mq5<br>Scripts\_OrderGridOpenP\OpenPairsStopOrder_0_10.mq5</p>
-<p>应用场景：大单边行情可用。贪婪时使用。<br>止赢止损：不带止损，怕上下拉。<br>功能说明：需要赢利时手动修改止损。<br>参数1：<br>仓位说明：需要控制总仓位。<br>仓位1：$10000, $2<em>3次, 手数是0.05</em>10<em>3&#x3D;1.5手。还算正常。<br>仓位2：$1000, $2</em>3次, 手数是…<br>仓位2：$100, $2*3次, 手数是…</p>
+<p>应用场景：大单边行情可用。贪婪时使用。<br>止赢止损：不带止损，怕上下拉。<br>功能说明：需要赢利时手动修改止损。<br>参数1：<br>仓位说明：多次点击总仓位会变大。参考另一篇修改仓位的文章。</p>
 <h3 id="双向开StopLimit单"><a href="#双向开StopLimit单" class="headerlink" title="双向开StopLimit单"></a>双向开StopLimit单</h3><p><font color="#3232CD">3. 双向开StopLimit单</font>：<br>Scripts\_OrderGridOpenP\OpenPairsStopLimitOrder.mq5</p>
 <p>应用场景：我没用过。可能会用在震荡上行或荡下行行情。</p>
 
