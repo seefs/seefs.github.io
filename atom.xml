@@ -6,7 +6,7 @@
   <link href="https://seefs.github.io/atom.xml" rel="self"/>
   
   <link href="https://seefs.github.io/"/>
-  <updated>2024-05-26T11:05:50.839Z</updated>
+  <updated>2024-05-26T11:33:51.523Z</updated>
   <id>https://seefs.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://seefs.github.io/2024/05/03/custom_market_edit/"/>
     <id>https://seefs.github.io/2024/05/03/custom_market_edit/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-26T11:05:50.839Z</updated>
+    <updated>2024-05-26T11:33:51.523Z</updated>
     
     <content type="html"><![CDATA[<p>Modify positions and take profit and stop loss.</p><span id="more"></span><h2 id="Modify-positions-and-take-profit-and-stop-loss"><a href="#Modify-positions-and-take-profit-and-stop-loss" class="headerlink" title="Modify positions and take profit and stop loss"></a>Modify positions and take profit and stop loss</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><font color="#3232CD" > modify the modified parameters</font>:<br>Positions:<br>Take Profit &amp; Stop Loss:<br>Bulk billing range and interval:</p><h3 id="Modify-parameters"><a href="#Modify-parameters" class="headerlink" title="Modify parameters"></a>Modify parameters</h3><p><font color="#3232CD" > position description</font>:<br>Compatible minimum step: When the account balance is small, the position uses the minimum value, the step size is reduced and evenly spread.<br>Small and light: Small accounts have heavier positions.</p><p><img src="/img/habit/test_lot2.png"></p><p>Run this script and the position size description will be displayed.<br>Scripts\_OrderTest\OptimizeAccountLot.mq5</p><p><font color="#3232CD" > position modification</font>:</p><p><img src="/img/habit/test_lot3.png"></p><p>As shown in the figure above, modify MM&#x3D;0.06. That is, the total position of each batch order is 6%.<br>Then recompile.</p><p><font color="#3232CD"> Take Profit and Stop Loss</font>:<br>As shown in the figure above, modify<br>STOPLOSS&#x3D;150;  &#x2F;&#x2F;The stop loss is 150 pips, and the measured is $1.5<br>TAKEPROFIT&#x3D;150; &#x2F;&#x2F;Take profit of 300 points</p><p><font color="#3232CD"> range and interval of bulk billing</font>:<br>As shown in the figure above, modify<br>RANGE&#x3D;200;       &#x2F;&#x2F;The step size range is 200 points, and the order is placed in batches in this price range.<br>RTOTAL&#x3D;20;       &#x2F;&#x2F;The step size is 40 points, that is, 10 orders</p><p><font color="#3232CD" > modify the price offset of the first order</font>:<br>As shown in the figure above, modify<br>LEVEL&#x3D;40;        &#x2F;&#x2F;A difference of $0.4 from the current price opens a ticket.</p><h3 id="Recompilation"><a href="#Recompilation" class="headerlink" title="Recompilation"></a>Recompilation</h3><p><font color="#3232CD" > steps</font>:<br>a. Open the IDE and modify the script parameters<br>b. Right-click on the _Orderxx folder and right-click on compilation<br>c. Open the MT5 software, right-click on the script to refresh, and click the script to run if needed</p>]]></content>
     
@@ -29,6 +29,8 @@
     <summary type="html">&lt;p&gt;Modify positions and take profit and stop loss.&lt;/p&gt;</summary>
     
     
+    
+    <category term="Script" scheme="https://seefs.github.io/categories/Script/"/>
     
     
     <category term="Position" scheme="https://seefs.github.io/tags/Position/"/>
@@ -55,11 +57,32 @@
   </entry>
   
   <entry>
+    <title>Download my script file</title>
+    <link href="https://seefs.github.io/2024/05/03/custom_market_install/"/>
+    <id>https://seefs.github.io/2024/05/03/custom_market_install/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-05-26T11:33:55.577Z</updated>
+    
+    <content type="html"><![CDATA[<p>Download the script file.</p><span id="more"></span><h2 id="Download-the-script-file"><a href="#Download-the-script-file" class="headerlink" title="Download the script file"></a>Download the script file</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><font color="#3232CD" > download the script file</font>: must be compiled once.<br>Downloading scripts from the MT5 software’s code base will be compiled automatically. However, copying the script file from another location requires manual compilation.<br>After downloading, please open the IDE software and right-click to compile the “scripts” folder. If you don’t know the steps you can search the web, or ask me, thank you!</p><p><font color="#3232CD" > how to compile</font>:<br>a. There are two “Start&#x2F;Resume Compilation” buttons, click the one on the left. If you click on the one on the right, you may place an order directly.<br>b. In the left sidebar, select the current file name and right-click to compile.<br>c. On the left sidebar, select the Chinese folder, right-click to compile.<br>d. Switch the trading software, refresh and use the script.</p><p><font color="#3232CD" > note</font>:<br>a. It can only be used for XAUUSD varieties normally, and the prices, take-profit and stop-loss of other varieties are inaccurate.</p><h3 id="Update-history-and-download-link"><a href="#Update-history-and-download-link" class="headerlink" title="Update history and download link"></a>Update history and download link</h3><p><font color="#3232CD"> Version 04 2024&#x2F;05&#x2F;25</font>:<br>a. Adjust the position size. Refer to another article on modifying positions.<br>b. Compatible with bugs caused by different platforms and different price bits.<br>[<font color="#99CC32">Download mt5_scripts_20240525.zip➬</font>] (<a href="https://seefs.github.io/zip/mt5_scripts_20240525.zip">https://seefs.github.io/zip/mt5_scripts_20240525.zip</a>)</p><p><font color="#3232CD"> Version 03 2024&#x2F;05&#x2F;20</font>:<br>a. When modifying batch billing, you cannot switch the price range by clicking continuously.</p><p>[<font color="#99CC32">Download mt5_scripts_20240520.zip➬</font>] (<a href="https://seefs.github.io/zip/mt5_scripts_20240520.zip">https://seefs.github.io/zip/mt5_scripts_20240520.zip</a>)</p><p><font color="#3232CD">Version 02 2024&#x2F;05&#x2F;18</font>:<br>a. When modifying batch billing, you cannot switch the price range by clicking continuously. (Actually not corrected)<br>b. Add anti-single scripts.<br>c. Batch ordering, two-way stop order, add no take-profit script. This one is more greedy.</p><p>[<font color="#99CC32">Download mt5_scripts_20240518.zip➬</font>] (<a href="https://seefs.github.io/zip/mt5_scripts_20240518.zip">https://seefs.github.io/zip/mt5_scripts_20240518.zip</a>)</p><p><font color="#3232CD"> version 01 2024&#x2F;05&#x2F;16</font>:</p><p>[<font color="#99CC32"> download mt5_scripts_20240516.zip➬</font>] (<a href="https://seefs.github.io/zip/mt5_scripts_20240516.zip">https://seefs.github.io/zip/mt5_scripts_20240516.zip</a>)</p><h3 id="Installation-path"><a href="#Installation-path" class="headerlink" title="Installation path"></a>Installation path</h3><p><font color="#3232CD"> installation path</font>:</p><p><img src="/img/habit/install_path.png"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Download the script file.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Script" scheme="https://seefs.github.io/categories/Script/"/>
+    
+    
+    <category term="Download" scheme="https://seefs.github.io/tags/Download/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Downloading and using scripts</title>
     <link href="https://seefs.github.io/2024/05/03/custom_market_usage/"/>
     <id>https://seefs.github.io/2024/05/03/custom_market_usage/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-26T11:04:01.640Z</updated>
+    <updated>2024-05-26T11:33:59.857Z</updated>
     
     <content type="html"><![CDATA[<p>Please refer to this for the operation of the script.</p><span id="more"></span><h2 id="Download-and-use-scripts"><a href="#Download-and-use-scripts" class="headerlink" title="Download and use scripts"></a>Download and use scripts</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><font color="#3232CD" > download and use of the script</font>: use a script, “one-click closing”, and give examples of how to use and modify it.<br>It is important to note that scripts compiled on different platforms are not universal. You can click on the folder in the IDE to recompile.</p><h3 id="Download-Use"><a href="#Download-Use" class="headerlink" title="Download &amp; Use"></a>Download &amp; Use</h3><p><font color="#3232CD" > download</font>: You need to register and log in first, and click Download</p><p><img src="/img/habit/market/test_01.png"></p><p>Alternatively, click Show and download it from your browser, instructions may be used on the forum</p><p><img src="/img/habit/market/test_06.png"></p><p><font color="#3232CD"> to register and log in</font>:</p><p><img src="/img/habit/market/test_02.png"></p><p><font color="#3232CD" > save location</font>:</p><p><img src="/img/habit/market/test_03.png"></p><p><font color="#3232CD" > how to use</font>: Turn on the switch, then double-click the script</p><p><img src="/img/habit/market/test_04.png"></p><p><font color="#3232CD" > effect</font>: about 1 second to close 2 orders, not as fast as the mobile phone</p><p><img src="/img/habit/market/test_05.png"></p><h3 id="Edit-the-script"><a href="#Edit-the-script" class="headerlink" title="Edit the script"></a>Edit the script</h3><p><font color="#3232CD" > open the editing tools</font>:</p><p><img src="/img/habit/market/edit_01.png"></p><p><font color="#3232CD" > modify the code</font>: After modifying, click Run to recompile</p><p><img src="/img/habit/market/edit_02.png"></p><p><font color="#3232CD" > copy each other</font>: different trading software, can be copied directly and then used</p><p><img src="/img/habit/market/edit_03.png"></p>]]></content>
     
@@ -67,6 +90,8 @@
     <summary type="html">&lt;p&gt;Please refer to this for the operation of the script.&lt;/p&gt;</summary>
     
     
+    
+    <category term="Script" scheme="https://seefs.github.io/categories/Script/"/>
     
     
     <category term="Download" scheme="https://seefs.github.io/tags/Download/"/>
@@ -108,25 +133,6 @@
     
     
     <category term="single" scheme="https://seefs.github.io/tags/single/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>A single open script</title>
-    <link href="https://seefs.github.io/2024/05/03/custom_scripts_open/"/>
-    <id>https://seefs.github.io/2024/05/03/custom_scripts_open/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-26T11:00:44.968Z</updated>
-    
-    <content type="html"><![CDATA[<p>A single opening script is basically not used, so there is no operation video.</p><span id="more"></span><h2 id="Single-open-script"><a href="#Single-open-script" class="headerlink" title="Single open script"></a>Single open script</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><font color="#3232CD"> MT5 to open a position with one click</font>: this is a script on the forum. Download it in the code base on 2019.05.25.</p><p><font color="#3232CD" > second set of scripts for opening positions</font>: this is a script on the forum. Download in the code base on 2017.06.05.</p><h3 id="MT5-one-click-position-opening"><a href="#MT5-one-click-position-opening" class="headerlink" title="MT5 one-click position opening"></a>MT5 one-click position opening</h3><p><font color="#3232CD">1. Single Buy or Sell</font>: Reference script. Download it in the code base on 2021.06.30<br>Scripts\_OrderOpenDemo\OpenBuy.mq5<br>Scripts\_OrderOpenDemo\OpenSell.mq5</p><h3 id="The-second-set-of-scripts-for-opening-positions"><a href="#The-second-set-of-scripts-for-opening-positions" class="headerlink" title="The second set of scripts for opening positions"></a>The second set of scripts for opening positions</h3><p><font color="#3232CD">2. Limit to open a position</font>:<br>Scripts\_OrderOpenDemo\OpenBuyLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellLimitOrders.mq5</p><p><font color="#3232CD">3. Stop to open a position</font><br>Scripts\_OrderOpenDemo\OpenBuyStopOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellStopOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellStopOrders.mq5</p><p><font color="#3232CD">4. StopLimit to open a position</font><br>Scripts\_OrderOpenDemo\OpenBuyStopLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellStopLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellStopLimitOrders.mq5</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;A single opening script is basically not used, so there is no operation video.&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="Open" scheme="https://seefs.github.io/tags/Open/"/>
     
   </entry>
   
@@ -287,6 +293,25 @@
   </entry>
   
   <entry>
+    <title>A single open script</title>
+    <link href="https://seefs.github.io/2024/05/03/custom_scripts_open/"/>
+    <id>https://seefs.github.io/2024/05/03/custom_scripts_open/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-05-26T11:00:44.968Z</updated>
+    
+    <content type="html"><![CDATA[<p>A single opening script is basically not used, so there is no operation video.</p><span id="more"></span><h2 id="Single-open-script"><a href="#Single-open-script" class="headerlink" title="Single open script"></a>Single open script</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><font color="#3232CD"> MT5 to open a position with one click</font>: this is a script on the forum. Download it in the code base on 2019.05.25.</p><p><font color="#3232CD" > second set of scripts for opening positions</font>: this is a script on the forum. Download in the code base on 2017.06.05.</p><h3 id="MT5-one-click-position-opening"><a href="#MT5-one-click-position-opening" class="headerlink" title="MT5 one-click position opening"></a>MT5 one-click position opening</h3><p><font color="#3232CD">1. Single Buy or Sell</font>: Reference script. Download it in the code base on 2021.06.30<br>Scripts\_OrderOpenDemo\OpenBuy.mq5<br>Scripts\_OrderOpenDemo\OpenSell.mq5</p><h3 id="The-second-set-of-scripts-for-opening-positions"><a href="#The-second-set-of-scripts-for-opening-positions" class="headerlink" title="The second set of scripts for opening positions"></a>The second set of scripts for opening positions</h3><p><font color="#3232CD">2. Limit to open a position</font>:<br>Scripts\_OrderOpenDemo\OpenBuyLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellLimitOrders.mq5</p><p><font color="#3232CD">3. Stop to open a position</font><br>Scripts\_OrderOpenDemo\OpenBuyStopOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellStopOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellStopOrders.mq5</p><p><font color="#3232CD">4. StopLimit to open a position</font><br>Scripts\_OrderOpenDemo\OpenBuyStopLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellStopLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellStopLimitOrders.mq5</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;A single opening script is basically not used, so there is no operation video.&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Open" scheme="https://seefs.github.io/tags/Open/"/>
+    
+  </entry>
+  
+  <entry>
     <title>脚本的下载与使用</title>
     <link href="https://seefs.github.io/2024/05/03/habit_market_usage/"/>
     <id>https://seefs.github.io/2024/05/03/habit_market_usage/</id>
@@ -375,25 +400,6 @@
     
     
     <summary type="html">&lt;p&gt;我做顺势单比较少，有经验再补充。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="开仓" scheme="https://seefs.github.io/tags/%E5%BC%80%E4%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>双向批量开仓脚本</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_scripts_open_grid2/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_scripts_open_grid2/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-24T15:44:13.254Z</updated>
-    
-    <content type="html"><![CDATA[<p>比较有用。</p><span id="more"></span><h2 id="双向批量开仓脚本"><a href="#双向批量开仓脚本" class="headerlink" title="双向批量开仓脚本"></a>双向批量开仓脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">双向开limit单</font>：</p><p><font color="#3232CD">双向开stop单</font>：</p><p><font color="#3232CD">双向开StopLimit单</font>：</p><p><font color="#3232CD">扩展</font>：赢利的方法要做细。考虑如何扩展功能。<br>扩展1：仓位按三角形平铺。<br>扩展2：增加自动补充功能。不停的手动补充，可能等于EA的效果。单边行情不要补充。</p><h3 id="双向开limit单"><a href="#双向开limit单" class="headerlink" title="双向开limit单"></a>双向开limit单</h3><p><font color="#3232CD">1. 双向开limit单</font>：<br>Scripts\_OrderGridOpenP\OpenPairsLimitOrder.mq5</p><p>应用场景：可以试下震荡行情。<br>场景1：行情有分歧时使用。<br>场景2：反转初期。<br>止赢止损：止损+2, 止赢+3。(根据需要自动调整)<br>功能说明：<br>参数1：从上下0.5开始，间隔0.4开单。<br>仓位说明：多次点击总仓位会变大。参考另一篇修改仓位的文章。</p><p><font color="#3232CD">2. 不带止损或止赢</font>：<br>Scripts\_OrderGridOpenP\OpenPairsLimitOrder_0_0.mq5<br>Scripts\_OrderGridOpenP\OpenPairsLimitOrder_0_10.mq5</p><p>应用场景：行情混乱<br>功能说明：待验证效果。</p><h3 id="双向开stop单"><a href="#双向开stop单" class="headerlink" title="双向开stop单"></a>双向开stop单</h3><p><font color="#3232CD">3. 双向开stop单</font>：<br>Scripts\_OrderGridOpenP\OpenPairsStopOrder.mq5</p><p>应用场景：大单边行情可用。<br>场景1：最佳行情启动时下单<br>止赢止损：止损+2, 止赢+3。(根据需要自动调整)<br>功能说明：<br>参数1：从上下0.5开始，间隔0.2开单。这个更密集。<br>仓位说明：多次点击总仓位会变大。参考另一篇修改仓位的文章。</p><p><font color="#3232CD">操作视频</font>：(手机请点全屏播放)</p><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://www.kuaishou.com/short-video/3xgbdjqyuu2u92g" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></div><p><font color="#3232CD">4. 不带止损或止赢</font>：<br>Scripts\_OrderGridOpenP\OpenPairsStopOrder_0_0.mq5<br>Scripts\_OrderGridOpenP\OpenPairsStopOrder_0_10.mq5</p><p>应用场景：大单边行情可用。贪婪时使用。<br>止赢止损：不带止损，怕上下拉。<br>功能说明：需要赢利时手动修改止损。<br>参数1：<br>仓位说明：多次点击总仓位会变大。参考另一篇修改仓位的文章。</p><h3 id="双向开StopLimit单"><a href="#双向开StopLimit单" class="headerlink" title="双向开StopLimit单"></a>双向开StopLimit单</h3><p><font color="#3232CD">3. 双向开StopLimit单</font>：<br>Scripts\_OrderGridOpenP\OpenPairsStopLimitOrder.mq5</p><p>应用场景：我没用过。可能会用在震荡上行或荡下行行情。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;比较有用。&lt;/p&gt;</summary>
     
     
     
