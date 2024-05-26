@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Introduces the scripts that are already available on the forum | Mql5 Scripts</title>
+
+  
+  <meta name="author" content="seefss">
+  
+
+  
+  <meta name="description" content="Help Documentation">
+  
+
+  
+  <meta name="keywords" content="Mql5,mt5,Scripts">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="Introduces the scripts that are already available on the forum"/>
+
+  <meta property="og:site_name" content="Mql5 Scripts"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Mql5 Scripts" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+  <link href="https://fonts.lug.ustc.edu.cn/css?family=Lato|Rubik" rel="stylesheet">
+  <script src="/js/pangu-407.min.js"></script>
+<meta name="generator" content="Hexo 7.2.0"></head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    pangu.autoSpacingPage();
+  });
+</script>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Mql5 Scripts</a>
+    </h1>
+    <p class="site-description">Losses must be controlled</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/categories">分类</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/atom.xml">订阅</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>Introduces the scripts that are already available on the forum</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2024/05/03/custom_market_exist/" rel="bookmark">
+        <time class="entry-date published" datetime="2024-05-03T10:00:00.000Z">
+          2024-05-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+
+<script type="text/javascript">
+    function convertRemToPixels(rem) {    
+        return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    }
+    window.onscroll = function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > convertRemToPixels(40)) {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'visible';
+        } else {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'hidden';
+        }
+    }
+</script>
+
+
+<div id="toc" class="toc-article">
+      <div class="toc-content">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Script-Learning"><span class="toc-text">Script Learning</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Introduction"><span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Operation"><span class="toc-text">Operation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Drawing-aids"><span class="toc-text">Drawing aids</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Analysis"><span class="toc-text">Analysis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#EA"><span class="toc-text">EA</span></a></li></ol></li></ol>
+      </div>
+</div>
+<style>
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+
+
+        <p>Script learning.</p>
+<span id="more"></span>
+
+<h2 id="Script-Learning"><a href="#Script-Learning" class="headerlink" title="Script Learning"></a>Script Learning</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><font color="#3232CD" > script classification</font>:<br>Expert Advisors:<br>Index:<br>Script:</p>
+<p><font color="#3232CD"> functional categories</font>:<br>Operate:<br>Drawing Aids:<br>Analysis: Backtesting<br>EA：</p>
+<h3 id="Operation"><a href="#Operation" class="headerlink" title="Operation"></a>Operation</h3><p><font color="#3232CD">OpenSellPosition_X</font>: Learn the input parameters<br>Time: 2014.01.10</p>
+<p><font color="#3232CD">setselllimitorder</font>：set limit<br>Date: 2014.01.20<br>setselllimitorder.mq5：</p>
+<p><font color="#3232CD">InvertPosition:</font> Open a reverse position at the current price<br>Date: 2014.01.20<br>invertposition.mq5：</p>
+<p><font color="#3232CD"> one-touch to cancel other</font>: when a pending order is triggered, the script deletes all (!) The current symbol is left with the order and exits<br>Time: 2014.02.10<br>oncecancelotherscript.mq5：</p>
+<p><font color="#3232CD" > a flat order around the current price</font>: a script to create a flat buy and sell pending order<br>Date: 2014.06.11<br>announcementstrategy.mq5: The existing order will be closed, and the code may be outdated.</p>
+<p><font color="#3232CD" > a pending short order</font>: When you drag and drop this script into the chart, it will calculate the current price of the price and determine whether to place a Sell Stop or Sell Limit pending order.<br>Time: 2015.02.06<br>sellorder.mq5：</p>
+<p><font color="#3232CD">Modify SL TP: Modify SL TP.</font><br>Time: 2017.05.03<br>Modify_SL_TP.mq5：</p>
+<p><font color="#3232CD">OpenSellStopOrder</font>: a script for setting a pending SellStop order.<br>Time: 2017.06.05<br>OpenSellStopOrder.mq5：<br>A set of operations.</p>
+<p><font color="#3232CD">CloseOrdersBySymbolByType</font>: the script deletes all orders in the current symbol according to the type specified in the settings<br>Time: 2017.06.05<br>CloseOrdersBySymbolByType.mq5：</p>
+<p><font color="#3232CD">MAX_LOT</font>: This script calculates the maximum number of lots to open a position using the entire free margin in the deposit.<br>Time: 2017.06.05<br>MAX_LOT.mq5：<br>Modify the function to tile the order.</p>
+<p><font color="#3232CD">AutoSLTP</font>: an aid for setting Stop Loss and Take Profit for all open orders. Symbol settings, position types, Stop Loss and Take Profit are specified in external files.<br>Time: 2017.11.16<br>AutoSLTP.mq5：</p>
+<p><font color="#3232CD" > one-click closing</font>: not fast enough.<br>Time: 2019.05.25.<br>CloseAllBuy.mq5: close long positions of the current chart symbol.<br>CloseAllSell.mq5: close a short position of the current chart symbol.<br>CloseAllPairs.mq5: close long and short positions of all symbols.</p>
+<p><font color="#3232CD" > six types of pending orders one-click cancellation script</font>:<br>Time: 2021.06.23<br>six pend cancel.mq5：</p>
+<p><font color="#3232CD"> MT5 to open a position with one click</font>:<br>Time: 2021.06.30<br>OpenBuy.mq5：<br>OpenSell.mq5：</p>
+<h3 id="Drawing-aids"><a href="#Drawing-aids" class="headerlink" title="Drawing aids"></a>Drawing aids</h3><p><font color="#3232CD">Widescreenshooter</font>: This script automatically calculates the width of the image file and adjusts the minimum and maximum values of the chart to fit the boundaries of the screenshot<br>Time: 2014.02.03<br>wideshooter.mq5：</p>
+<p><font color="#3232CD" > Candle Statistics 2</font>: This is a modified version of the Candle Statistics script. Count the number of bars in a series of bullish and bearish markets. Displayed as a chart. Save a screenshot of the resulting chart. The CGraphic class is used.<br>Time: 2018.01.29<br>Statistics of candles 2.mq5：</p>
+<h3 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h3><p><font color="#3232CD" > Output Historical Data</font>: The purpose of this script is to output historical data in a specified format and convert it for external program analysis<br>Time: 2014.01.23<br>history_in_mathcad.mq5：</p>
+<p><font color="#3232CD">ytg_Percent_Lot</font>: This script calculates the volume of orders using the specified percentage of capital risk<br>Time: 2014.01.24<br>ytg_percent_lot.mq5：</p>
+<p><font color="#3232CD">YURAZ_CreateCSV_HistoryFile_From_MT5_For_MT4</font>: I found that some brokers do not provide complete historical data<br>Time: 2014.01.24<br>yuraz_create_history_csv_from_mt5_for_mt4.mq5：</p>
+<p><font color="#3232CD" > save and display the test chart object</font>: backtest. The purpose of this script is to save the objects on the test chart and then display them on the new chart.<br>Time: 2018.02.15<br>SaveAndShowTestingChartObjects.mq5：</p>
+<h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD"> Simple EA</font>: The Simplest Robot for Buying and Selling!<br>Time: 2014.06.16<br>simple.mq5：</p>
+<p><font color="#3232CD" > Sentiment Expert Advisor:</font> A robot that trades using changes in sentiment when the market opens<br>Time: 2016.02.11<br>sentiment_ea.mq5：</p>
+<p><font color="#3232CD" > AutoTrader</font>: The AutoTrader EA is designed to enable the Disable Auto Trading button in the MT5 terminal and close the currently open positions in the terminal<br>Time: 2016.07.27<br>AutoTraderRus.mq5：</p>
+<p><font color="#3232CD" > Timed Trading</font>: Auto-Trader EA is designed to enable the Disable Auto-Trade button in the MT5 terminal and close the currently open positions in the terminal<br>Time: 2017.01.25<br>timer_trade.mq5：</p>
+<p><font color="#3232CD" > Multi-lot scalping Expert Advisor</font>:<br>Time: 2017.02.06<br>timer_trade.mq5：</p>
+<p><font color="#3232CD" > opposite trade</font>: a position opposite to the previous closed position is opened, using the same volume. It works with arbitrary symbols and magic numbers,<br>Time: 2017.11.16<br>Opposite trade.mq5：</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/Forum/">Forum</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+	<section id="comment" class="comment">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'kidhaibara';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Deployed by <a href="https://github.com/kaedea/notion-down" target="_blank">notion-down</a> and
+    Theme by <a href="https://github.com/kaedea/hexo-theme-hacker" target="_blank">hexo-theme-hacker</a>
+    </br>
+    
+    &copy; 2024 seefss
+    
+  </p>
+</footer>
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'G-J38N5N288S', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </div>
+</div>
+</body>
+</html>

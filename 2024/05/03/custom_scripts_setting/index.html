@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Set order parameters | Mql5 Scripts</title>
+
+  
+  <meta name="author" content="seefss">
+  
+
+  
+  <meta name="description" content="Help Documentation">
+  
+
+  
+  <meta name="keywords" content="Mql5,mt5,Scripts">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="Set order parameters"/>
+
+  <meta property="og:site_name" content="Mql5 Scripts"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Mql5 Scripts" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+  <link href="https://fonts.lug.ustc.edu.cn/css?family=Lato|Rubik" rel="stylesheet">
+  <script src="/js/pangu-407.min.js"></script>
+<meta name="generator" content="Hexo 7.2.0"></head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    pangu.autoSpacingPage();
+  });
+</script>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Mql5 Scripts</a>
+    </h1>
+    <p class="site-description">Losses must be controlled</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/categories">分类</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/atom.xml">订阅</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>Set order parameters</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2024/05/03/custom_scripts_setting/" rel="bookmark">
+        <time class="entry-date published" datetime="2024-05-03T10:00:00.000Z">
+          2024-05-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+
+<script type="text/javascript">
+    function convertRemToPixels(rem) {    
+        return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    }
+    window.onscroll = function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > convertRemToPixels(40)) {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'visible';
+        } else {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'hidden';
+        }
+    }
+</script>
+
+
+<div id="toc" class="toc-article">
+      <div class="toc-content">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Set-order-parameters"><span class="toc-text">Set order parameters</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Introduction"><span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Reference-script"><span class="toc-text">Reference script</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unset"><span class="toc-text">Unset</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Initial-setup"><span class="toc-text">Initial setup</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Set-up-a-rush"><span class="toc-text">Set up a rush</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Set-fine-tuning"><span class="toc-text">Set fine-tuning</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Stop-loss-halved"><span class="toc-text">Stop loss halved</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unilateral-trend-setup"><span class="toc-text">Unilateral trend setup</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pre-Close-Settings"><span class="toc-text">Pre-Close Settings</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Magic-number-settings"><span class="toc-text">Magic number settings</span></a></li></ol></li></ol>
+      </div>
+</div>
+<style>
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+
+
+        <p>Set Take Profit and Stop Loss.</p>
+<span id="more"></span>
+
+<h2 id="Set-order-parameters"><a href="#Set-order-parameters" class="headerlink" title="Set order parameters"></a>Set order parameters</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><font color="#3232CD" > reference script</font>: downloaded from the code base on 2017.05.03<br>Due to functional requirements, it is inconvenient to use directly. The rest of the scripts are changed from the main one.</p>
+<p><font color="#3232CD" > Unset</font>:</p>
+<p><font color="#FF2400" > initial setup</font>: used a lot.<br>Name description: _10_0, indicating that the stop loss change is 10, decreasing by $1. The change in take profit is 0 and does not decrease.</p>
+<p><font color="#3232CD" > set the alert</font>:</p>
+<p><font color="#3232CD" > set fine-tuning</font>:</p>
+<p><font color="#665048"> Stop loss halved</font>: Use less.</p>
+<p><font color="#665048" > one-sided trend setting</font>:</p>
+<p><font color="#FF2400"> pre-close settings</font>: used more.</p>
+<p><font color="#665048"> magic number settings</font>:</p>
+<h3 id="Reference-script"><a href="#Reference-script" class="headerlink" title="Reference script"></a>Reference script</h3><p><font color="#3232CD">Modify_SL_TP</font>：<br>Scripts\_OrderSetting\Modify_SL_TP.mq5</p>
+<p>Function description: I don’t know how to enter parameters when using it, so the download is not provided. You can download it yourself from the forum.</p>
+<h3 id="Unset"><a href="#Unset" class="headerlink" title="Unset"></a>Unset</h3><p><font color="#3232CD">1. Unset</font>:<br>Scripts\_OrderSetting\ClearPairs_0_0.mq5</p>
+<p>Application scenario: If the settings are incorrect, set them again. Or for debugging.</p>
+<p><font color="#3232CD">2. Set Big Take Profit</font>: The function is not used. It feels like a random stop loss, and it doesn’t make much sense.<br>Scripts\_OrderSetting\ClearPairs_0_50.mq5</p>
+<p>Application scenario: Quickly adjust the profit and take profit.<br>Function description: It can be clicked multiple times. Tap 1 +5.0, tap 2 +10.0, tap 3 +15.0.</p>
+<h3 id="Initial-setup"><a href="#Initial-setup" class="headerlink" title="Initial setup"></a>Initial setup</h3><p><font color="#3232CD">3. Initial setting</font>: control a single loss should not be too large.<br>Scripts\_OrderSetting\InitPairs_20_20.mq5<br>Scripts\_OrderSetting\InitPairs_30_60.mq5<br>Scripts\_OrderSetting\InitPairs_50_100.mq5</p>
+<p>Application scenario: If the parameters have not been set, set the take-profit and stop-loss. (You can clear first)<br>Function description: fix a few of your own commonly used stop losses.<br>Function 1: Stop Loss -2, Take Profit +2. Set when entering the market for a short term.<br>Function 2: Stop Loss -3, Take Profit +6.<br>Function 3: Stop Loss -5, Take Profit +10. Take the list long.</p>
+<p><font color="#665048">4. Unified settings</font>: Not used.<br>Scripts\_OrderSetting\InitPairs_By_First.mq5</p>
+<p>Application scenario: Take profit and stop loss are chaotic, but you don’t want to clear and readjust. For example, fine-tuned.<br>Scenario 1: If you have added a position, change it to the same parameters.<br>Function description: Refer to the first order with parameters, synchronous settings.</p>
+<h3 id="Set-up-a-rush"><a href="#Set-up-a-rush" class="headerlink" title="Set up a rush"></a>Set up a rush</h3><p><font color="#3232CD">5. Double stop loss</font>: used for many small orders, centralized parameter modification.<br>Scripts\_OrderSetting\UpdatePairs_20_0.mq5</p>
+<p>Application scenario: Large unilateral market is available. If it is a large unilateral side, it will be profitable, and if it is pulled up and down, it will be lost.<br>Step 1: Open an order first, long and short in both directions. Note that opening 1 large order is faster than opening 10 small orders.<br>Step 2: Don’t be stopped. Cancel the setup before 8:29 (Clear script). 8:30 20 seconds before the start of the setup (Init script). If the fluctuation is too fast before 8:30, you need to click this script repeatedly (Update stop loss).<br>Step 3: At 8:30, wait for the profit and stability.<br>Step 4: Click this script again before the swing pullback, and the profit is only a lot more, because the script restricts the stop loss to the pullback.<br>Step 5: Without stop loss, select a suitable position to close the position manually.<br>Function description: Stop loss -2, take profit unchanged.<br>Function 1: Hold the stop loss $2 from the current price. You can keep ordering.<br>Function 2: Stop loss cannot be pulled back when making profits.</p>
+<p><font color="#3232CD">6. Single Take Profit</font>: The function is of little use<br>Scripts\_OrderSetting\UpdatePairs_0_20.mq5</p>
+<p>Application scenario: I don’t want to be stopped.<br>Function description: Stop loss unchanged, Take Profit +2.</p>
+<h3 id="Set-fine-tuning"><a href="#Set-fine-tuning" class="headerlink" title="Set fine-tuning"></a>Set fine-tuning</h3><p><font color="#3232CD">7. Advantageous direction</font>: used for a lot of small orders, centralized parameter modification.<br>Scripts\_OrderSetting\MovePairs_2_0.mq5<br>Scripts\_OrderSetting\MovePairs_0_2.mq5<br>Scripts\_OrderSetting\MovePairs_0_10.mq5</p>
+<p>Application scenario: Estimated Take Profit level.<br>Function description: Use Init or Update to modify the parameters first, and then use this to fine-tune.<br>Function 1: Stop loss is reduced by 0.2.<br>Function 2: Take profit increases by 0.2.<br>Function 3: Take Profit Increase by 1.0.</p>
+<p><font color="#3232CD">8. Downside</font>: The file name is not obvious enough<br>Scripts\_OrderSetting\DecreasePairs_2_0.mq5<br>Scripts\_OrderSetting\DecreasePairs_0_2.mq5</p>
+<p>Application scenario: Estimated Take Profit level.<br>Function description: Use Init or Update to modify the parameters first, and then use this to fine-tune.<br>Function 1: Stop loss increased by 0.2.<br>Function 2: Take profit decreases by 0.2.</p>
+<h3 id="Stop-loss-halved"><a href="#Stop-loss-halved" class="headerlink" title="Stop loss halved"></a>Stop loss halved</h3><p><font color="#3232CD">9. Profit protection</font>: I don’t do long-term, all this feature is useless.<br>Scripts\_OrderSetting\ProtectPairs_10_0.mq5</p>
+<p>Application scenario: Protect profits when making profits.<br>Function description: Stop loss to the position of the open position, or half of the profit (can be multiple times).<br>Name description: _10_0, indicating that the stop loss change is 10, decreasing by $1. The change in take profit is 0 and does not decrease.<br>Other: Do not exceed the current price of the stop loss, it should prompt a failure, unprocessed.</p>
+<h3 id="Unilateral-trend-setup"><a href="#Unilateral-trend-setup" class="headerlink" title="Unilateral trend setup"></a>Unilateral trend setup</h3><p><font color="#3232CD">10. Unilateral trend setting</font>: do not write scripts, use the previous combination of functions.<br>Application scenario: How to configure parameters when the trend is halfway through.<br>Scenario 1: The market pauses and goes to eat. Set Take Profit +4 and Stop Loss -2. (10-2 stops with Init + Move)<br>Scenario 2: The market is weak to rebound. Set Take Profit +2 and Stop Loss -1. (Achieved with Init + Move stop loss 2–5 times)</p>
+<h3 id="Pre-Close-Settings"><a href="#Pre-Close-Settings" class="headerlink" title="Pre-Close Settings"></a>Pre-Close Settings</h3><p><font color="#665048">11. Pre-closing settings</font>: fixed parameters according to the actual application scenario.<br>The script is only available for XAUUSD, and the parameters for other symbols should be changed.</p>
+<p><font color="#3232CD" > anti-reversal</font>: A few scenes when you are ready to play, but you want to stay and watch.<br>Scripts\_OrderSetting\PreClosePairs_5_10.mq5</p>
+<p>Application scenario: advantageous order, to the bottom, anti-breakthrough reversal.<br>Scenario 1: When the instantaneous reversal is 0.5, it will automatically appear.<br>Scenario 2: When reversing slowly, as long as the callback is limited, you can click a few more times to update the settings and prevent the order from being stopped.<br>Scenario 3: When slowly following the trend, tap a few more times. Keep the take profit at 1.0. A wave of market conditions brought it to the point of reversal.<br>Scenario 4: When the profit is estimated and the exit conditions are met, use this to expand the profit.</p>
+<p><font color="#3232CD">12. Trial and error</font>:<br>Scripts\_OrderSetting\PreClosePairs_10_10.mq5</p>
+<p>Application scenario: unoptimistic lists. You shouldn’t be in or it’s time to play.<br>Scenario 1: Place the wrong order, and admit it after losing a little.<br>Scenario 2: The order that is lucky to return to the original may be reversed quickly to prevent the loss from expanding.<br>Scenario 3: Just made a profit, not greedy.<br>Scenario 4: Take a risk to follow, and there must be a bottom limit for the drawdown.</p>
+<p><font color="#3232CD">13. Expand your profits</font>:<br>Scripts\_OrderSetting\PreClosePairs_5_5.mq5</p>
+<p>Application scenario: In some markets, a small fluctuation of 0.5 will be retraced, and no stop profit can be caught.<br>Scenario 1: The volatility is small in the morning, just take a profit of 0.5. Save yourself time.<br>Scenario 2: When there is a high probability of reversal, try to lose as little as possible. Take profit is swept away, which is usually a reversal signal.<br>Scenario 3: Expectations are small.</p>
+<h3 id="Magic-number-settings"><a href="#Magic-number-settings" class="headerlink" title="Magic number settings"></a>Magic number settings</h3><p><font color="#3232CD"> partial liquidation</font>: the function is too complicated, and it is troublesome to use, so I don’t consider it.<br>Application scenario: The magic number is different, and the point will not close all the positions. It is equivalent to reducing positions.</p>
+<p><font color="#3232CD" > partial take profit</font>: not considered. Do EA and then consider.<br>Application scenario: If the magic number is different, the point Update will not be updated to avoid all positions being closed.</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/Settings/">Settings</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+	<section id="comment" class="comment">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'kidhaibara';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Deployed by <a href="https://github.com/kaedea/notion-down" target="_blank">notion-down</a> and
+    Theme by <a href="https://github.com/kaedea/hexo-theme-hacker" target="_blank">hexo-theme-hacker</a>
+    </br>
+    
+    &copy; 2024 seefss
+    
+  </p>
+</footer>
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'G-J38N5N288S', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </div>
+</div>
+</body>
+</html>
