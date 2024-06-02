@@ -113,7 +113,7 @@
 
 <div id="toc" class="toc-article">
       <div class="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#MT5-%E8%84%9A%E6%9C%AC"><span class="toc-text">MT5 脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E5%88%86%E7%B1%BB%E4%B8%8E%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="toc-text">脚本分类与使用示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85"><span class="toc-text">脚本安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0"><span class="toc-text">脚本学习</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#MT5-%E8%84%9A%E6%9C%AC"><span class="toc-text">MT5 脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E5%88%86%E7%B1%BB"><span class="toc-text">脚本分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85"><span class="toc-text">脚本安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E4%BF%AE%E6%94%B9"><span class="toc-text">脚本修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E6%B5%8B%E8%AF%95"><span class="toc-text">脚本测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E4%B8%8E%E7%94%BB%E5%9B%BE"><span class="toc-text">分析与画图</span></a></li></ol></li></ol>
       </div>
 </div>
 <style>
@@ -130,30 +130,38 @@
 <h2 id="MT5-脚本"><a href="#MT5-脚本" class="headerlink" title="MT5 脚本"></a>MT5 脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">MT5 脚本</font>：这套脚本还不够完善，功能也不够强。偶尔还出现一些问题，我会努力修复它。<br>相信过一段时间，经过验证，会看到哪些功能是有效的。<br>刚开始写它，是为了与平时的操作配合着使用。每个功能，都是从经验上实现一些想法和需求，当然也有多余的。<br>对于脚本说明，即使我分享了自己的总结，你们也应该怀疑和重新考虑。例如每个脚本的使用场景。<br>如果过于依赖它，或频繁使用导致亏损，或因为它影响自己的交易风格。那么建议马上回到之前的习惯。</p>
 <p><font color="#3232CD">下载和使用</font>：下面的文章提供了源码包和下载链接。若有变动，我以后尽量每周更新一个版本。<br>更新时，写上更新时间与修改记录。若有重大bug修复，请务必重新下载再使用。<br>另外，群里有大神在做EA，而我刚入门，很多不懂，谢谢！</p>
 <p><font color="#3232CD">继续分享</font>：有时间，我会学习其他人的方法，并尝试回测，然后分享结果出来。<br>很多大大小小的想法。可以用脚本去发现和实现。这是一个好的开始。</p>
-<h3 id="脚本分类与使用示例"><a href="#脚本分类与使用示例" class="headerlink" title="脚本分类与使用示例"></a>脚本分类与使用示例</h3><p><a href="https://seefs.github.io/2024/05/03/habit_scripts_close"><font color="#99CC32">平仓脚本➬</font></a></p>
+<h3 id="脚本分类"><a href="#脚本分类" class="headerlink" title="脚本分类"></a>脚本分类</h3><p><a href="https://seefs.github.io/2024/05/03/habit_scripts_close"><font color="#99CC32">平仓脚本➬</font></a></p>
 <p>mt5电脑软件中已经自带一键平仓，若是用脚本不一定更快。因为使用脚本是一个个的平仓，可能更慢。</p>
-<p><a href="https://seefs.github.io/2024/05/03/habit_scripts_open"><font color="#99CC32">单个开仓脚本➬</font></a></p>
-<p>单个开仓的脚本实际上使用不到，我也没有拍操作视频。</p>
+<p><a href="https://seefs.github.io/2024/05/03/habit_scripts_invert"><font color="#99CC32">预平仓或反单脚本➬</font></a></p>
+<p>不预测市场，灵活使用平仓或反单。</p>
+<p><a href="https://seefs.github.io/2024/05/03/habit_scripts_open"><font color="#99CC32">单个开仓脚本Demo➬</font></a></p>
+<p>单个开仓的脚本，学习用的Demo。实际上使用不上。</p>
 <p><a href="https://seefs.github.io/2024/05/03/habit_scripts_open_grid"><font color="#99CC32">单向批量开仓脚本➬</font></a></p>
 <p>我做顺势单比较少，有经验再补充。但乐意帮别人改功能。</p>
 <p><a href="https://seefs.github.io/2024/05/03/habit_scripts_open_grid2"><font color="#99CC32">双向批量开仓脚本➬</font></a></p>
 <p>比较有用，附操作视频。</p>
 <p><a href="https://seefs.github.io/2024/05/03/habit_scripts_setting"><font color="#99CC32">设置订单参数➬</font></a></p>
 <p>设置止赢和止损。确实能扩大利润，减少损失。</p>
-<p><a href="https://seefs.github.io/2024/05/03/habit_scripts_invert"><font color="#99CC32">平仓并反单脚本➬</font></a></p>
-<p>考虑异外情况，平仓并反单。</p>
 <h3 id="脚本安装"><a href="#脚本安装" class="headerlink" title="脚本安装"></a>脚本安装</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_install"><font color="#99CC32">下载我的脚本文件➬</font></a></p>
 <p>现在只能下载zip压缩文件。待我完善后，会尝试上传到Mql5论坛。</p>
 <p><a href="https://seefs.github.io/2024/05/03/habit_market_usage"><font color="#99CC32">Mql5论坛上的脚本的下载与使用➬</font></a></p>
 <p>脚本的操作请参考这个。</p>
-<h3 id="脚本学习"><a href="#脚本学习" class="headerlink" title="脚本学习"></a>脚本学习</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_exist"><font color="#99CC32">介绍Mql5论坛上已有脚本➬</font></a></p>
+<h3 id="脚本修改"><a href="#脚本修改" class="headerlink" title="脚本修改"></a>脚本修改</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_exist"><font color="#99CC32">介绍Mql5论坛上已有脚本➬</font></a></p>
 <p>记录一些可能会用到的脚本。</p>
 <p><a href="https://seefs.github.io/2024/05/03/habit_market_edit"><font color="#99CC32">修改仓位与止赢止损➬</font></a></p>
 <p>按照自己的风险修改设置。</p>
+<h3 id="脚本测试"><a href="#脚本测试" class="headerlink" title="脚本测试"></a>脚本测试</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_test"><font color="#99CC32">测试脚本➬</font></a></p>
+<p>单个模块测试。</p>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_script"><font color="#99CC32">其他脚本修改➬</font></a></p>
 <p>一些未整理好的文档放到最后。</p>
 <p><a href="https://seefs.github.io/2024/05/03/habit_market_other"><font color="#99CC32">其他➬</font></a></p>
 <p>备注上传视频中遇到的问题。</p>
+<p><a href="https://seefs.github.io/2024/05/03/habit_market_init"><font color="#99CC32">图表脚本➬</font></a></p>
+<p>完成图表模板的加载。</p>
+<h3 id="分析与画图"><a href="#分析与画图" class="headerlink" title="分析与画图"></a>分析与画图</h3><p><a href="https://seefs.github.io/2024/05/03/scripts_analyze_stats"><font color="#99CC32">常用统计➬</font></a></p>
+<p>常用统计。</p>
+<p><a href="https://seefs.github.io/2024/05/03/scripts_analyze_stats"><font color="#99CC32">常用指标与EA效果➬</font></a></p>
+<p>常用指标与EA效果。</p>
 
       
     </div>

@@ -6,7 +6,7 @@
   <link href="https://seefs.github.io/atom.xml" rel="self"/>
   
   <link href="https://seefs.github.io/"/>
-  <updated>2024-05-26T11:33:51.523Z</updated>
+  <updated>2024-05-27T10:17:11.022Z</updated>
   <id>https://seefs.github.io/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://seefs.github.io/2024/05/27/analyze_scripts_stats/"/>
+    <id>https://seefs.github.io/2024/05/27/analyze_scripts_stats/</id>
+    <published>2024-05-27T09:52:23.652Z</published>
+    <updated>2024-05-27T10:17:11.022Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Modify Position and Take Profit &amp; Stop Loss</title>
@@ -38,25 +51,6 @@
   </entry>
   
   <entry>
-    <title>Introduces the scripts that are already available on the forum</title>
-    <link href="https://seefs.github.io/2024/05/03/custom_market_exist/"/>
-    <id>https://seefs.github.io/2024/05/03/custom_market_exist/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-26T11:04:51.651Z</updated>
-    
-    <content type="html"><![CDATA[<p>Script learning.</p><span id="more"></span><h2 id="Script-Learning"><a href="#Script-Learning" class="headerlink" title="Script Learning"></a>Script Learning</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><font color="#3232CD" > script classification</font>:<br>Expert Advisors:<br>Index:<br>Script:</p><p><font color="#3232CD"> functional categories</font>:<br>Operate:<br>Drawing Aids:<br>Analysis: Backtesting<br>EA：</p><h3 id="Operation"><a href="#Operation" class="headerlink" title="Operation"></a>Operation</h3><p><font color="#3232CD">OpenSellPosition_X</font>: Learn the input parameters<br>Time: 2014.01.10</p><p><font color="#3232CD">setselllimitorder</font>：set limit<br>Date: 2014.01.20<br>setselllimitorder.mq5：</p><p><font color="#3232CD">InvertPosition:</font> Open a reverse position at the current price<br>Date: 2014.01.20<br>invertposition.mq5：</p><p><font color="#3232CD"> one-touch to cancel other</font>: when a pending order is triggered, the script deletes all (!) The current symbol is left with the order and exits<br>Time: 2014.02.10<br>oncecancelotherscript.mq5：</p><p><font color="#3232CD" > a flat order around the current price</font>: a script to create a flat buy and sell pending order<br>Date: 2014.06.11<br>announcementstrategy.mq5: The existing order will be closed, and the code may be outdated.</p><p><font color="#3232CD" > a pending short order</font>: When you drag and drop this script into the chart, it will calculate the current price of the price and determine whether to place a Sell Stop or Sell Limit pending order.<br>Time: 2015.02.06<br>sellorder.mq5：</p><p><font color="#3232CD">Modify SL TP: Modify SL TP.</font><br>Time: 2017.05.03<br>Modify_SL_TP.mq5：</p><p><font color="#3232CD">OpenSellStopOrder</font>: a script for setting a pending SellStop order.<br>Time: 2017.06.05<br>OpenSellStopOrder.mq5：<br>A set of operations.</p><p><font color="#3232CD">CloseOrdersBySymbolByType</font>: the script deletes all orders in the current symbol according to the type specified in the settings<br>Time: 2017.06.05<br>CloseOrdersBySymbolByType.mq5：</p><p><font color="#3232CD">MAX_LOT</font>: This script calculates the maximum number of lots to open a position using the entire free margin in the deposit.<br>Time: 2017.06.05<br>MAX_LOT.mq5：<br>Modify the function to tile the order.</p><p><font color="#3232CD">AutoSLTP</font>: an aid for setting Stop Loss and Take Profit for all open orders. Symbol settings, position types, Stop Loss and Take Profit are specified in external files.<br>Time: 2017.11.16<br>AutoSLTP.mq5：</p><p><font color="#3232CD" > one-click closing</font>: not fast enough.<br>Time: 2019.05.25.<br>CloseAllBuy.mq5: close long positions of the current chart symbol.<br>CloseAllSell.mq5: close a short position of the current chart symbol.<br>CloseAllPairs.mq5: close long and short positions of all symbols.</p><p><font color="#3232CD" > six types of pending orders one-click cancellation script</font>:<br>Time: 2021.06.23<br>six pend cancel.mq5：</p><p><font color="#3232CD"> MT5 to open a position with one click</font>:<br>Time: 2021.06.30<br>OpenBuy.mq5：<br>OpenSell.mq5：</p><h3 id="Drawing-aids"><a href="#Drawing-aids" class="headerlink" title="Drawing aids"></a>Drawing aids</h3><p><font color="#3232CD">Widescreenshooter</font>: This script automatically calculates the width of the image file and adjusts the minimum and maximum values of the chart to fit the boundaries of the screenshot<br>Time: 2014.02.03<br>wideshooter.mq5：</p><p><font color="#3232CD" > Candle Statistics 2</font>: This is a modified version of the Candle Statistics script. Count the number of bars in a series of bullish and bearish markets. Displayed as a chart. Save a screenshot of the resulting chart. The CGraphic class is used.<br>Time: 2018.01.29<br>Statistics of candles 2.mq5：</p><h3 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h3><p><font color="#3232CD" > Output Historical Data</font>: The purpose of this script is to output historical data in a specified format and convert it for external program analysis<br>Time: 2014.01.23<br>history_in_mathcad.mq5：</p><p><font color="#3232CD">ytg_Percent_Lot</font>: This script calculates the volume of orders using the specified percentage of capital risk<br>Time: 2014.01.24<br>ytg_percent_lot.mq5：</p><p><font color="#3232CD">YURAZ_CreateCSV_HistoryFile_From_MT5_For_MT4</font>: I found that some brokers do not provide complete historical data<br>Time: 2014.01.24<br>yuraz_create_history_csv_from_mt5_for_mt4.mq5：</p><p><font color="#3232CD" > save and display the test chart object</font>: backtest. The purpose of this script is to save the objects on the test chart and then display them on the new chart.<br>Time: 2018.02.15<br>SaveAndShowTestingChartObjects.mq5：</p><h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD"> Simple EA</font>: The Simplest Robot for Buying and Selling!<br>Time: 2014.06.16<br>simple.mq5：</p><p><font color="#3232CD" > Sentiment Expert Advisor:</font> A robot that trades using changes in sentiment when the market opens<br>Time: 2016.02.11<br>sentiment_ea.mq5：</p><p><font color="#3232CD" > AutoTrader</font>: The AutoTrader EA is designed to enable the Disable Auto Trading button in the MT5 terminal and close the currently open positions in the terminal<br>Time: 2016.07.27<br>AutoTraderRus.mq5：</p><p><font color="#3232CD" > Timed Trading</font>: Auto-Trader EA is designed to enable the Disable Auto-Trade button in the MT5 terminal and close the currently open positions in the terminal<br>Time: 2017.01.25<br>timer_trade.mq5：</p><p><font color="#3232CD" > Multi-lot scalping Expert Advisor</font>:<br>Time: 2017.02.06<br>timer_trade.mq5：</p><p><font color="#3232CD" > opposite trade</font>: a position opposite to the previous closed position is opened, using the same volume. It works with arbitrary symbols and magic numbers,<br>Time: 2017.11.16<br>Opposite trade.mq5：</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Script learning.&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="Forum" scheme="https://seefs.github.io/tags/Forum/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Download my script file</title>
     <link href="https://seefs.github.io/2024/05/03/custom_market_install/"/>
     <id>https://seefs.github.io/2024/05/03/custom_market_install/</id>
@@ -74,6 +68,25 @@
     
     
     <category term="Download" scheme="https://seefs.github.io/tags/Download/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Introduces the scripts that are already available on the forum</title>
+    <link href="https://seefs.github.io/2024/05/03/custom_market_exist/"/>
+    <id>https://seefs.github.io/2024/05/03/custom_market_exist/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-05-26T11:04:51.651Z</updated>
+    
+    <content type="html"><![CDATA[<p>Script learning.</p><span id="more"></span><h2 id="Script-Learning"><a href="#Script-Learning" class="headerlink" title="Script Learning"></a>Script Learning</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><font color="#3232CD" > script classification</font>:<br>Expert Advisors:<br>Index:<br>Script:</p><p><font color="#3232CD"> functional categories</font>:<br>Operate:<br>Drawing Aids:<br>Analysis: Backtesting<br>EA：</p><h3 id="Operation"><a href="#Operation" class="headerlink" title="Operation"></a>Operation</h3><p><font color="#3232CD">OpenSellPosition_X</font>: Learn the input parameters<br>Time: 2014.01.10</p><p><font color="#3232CD">setselllimitorder</font>：set limit<br>Date: 2014.01.20<br>setselllimitorder.mq5：</p><p><font color="#3232CD">InvertPosition:</font> Open a reverse position at the current price<br>Date: 2014.01.20<br>invertposition.mq5：</p><p><font color="#3232CD"> one-touch to cancel other</font>: when a pending order is triggered, the script deletes all (!) The current symbol is left with the order and exits<br>Time: 2014.02.10<br>oncecancelotherscript.mq5：</p><p><font color="#3232CD" > a flat order around the current price</font>: a script to create a flat buy and sell pending order<br>Date: 2014.06.11<br>announcementstrategy.mq5: The existing order will be closed, and the code may be outdated.</p><p><font color="#3232CD" > a pending short order</font>: When you drag and drop this script into the chart, it will calculate the current price of the price and determine whether to place a Sell Stop or Sell Limit pending order.<br>Time: 2015.02.06<br>sellorder.mq5：</p><p><font color="#3232CD">Modify SL TP: Modify SL TP.</font><br>Time: 2017.05.03<br>Modify_SL_TP.mq5：</p><p><font color="#3232CD">OpenSellStopOrder</font>: a script for setting a pending SellStop order.<br>Time: 2017.06.05<br>OpenSellStopOrder.mq5：<br>A set of operations.</p><p><font color="#3232CD">CloseOrdersBySymbolByType</font>: the script deletes all orders in the current symbol according to the type specified in the settings<br>Time: 2017.06.05<br>CloseOrdersBySymbolByType.mq5：</p><p><font color="#3232CD">MAX_LOT</font>: This script calculates the maximum number of lots to open a position using the entire free margin in the deposit.<br>Time: 2017.06.05<br>MAX_LOT.mq5：<br>Modify the function to tile the order.</p><p><font color="#3232CD">AutoSLTP</font>: an aid for setting Stop Loss and Take Profit for all open orders. Symbol settings, position types, Stop Loss and Take Profit are specified in external files.<br>Time: 2017.11.16<br>AutoSLTP.mq5：</p><p><font color="#3232CD" > one-click closing</font>: not fast enough.<br>Time: 2019.05.25.<br>CloseAllBuy.mq5: close long positions of the current chart symbol.<br>CloseAllSell.mq5: close a short position of the current chart symbol.<br>CloseAllPairs.mq5: close long and short positions of all symbols.</p><p><font color="#3232CD" > six types of pending orders one-click cancellation script</font>:<br>Time: 2021.06.23<br>six pend cancel.mq5：</p><p><font color="#3232CD"> MT5 to open a position with one click</font>:<br>Time: 2021.06.30<br>OpenBuy.mq5：<br>OpenSell.mq5：</p><h3 id="Drawing-aids"><a href="#Drawing-aids" class="headerlink" title="Drawing aids"></a>Drawing aids</h3><p><font color="#3232CD">Widescreenshooter</font>: This script automatically calculates the width of the image file and adjusts the minimum and maximum values of the chart to fit the boundaries of the screenshot<br>Time: 2014.02.03<br>wideshooter.mq5：</p><p><font color="#3232CD" > Candle Statistics 2</font>: This is a modified version of the Candle Statistics script. Count the number of bars in a series of bullish and bearish markets. Displayed as a chart. Save a screenshot of the resulting chart. The CGraphic class is used.<br>Time: 2018.01.29<br>Statistics of candles 2.mq5：</p><h3 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h3><p><font color="#3232CD" > Output Historical Data</font>: The purpose of this script is to output historical data in a specified format and convert it for external program analysis<br>Time: 2014.01.23<br>history_in_mathcad.mq5：</p><p><font color="#3232CD">ytg_Percent_Lot</font>: This script calculates the volume of orders using the specified percentage of capital risk<br>Time: 2014.01.24<br>ytg_percent_lot.mq5：</p><p><font color="#3232CD">YURAZ_CreateCSV_HistoryFile_From_MT5_For_MT4</font>: I found that some brokers do not provide complete historical data<br>Time: 2014.01.24<br>yuraz_create_history_csv_from_mt5_for_mt4.mq5：</p><p><font color="#3232CD" > save and display the test chart object</font>: backtest. The purpose of this script is to save the objects on the test chart and then display them on the new chart.<br>Time: 2018.02.15<br>SaveAndShowTestingChartObjects.mq5：</p><h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD"> Simple EA</font>: The Simplest Robot for Buying and Selling!<br>Time: 2014.06.16<br>simple.mq5：</p><p><font color="#3232CD" > Sentiment Expert Advisor:</font> A robot that trades using changes in sentiment when the market opens<br>Time: 2016.02.11<br>sentiment_ea.mq5：</p><p><font color="#3232CD" > AutoTrader</font>: The AutoTrader EA is designed to enable the Disable Auto Trading button in the MT5 terminal and close the currently open positions in the terminal<br>Time: 2016.07.27<br>AutoTraderRus.mq5：</p><p><font color="#3232CD" > Timed Trading</font>: Auto-Trader EA is designed to enable the Disable Auto-Trade button in the MT5 terminal and close the currently open positions in the terminal<br>Time: 2017.01.25<br>timer_trade.mq5：</p><p><font color="#3232CD" > Multi-lot scalping Expert Advisor</font>:<br>Time: 2017.02.06<br>timer_trade.mq5：</p><p><font color="#3232CD" > opposite trade</font>: a position opposite to the previous closed position is opened, using the same volume. It works with arbitrary symbols and magic numbers,<br>Time: 2017.11.16<br>Opposite trade.mq5：</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Script learning.&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Forum" scheme="https://seefs.github.io/tags/Forum/"/>
     
   </entry>
   
@@ -137,6 +150,25 @@
   </entry>
   
   <entry>
+    <title>A single open script</title>
+    <link href="https://seefs.github.io/2024/05/03/custom_scripts_open/"/>
+    <id>https://seefs.github.io/2024/05/03/custom_scripts_open/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-05-26T11:00:44.968Z</updated>
+    
+    <content type="html"><![CDATA[<p>A single opening script is basically not used, so there is no operation video.</p><span id="more"></span><h2 id="Single-open-script"><a href="#Single-open-script" class="headerlink" title="Single open script"></a>Single open script</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><font color="#3232CD"> MT5 to open a position with one click</font>: this is a script on the forum. Download it in the code base on 2019.05.25.</p><p><font color="#3232CD" > second set of scripts for opening positions</font>: this is a script on the forum. Download in the code base on 2017.06.05.</p><h3 id="MT5-one-click-position-opening"><a href="#MT5-one-click-position-opening" class="headerlink" title="MT5 one-click position opening"></a>MT5 one-click position opening</h3><p><font color="#3232CD">1. Single Buy or Sell</font>: Reference script. Download it in the code base on 2021.06.30<br>Scripts\_OrderOpenDemo\OpenBuy.mq5<br>Scripts\_OrderOpenDemo\OpenSell.mq5</p><h3 id="The-second-set-of-scripts-for-opening-positions"><a href="#The-second-set-of-scripts-for-opening-positions" class="headerlink" title="The second set of scripts for opening positions"></a>The second set of scripts for opening positions</h3><p><font color="#3232CD">2. Limit to open a position</font>:<br>Scripts\_OrderOpenDemo\OpenBuyLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellLimitOrders.mq5</p><p><font color="#3232CD">3. Stop to open a position</font><br>Scripts\_OrderOpenDemo\OpenBuyStopOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellStopOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellStopOrders.mq5</p><p><font color="#3232CD">4. StopLimit to open a position</font><br>Scripts\_OrderOpenDemo\OpenBuyStopLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellStopLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellStopLimitOrders.mq5</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;A single opening script is basically not used, so there is no operation video.&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Open" scheme="https://seefs.github.io/tags/Open/"/>
+    
+  </entry>
+  
+  <entry>
     <title>One-way batch opening script</title>
     <link href="https://seefs.github.io/2024/05/03/custom_scripts_open_grid/"/>
     <id>https://seefs.github.io/2024/05/03/custom_scripts_open_grid/</id>
@@ -194,6 +226,25 @@
   </entry>
   
   <entry>
+    <title>常用统计</title>
+    <link href="https://seefs.github.io/2024/05/03/ea_index_common/"/>
+    <id>https://seefs.github.io/2024/05/03/ea_index_common/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-05-27T10:28:33.455Z</updated>
+    
+    <content type="html"><![CDATA[<p>常用统计。</p><span id="more"></span><h2 id="常用统计"><a href="#常用统计" class="headerlink" title="常用统计"></a>常用统计</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">常用统计</font>：</p><h3 id="下载代码库与验证效果"><a href="#下载代码库与验证效果" class="headerlink" title="下载代码库与验证效果"></a>下载代码库与验证效果</h3><p><font color="#3232CD">下载路径</font>：</p><p><font color="#3232CD">简单EA，基于简单均线与ADX</font>：<br>Experts\_Demo\simple_ma-adx_ea_en.mq5<br>时间：2014.01.23</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;常用统计。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="统计" scheme="https://seefs.github.io/tags/%E7%BB%9F%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>修改仓位与止赢止损</title>
     <link href="https://seefs.github.io/2024/05/03/habit_market_edit/"/>
     <id>https://seefs.github.io/2024/05/03/habit_market_edit/</id>
@@ -215,13 +266,32 @@
   </entry>
   
   <entry>
+    <title>图表脚本</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_init/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_init/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-05-31T00:23:55.080Z</updated>
+    
+    <content type="html"><![CDATA[<p>完成图表模板的加载。</p><span id="more"></span><h2 id="图表脚本"><a href="#图表脚本" class="headerlink" title="图表脚本"></a>图表脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">图表脚本</font>：</p><h3 id="加载模板"><a href="#加载模板" class="headerlink" title="加载模板"></a>加载模板</h3><p><font color="#3232CD">模板路径</font>：<br>模板可以放在默认位置或当前脚本位置。<br>Mql5<br>Mql5\Scripts\_Init<br>Mql5\Profiles\Templates\xauusd_m5.tpl<br>Terminal\Common\Files<br>Mql5\Files<br>Mql5\Tester\Files\</p><p><font color="#3232CD">1. 加载模板</font>：<br>Scripts\_Init\LoadTemplate.mq5</p><p>功能说明：调试模板的加载与存放位置，</p><h3 id="打开新图表"><a href="#打开新图表" class="headerlink" title="打开新图表"></a>打开新图表</h3><p><font color="#3232CD">2. 打开新图表</font>：<br>Scripts\_Init\OpenNewChart.mq5</p><p>功能说明：关闭窗口，再重新打开窗口，并设置模板 Mql5\Files\xxx.tpl。<br>注释1：需要修改品种和模板名称。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;完成图表模板的加载。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="图表" scheme="https://seefs.github.io/tags/%E5%9B%BE%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>介绍论坛上已有脚本</title>
     <link href="https://seefs.github.io/2024/05/03/habit_market_exist/"/>
     <id>https://seefs.github.io/2024/05/03/habit_market_exist/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-17T09:53:36.583Z</updated>
+    <updated>2024-05-27T10:11:55.691Z</updated>
     
-    <content type="html"><![CDATA[<p>脚本学习。</p><span id="more"></span><h2 id="脚本学习"><a href="#脚本学习" class="headerlink" title="脚本学习"></a>脚本学习</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本分类</font>：<br>EA交易：<br>指标：<br>脚本：</p><p><font color="#3232CD">功能分类</font>：<br>操作：<br>画图辅助：<br>分析：回测<br>EA：</p><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p><font color="#3232CD">OpenSellPosition_X</font>：学一下输入参数<br>时间：2014.01.10</p><p><font color="#3232CD">setselllimitorder</font>：set limit<br>时间：2014.01.20<br>setselllimitorder.mq5：</p><p><font color="#3232CD">InvertPosition</font>：以当前价位开反向单<br>时间：2014.01.20<br>invertposition.mq5：</p><p><font color="#3232CD">一触取消其它</font>：当一个挂单被触发, 脚本删除所有(!)当前符号剩余订单并退出<br>时间：2014.02.10<br>oncecancelotherscript.mq5：</p><p><font color="#3232CD">围绕当前价位平铺订单</font>：一个脚本来创建平铺的买、卖挂单<br>时间：2014.06.11<br>announcementstrategy.mq5：会把已有单子平仓，可能代码过时。</p><p><font color="#3232CD">空头挂单</font>：当您将此脚本拖拽进图表, 它将计算价格当前价格并据此价格判断是否放置 Sell Stop 或 Sell Limit 挂单。<br>时间：2015.02.06<br>sellorder.mq5：</p><p><font color="#3232CD">Modify SL TP</font>：修改止赢止损。<br>时间：2017.05.03<br>Modify_SL_TP.mq5：</p><p><font color="#3232CD">OpenSellStopOrder</font>：用于设置止损卖出(SellStop)挂单的脚本程序。<br>时间：2017.06.05<br>OpenSellStopOrder.mq5：<br>一套操作。</p><p><font color="#3232CD">CloseOrdersBySymbolByType</font>：本脚本程序在当前交易品种中根据设置中指定的类型删除所有订单<br>时间：2017.06.05<br>CloseOrdersBySymbolByType.mq5：</p><p><font color="#3232CD">MAX_LOT</font>：本脚本程序计算使用存款中的全部可用保证金来建立仓位的最大手数。<br>时间：2017.06.05<br>MAX_LOT.mq5：<br>修改功能，平铺订单。</p><p><font color="#3232CD">AutoSLTP</font>：为所有开启的订单设置止损和获利的辅助工具。交易品种设置，仓位类型，止损和获利是在外部文件中指定的.<br>时间：2017.11.16<br>AutoSLTP.mq5：</p><p><font color="#3232CD">一键平仓</font>：速度不够快。<br>时间：2019.05.25。<br>CloseAllBuy.mq5：平当前图表品种的多单。<br>CloseAllSell.mq5：平当前图表品种的空单。<br>CloseAllPairs.mq5：平所有品种的多单和空单。</p><p><font color="#3232CD">六类挂单一键取消脚本</font>：<br>时间：2021.06.23<br>six pend cancel.mq5：</p><p><font color="#3232CD">MT5一键开仓</font>：<br>时间：2021.06.30<br>OpenBuy.mq5：<br>OpenSell.mq5：</p><h3 id="画图辅助"><a href="#画图辅助" class="headerlink" title="画图辅助"></a>画图辅助</h3><p><font color="#3232CD">Widescreenshooter</font>：本脚本自动计算图片文件的宽度并调整图表的最小 最大值以适应截图的边界<br>时间：2014.02.03<br>wideshooter.mq5：</p><p><font color="#3232CD">蜡烛统计 2</font>：此为 蜡烛统计 脚本的修改版。计算一系列牛市和熊市柱线的数量。作为图表显示。保存结果图表的截屏。使用了 CGraphic 类。<br>时间：2018.01.29<br>Statistics of candles 2.mq5：</p><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p><font color="#3232CD">输出历史数据</font>：此脚本目的是输出历史数据为指定格式, 转换用于外部程序分析<br>时间：2014.01.23<br>history_in_mathcad.mq5：</p><p><font color="#3232CD">ytg_Percent_Lot</font>：此脚本使用指定的资金风险百分比计算下单交易量<br>时间：2014.01.24<br>ytg_percent_lot.mq5：</p><p><font color="#3232CD">YURAZ_CreateCSV_HistoryFile_From_MT5_For_MT4</font>：我发现一些交易商并未提供完整的历史数据<br>时间：2014.01.24<br>yuraz_create_history_csv_from_mt5_for_mt4.mq5：</p><p><font color="#3232CD">保存和显示测试图表对象</font>：回测。本脚本的作用就是先保存测试图表上的对象，然后再新的图表上显示出来。<br>时间：2018.02.15<br>SaveAndShowTestingChartObjects.mq5：</p><h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD">简单 EA</font>：最简单的买卖机器人!<br>时间：2014.06.16<br>simple.mq5：</p><p><font color="#3232CD">情绪EA交易</font>：利用市场开启时情绪变化进行交易的机器人<br>时间：2016.02.11<br>sentiment_ea.mq5：</p><p><font color="#3232CD">自动交易员</font>：自动交易员 EA 设计用于启用 禁用 MT5 终端的 自动交易 按钮, 并将终端内当前已开仓位平仓<br>时间：2016.07.27<br>AutoTraderRus.mq5：</p><p><font color="#3232CD">定时交易</font>：自动交易员 EA 设计用于启用 禁用 MT5 终端的 自动交易 按钮, 并将终端内当前已开仓位平仓<br>时间：2017.01.25<br>timer_trade.mq5：</p><p><font color="#3232CD">多手数剥头皮EA交易</font>：<br>时间：2017.02.06<br>timer_trade.mq5：</p><p><font color="#3232CD">反向交易</font>：建立于之前关闭仓位相反的仓位，使用同样的交易量。它工作于任意交易品种和幻数，<br>时间：2017.11.16<br>Opposite trade.mq5：</p>]]></content>
+    <content type="html"><![CDATA[<p>脚本学习。</p><span id="more"></span><h2 id="脚本学习"><a href="#脚本学习" class="headerlink" title="脚本学习"></a>脚本学习</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本分类</font>：<br>EA交易：<br>指标：<br>脚本：</p><p><font color="#3232CD">功能分类</font>：<br>操作：<br>画图辅助：<br>分析：回测<br>EA：</p><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p><font color="#3232CD">OpenSellPosition_X</font>：<br>时间：2014.01.10<br>OpenSellPosition_X.mq5：学一下输入参数</p><p><font color="#3232CD">setselllimitorder</font>：set limit<br>时间：2014.01.20<br>setselllimitorder.mq5：</p><p><font color="#3232CD">InvertPosition</font>：以当前价位开反向单<br>时间：2014.01.20<br>invertposition.mq5：</p><p><font color="#3232CD">一触取消其它</font>：当一个挂单被触发, 脚本删除所有(!)当前符号剩余订单并退出<br>时间：2014.02.10<br>oncecancelotherscript.mq5：</p><p><font color="#3232CD">围绕当前价位平铺订单</font>：一个脚本来创建平铺的买、卖挂单<br>时间：2014.06.11<br>announcementstrategy.mq5：有bug。会把已有单子平仓，可能代码过时。</p><p><font color="#3232CD">空头挂单</font>：当您将此脚本拖拽进图表, 它将计算价格当前价格并据此价格判断是否放置 Sell Stop 或 Sell Limit 挂单。<br>时间：2015.02.06<br>sellorder.mq5：</p><p><font color="#3232CD">Modify SL TP</font>：修改止赢止损。<br>时间：2017.05.03<br>Modify_SL_TP.mq5：</p><p><font color="#3232CD">OpenSellStopOrder</font>：用于设置止损卖出(SellStop)挂单的脚本程序。<br>时间：2017.06.05<br>OpenSellStopOrder.mq5：<br>一套操作。</p><p><font color="#3232CD">CloseOrdersBySymbolByType</font>：本脚本程序在当前交易品种中根据设置中指定的类型删除所有订单<br>时间：2017.06.05<br>CloseOrdersBySymbolByType.mq5：</p><p><font color="#3232CD">MAX_LOT</font>：本脚本程序计算使用存款中的全部可用保证金来建立仓位的最大手数。<br>时间：2017.06.05<br>MAX_LOT.mq5：<br>修改功能，平铺订单。</p><p><font color="#3232CD">AutoSLTP</font>：为所有开启的订单设置止损和获利的辅助工具。交易品种设置，仓位类型，止损和获利是在外部文件中指定的.<br>时间：2017.11.16<br>AutoSLTP.mq5：</p><p><font color="#3232CD">一键平仓</font>：速度不够快。<br>时间：2019.05.25。<br>CloseAllBuy.mq5：平当前图表品种的多单。<br>CloseAllSell.mq5：平当前图表品种的空单。<br>CloseAllPairs.mq5：平所有品种的多单和空单。</p><p><font color="#3232CD">六类挂单一键取消脚本</font>：<br>时间：2021.06.23<br>six pend cancel.mq5：</p><p><font color="#3232CD">MT5一键开仓</font>：<br>时间：2021.06.30<br>OpenBuy.mq5：<br>OpenSell.mq5：</p><h3 id="画图辅助"><a href="#画图辅助" class="headerlink" title="画图辅助"></a>画图辅助</h3><p><font color="#3232CD">Widescreenshooter</font>：本脚本自动计算图片文件的宽度并调整图表的最小 最大值以适应截图的边界<br>时间：2014.02.03<br>wideshooter.mq5：</p><p><font color="#3232CD">蜡烛统计 2</font>：此为 蜡烛统计 脚本的修改版。计算一系列牛市和熊市柱线的数量。作为图表显示。保存结果图表的截屏。使用了 CGraphic 类。<br>时间：2018.01.29<br>Statistics of candles 2.mq5：</p><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p><font color="#3232CD">输出历史数据</font>：此脚本目的是输出历史数据为指定格式, 转换用于外部程序分析<br>时间：2014.01.23<br>history_in_mathcad.mq5：</p><p><font color="#3232CD">ytg_Percent_Lot</font>：此脚本使用指定的资金风险百分比计算下单交易量<br>时间：2014.01.24<br>ytg_percent_lot.mq5：</p><p><font color="#3232CD">YURAZ_CreateCSV_HistoryFile_From_MT5_For_MT4</font>：我发现一些交易商并未提供完整的历史数据<br>时间：2014.01.24<br>yuraz_create_history_csv_from_mt5_for_mt4.mq5：</p><p><font color="#3232CD">保存和显示测试图表对象</font>：回测。本脚本的作用就是先保存测试图表上的对象，然后再新的图表上显示出来。<br>时间：2018.02.15<br>SaveAndShowTestingChartObjects.mq5：</p><h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD">简单 EA</font>：最简单的买卖机器人!<br>时间：2014.06.16<br>simple.mq5：</p><p><font color="#3232CD">情绪EA交易</font>：利用市场开启时情绪变化进行交易的机器人<br>时间：2016.02.11<br>sentiment_ea.mq5：</p><p><font color="#3232CD">自动交易员</font>：自动交易员 EA 设计用于启用 禁用 MT5 终端的 自动交易 按钮, 并将终端内当前已开仓位平仓<br>时间：2016.07.27<br>AutoTraderRus.mq5：</p><p><font color="#3232CD">定时交易</font>：自动交易员 EA 设计用于启用 禁用 MT5 终端的 自动交易 按钮, 并将终端内当前已开仓位平仓<br>时间：2017.01.25<br>timer_trade.mq5：</p><p><font color="#3232CD">多手数剥头皮EA交易</font>：<br>时间：2017.02.06<br>timer_trade.mq5：</p><p><font color="#3232CD">反向交易</font>：建立于之前关闭仓位相反的仓位，使用同样的交易量。它工作于任意交易品种和幻数，<br>时间：2017.11.16<br>Opposite trade.mq5：</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;脚本学习。&lt;/p&gt;</summary>
@@ -238,9 +308,9 @@
     <link href="https://seefs.github.io/2024/05/03/habit_market_install/"/>
     <id>https://seefs.github.io/2024/05/03/habit_market_install/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-24T16:19:47.799Z</updated>
+    <updated>2024-06-02T13:25:41.301Z</updated>
     
-    <content type="html"><![CDATA[<p>下载脚本文件。</p><span id="more"></span><h2 id="下载脚本文件"><a href="#下载脚本文件" class="headerlink" title="下载脚本文件"></a>下载脚本文件</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">下载脚本文件</font>：必需编译一次。<br>从mt5软件的代码库中下载脚本，是会自动编译的。但从其他位置复制脚本文件，需要手动编译。<br>下载后，请打开IDE软件，右键编译 “scripts”文件夹。不清楚可以搜索网络上的步骤，或问我，谢谢！</p><p><font color="#3232CD">如何编译</font>：<br>a. “开始&#x2F;恢复编译”按钮，有两个，点左边一个。若点右边一个可能会直接下单。<br>b. 左侧栏，选中当前文件名，右键编译。<br>c. 左侧栏，选中文件夹，右键编译。<br>d. 切换交易软件，刷新再使用脚本。</p><p><font color="#3232CD">注意事项</font>：<br>a. 只能正常用于XAUUSD品种，其他品种的价格、止赢止损不准确。</p><h3 id="更新记录与下载链接"><a href="#更新记录与下载链接" class="headerlink" title="更新记录与下载链接"></a>更新记录与下载链接</h3><p><font color="#3232CD">第04版 2024&#x2F;05&#x2F;25</font>：<br>a. 调整仓位大小。参考另一篇文章关于修改仓位的说明。<br>b. 兼容不同平台价格位数不同引起的bug。<br><a href="https://seefs.github.io/zip/mt5_scripts_20240525.zip"><font color="#99CC32">下载 mt5_scripts_20240525.zip➬</font></a></p><p><font color="#3232CD">第03版 2024&#x2F;05&#x2F;20</font>：<br>a. 修改批量开单时，连续点击不能切换价格范围。</p><p><a href="https://seefs.github.io/zip/mt5_scripts_20240520.zip"><font color="#99CC32">下载 mt5_scripts_20240520.zip➬</font></a></p><p><font color="#3232CD">第02版 2024&#x2F;05&#x2F;18</font>：<br>a. 修改批量开单时，连续点击不能切换价格范围。(实际未改好)<br>b. 增加反单脚本。<br>c. 批量开单，双向stop单，增加不带止赢脚本。这种更贪婪。</p><p><a href="https://seefs.github.io/zip/mt5_scripts_20240518.zip"><font color="#99CC32">下载 mt5_scripts_20240518.zip➬</font></a></p><p><font color="#3232CD">第01版 2024&#x2F;05&#x2F;16</font>：</p><p><a href="https://seefs.github.io/zip/mt5_scripts_20240516.zip"><font color="#99CC32">下载 mt5_scripts_20240516.zip➬</font></a></p><h3 id="安装路径"><a href="#安装路径" class="headerlink" title="安装路径"></a>安装路径</h3><p><font color="#3232CD">安装路径</font>：</p><p><img src="/img/habit/install_path.png"></p>]]></content>
+    <content type="html"><![CDATA[<p>下载脚本文件。</p><span id="more"></span><h2 id="下载脚本文件"><a href="#下载脚本文件" class="headerlink" title="下载脚本文件"></a>下载脚本文件</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">下载脚本文件</font>：必需编译一次。<br>从mt5软件的代码库中下载脚本，是会自动编译的。但从其他位置复制脚本文件，需要手动编译。<br>下载后，请打开IDE软件，右键编译 “scripts”文件夹。不清楚可以搜索网络上的步骤，或问我，谢谢！</p><p><font color="#3232CD">如何编译</font>：<br>a. “开始&#x2F;恢复编译”按钮，有两个，点左边一个。若点右边一个可能会直接下单。<br>b. 左侧栏，选中当前文件名，右键编译。<br>c. 左侧栏，选中文件夹，右键编译。<br>d. 切换交易软件，刷新再使用脚本。</p><p><font color="#3232CD">注意事项</font>：<br>a. 只能正常用于XAUUSD品种，其他品种的价格、止赢止损不准确。</p><h3 id="更新记录与下载链接"><a href="#更新记录与下载链接" class="headerlink" title="更新记录与下载链接"></a>更新记录与下载链接</h3><p><font color="#3232CD">第05版 2024&#x2F;06&#x2F;02</font>：<br>a. 调整余额在1000内的仓位大小。参考另一篇文章关于修改仓位的说明。<br>b. 合并重复代码，便于后期维护。注意导入 Include\Custom\OrderGrid.mqh。参考本篇文章末尾的安装路径截图。<br><a href="https://seefs.github.io/zip/mt5_scripts_20240602.zip"><font color="#99CC32">下载 mt5_scripts_20240602.zip➬</font></a></p><p><font color="#3232CD">第04版 2024&#x2F;05&#x2F;25</font>：<br>a. 调整仓位大小。功能参考另一篇文章关于修改仓位的说明。<br>b. 兼容不同平台价格位数不同引起的bug。<br><a href="https://seefs.github.io/zip/mt5_scripts_20240525.zip"><font color="#99CC32">下载 mt5_scripts_20240525.zip➬</font></a></p><p><font color="#3232CD">第03版 2024&#x2F;05&#x2F;20</font>：<br>a. 修改批量开单时，连续点击不能切换价格范围。</p><p><a href="https://seefs.github.io/zip/mt5_scripts_20240520.zip"><font color="#99CC32">下载 mt5_scripts_20240520.zip➬</font></a></p><p><font color="#3232CD">第02版 2024&#x2F;05&#x2F;18</font>：<br>a. 修改批量开单时，连续点击不能切换价格范围。(实际未改好)<br>b. 增加反单脚本。<br>c. 批量开单，双向stop单，增加不带止赢脚本。这种更贪婪。</p><p><a href="https://seefs.github.io/zip/mt5_scripts_20240518.zip"><font color="#99CC32">下载 mt5_scripts_20240518.zip➬</font></a></p><p><font color="#3232CD">第01版 2024&#x2F;05&#x2F;16</font>：</p><p><a href="https://seefs.github.io/zip/mt5_scripts_20240516.zip"><font color="#99CC32">下载 mt5_scripts_20240516.zip➬</font></a></p><h3 id="安装路径"><a href="#安装路径" class="headerlink" title="安装路径"></a>安装路径</h3><p><font color="#3232CD">安装路径</font>：</p><p><img src="/img/habit/install_path.png"></p>]]></content>
     
     
     <summary type="html">&lt;p&gt;下载脚本文件。&lt;/p&gt;</summary>
@@ -251,6 +321,25 @@
     
     
     <category term="下载" scheme="https://seefs.github.io/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>其他脚本修改</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_script/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_script/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-05-31T09:25:08.845Z</updated>
+    
+    <content type="html"><![CDATA[<p>一套脚本。</p><span id="more"></span><h2 id="其他脚本修改"><a href="#其他脚本修改" class="headerlink" title="其他脚本修改"></a>其他脚本修改</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本的好处</font>：完全策略化，下单就不怎么管了。<br>风险：<br>增加批量止损：不带损不敢冲，浑水区直接不做。优势质疑冒险，劣势不敢冒险。<br>限制亏损：防止大亏损，防止黑天鹅，不被恶庄咬伤。<br>状态差：防止生病时，高估能力与反应。<br>考虑极端行情：两边坑，只有我赚钱。因为手快，有更多时间思考。</p><p>策略：<br>机会差：完善策略搭配与快速操作。错过最好的策略，会被垃圾策略控制。<br>融入变背离：可能过度观望，导致判断失误，从而背离市场。一般参与者更了解市场。<br>短拿变长拿：看可能是大风险，不看可能是小风险。长拿会躲，不追。<br>减少等待：买潜不买急，方向确定时，不会被当前行情控制。如等回调做多。<br>扩展：扩展到如美股。</p><p>市场：<br>大机会长拿，小机会短拿。<br>不专业：长期受自己的盈利能力影响，自信时有时无。</p><p>损失：<br>先设置风险，后确认风险。先防备风险，后调整方向。</p><p><font color="#3232CD">应用脚本注意事项</font>：<br>参数配置：可以考虑用参数文件，来调整仓位。<br>仓位固定：如果需要调整仓位，最好将旧脚本做备份。调制一套新的脚本，重新编译。<br>从小开始：默认仓位应该较低，谨慎加大仓位，最好自己修改并验证。毕竟用别人的东西有风险。</p><p><font color="#3232CD">脚本类型</font>：<br>操作：<br>设置：单边必止损，震荡必止赢。亏损必锁单，众亏必反单。<br>分析：打破规律，了解常用技术的弱点。尊重基础分析与数据统计。了解真实的被控制行情。<br>指标：自研形态码。<br>策略：<br>EA：</p><h3 id="脚本目录"><a href="#脚本目录" class="headerlink" title="脚本目录"></a>脚本目录</h3><p><font color="#3232CD">脚本目录</font>：</p><p>&#x2F;&#x2F; 脚本 (默认下载目录，整理过的，会移动新目录)<br>Serial:Mql5\Scripts\Downloads<br>&#x2F;&#x2F; 脚本–操作<br>Serial:Mql5\Scripts\_OrderOpen<br>Serial:Mql5\Scripts\_OrderClose<br>Serial:Mql5\Scripts\_OrderSetting<br>&#x2F;&#x2F; 脚本–分析回测<br>Serial:Mql5\Scripts\_Analyze<br>&#x2F;&#x2F; 脚本–画图辅助<br>Serial:Mql5\Scripts\_Draw<br>&#x2F;&#x2F; 脚本–其他<br>Serial:Mql5\Scripts\_Other<br>&#x2F;&#x2F; EA交易<br>&#x2F;&#x2F; 指标<br>Serial:Mql5\Scripts\_Other\</p><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p><font color="#3232CD">减仓</font>：按价减仓，或按量减仓。</p><p>(加仓后减新仓)<br>逆势减仓：逆势用不上减仓，一般全平。<br>顺势减仓：平掉2美金以内的单子，包括亏损。(行情大时考虑自动平)(应该只用第3个就行)<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllPairs.mq5</p><p>(反转后减旧仓)<br>逆势反转：平掉2美金以上的单子。如锁仓时发现或觉得要转势，先平赢利单子。<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllPairs.mq5</p><p>(赢利减仓，亏损减仓)<br>顺势反转：震荡遇阻先减部分仓位，再遇阻赢利锁仓。<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllPairs.mq5</p><p>(测试)(先不写没收益的脚本)<br>减仓1单：可能比点订单右侧的叉子快。</p><p>(长短结合)(先不考虑)<br>小单平仓：平掉0.3手以下单子，如0.3为最大仓位。</p><p>预平仓：参考后面预平仓设置。</p><p><font color="#3232CD">网格开仓–设置</font>：</p><p>平铺下单：加仓。将上面的仓位重复一遍，有时间再作仓位上限处理。(不要反复点，翻倍不能失误) ($10平铺有10%，不建议加仓)</p><p>平铺下单：加仓。将之前的仓位重复一遍。<br>&#x2F;&#x2F;——加仓方法。<br>&#x2F;&#x2F;——–先 4Int2，再 repeat，再 4Out2。这种组合方式可能考虑当前价格风险小一点。<br>&#x2F;&#x2F;——–先 4Int2，再 repeat，再 4Int2。这种组合方式可能考虑中间价格风险小一点。<br>&#x2F;&#x2F;——犯错。不要反复点，失误会翻倍<br>&#x2F;&#x2F;——–有时间再作仓位上限处理。最好按比例加仓如1%。脚本更少。<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatBuyLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatSellLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatPairsLimitOrder.mq5<br>平铺下单：加仓。<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatBuyStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatSellStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatPairsStopOrder.mq5<br>平铺下单：修改止赢止损。<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_20_20.mq5   # 止损 -2、止赢 +2<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_20_40.mq5   # 止损 -2、止赢 +4，长线这样做吧<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_10_30.mq5   # 止损 -1、止赢 +3<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_0_20.mq5   # 没有止损</p><p><font color="#3232CD">锁单换仓</font>：尽量做到自动解锁。应该做EA，我现在不会。<br>研究怎么锁单，让脚本处理</p><p>Serial:Mql5\Scripts\_OrderLock\</p><p>N字解锁：多空多时平多，空多空时平空。<br>Serial:Mql5\Scripts\_OrderLock\</p><p><font color="#3232CD">赢利锁仓</font>：</p><p>赢利锁仓：最高点反向锁仓。用最近的顶点。并计算支撑点主动解锁。解锁后又开锁仓单。更新旧单子止损在支撑点下。<br>Serial:Mql5\Scripts\_OrderLock\</p><p>赢利换仓：多次触及解锁点，应该平仓旧单子。并下移开仓位置。<br>Serial:Mql5\Scripts\_OrderLock\</p><p>赢利锁仓：整点快速盈利锁仓。<br>Serial:Mql5\Scripts\_OrderLock\</p><p>隔夜赢利锁仓：预测会向上挖坑。<br>Serial:Mql5\Scripts\_OrderLock\</p><p>无方向锁仓：在成本区上下成对锁仓。<br>Serial:Mql5\Scripts\_OrderLock\</p><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p><font color="#3232CD">形态分析</font>：</p><p>单边形态：早上进场。统计所有的单边形态。<br>Serial:Mql5\Scripts\_Analyze\</p><p>区间形态：下午做区间。<br>Serial:Mql5\Scripts\_Analyze\</p><p>5分钟指标：试下形态码有效果吗<br>&#x2F;&#x2F;——验证0 ~ 4, 作为M5起始时间，效果有区别吗？<br>Serial:Mql5\Scripts\_Analyze\</p><p>检查犯错程度：当前交易是否犯错，是否考虑平仓。<br>检查交易不致性：是否方向变来变去。</p><p>杀急，急对应的形态是什么？<br>如何识别行情分类，用形态码？<br>从月到时，分析效果。</p><p><font color="#3232CD">波动分析</font>：<br>A：<br>B：<br>C：晚上CA，上保险，C要准确止盈。<br>CA：CA不做反转，所以经常假反转。</p><p><font color="#3232CD">速度分析</font>：</p><p>快跟随：震荡后突破。<br>Serial:Mql5\Scripts\_Analyze\</p><p>慢跟随：等待浪结束，再次突涨。如波浪2涨1跌，才再涨创新高。<br>Serial:Mql5\Scripts\_Analyze\</p><p><font color="#3232CD">趋势分析</font>：找时间点。<br>07:30<br>09:00<br>10:00<br>15:15<br>17:25<br>20:30, 这个是重点</p><p>中午反转：检测技术反转，m5，杀多再多，不杀空不空。<br>Serial:Mql5\Scripts\_Analyze\</p><p><font color="#3232CD">随机试验</font>：</p><p>反单试验：9点半，5损10赢。<br>跟单试验：9点半，5损10赢。<br>Serial:Mql5\Scripts\_Analyze\</p><h3 id="画图辅助"><a href="#画图辅助" class="headerlink" title="画图辅助"></a>画图辅助</h3><p><font color="#3232CD">复盘</font>：</p><p>标时间：在图上标时间，便于复盘<br>Serial:Mql5\Scripts\_Draw\</p><p>MAX_LOT：最大手数，CreateTLabel<br>Serial:Mql5\Scripts\_Analyze\MAX_LOT.mq5</p><h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD">随机试验</font>：</p><p>全多：<br>全空：<br>只做反转：只反转一次。错误后再反转。<br>只做跟随：只做N形，1~2次。<br>贪心：追求更高点。<br>启动点：寻找大浪和小浪的启动点，否则概率太低。<br>自动解锁：<br>Serial:Mql5\Scripts\_Draw\</p><p><font color="#3232CD">回测信号</font>：看效果。<br>3分信号：<br>早上反转信号：<br>整点风险单：<br>N字信号：最低点升高做多。</p><h3 id="EA-1"><a href="#EA-1" class="headerlink" title="EA"></a>EA</h3><p><a href="https://seefs.github.io/2023/11/06/attitude_predict_EA"><font color="#99CC32">EA参考➬</font></a></p><h3 id="指标"><a href="#指标" class="headerlink" title="指标"></a>指标</h3><p>震荡指标：最好明确给出左右。左空右多。<br>Serial:Mql5\Scripts\_Other\</p><h3 id="其他思路"><a href="#其他思路" class="headerlink" title="其他思路"></a>其他思路</h3><p><font color="#3232CD">宏</font>：<br>宏：是否设置参数</p><p><font color="#3232CD">EA</font>：<br>定时开脚本：15秒不赚自动关闭。<br>修改止损：先做</p><p><font color="#3232CD">EA</font>：<br>一定要有一单止赢不止损–+1<br>一定要反单<br>大赚反单，大亏反单(势未尽反单，操作不快要什么脚本)<br>只要连续波动，就准备动手</p><p><font color="#3232CD">操作</font>：<br>反单：自动获取均线解锁位置<br>平仓：可能有持仓集中平仓函数<br>预开单：test,一单。1.删，2突破时准备反转，3不能大损，能保本必保本<br>开单：每个位置补一单<br>set订单：从当前价格网格开仓，可能缺少set脚本锁定利润。</p><p><font color="#3232CD">代码编辑</font>：</p><ol><li>加仓<br>建议每周调一次，甚至每月<br>稳定后不用调</li></ol><p>趋势平铺法：省精力<br>1.在最低点平铺上去<br>2.在最高点平铺下来<br>3.震荡不赚钱<br>4.没有止损<br>5.预测顶点反单</p><p>不整理一套，不分享</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;一套脚本。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="脚本" scheme="https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
     
   </entry>
   
@@ -274,40 +363,21 @@
   </entry>
   
   <entry>
-    <title>其他脚本修改</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_market_script/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_market_script/</id>
+    <title>测试脚本</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_test/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_test/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-24T15:46:32.293Z</updated>
+    <updated>2024-06-02T10:52:09.244Z</updated>
     
-    <content type="html"><![CDATA[<p>一套脚本。</p><span id="more"></span><h2 id="其他脚本修改"><a href="#其他脚本修改" class="headerlink" title="其他脚本修改"></a>其他脚本修改</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本的好处</font>：完全策略化，下单就不怎么管了。<br>风险：<br>增加批量止损：不带损不敢冲，浑水区直接不做。优势质疑冒险，劣势不敢冒险。<br>限制亏损：防止大亏损，防止黑天鹅，不被恶庄咬伤。<br>状态差：防止生病时，高估能力与反应。<br>考虑极端行情：两边坑，只有我赚钱。因为手快，有更多时间思考。</p><p>策略：<br>机会差：完善策略搭配与快速操作。错过最好的策略，会被垃圾策略控制。<br>融入变背离：可能过度观望，导致判断失误，从而背离市场。一般参与者更了解市场。<br>短拿变长拿：看可能是大风险，不看可能是小风险。长拿会躲，不追。<br>减少等待：买潜不买急，方向确定时，不会被当前行情控制。如等回调做多。<br>扩展：扩展到如美股。</p><p>市场：<br>大机会长拿，小机会短拿。<br>不专业：长期受自己的盈利能力影响，自信时有时无。</p><p>损失：<br>先设置风险，后确认风险。先防备风险，后调整方向。</p><p><font color="#3232CD">应用脚本注意事项</font>：<br>参数配置：可以考虑用参数文件，来调整仓位。<br>仓位固定：如果需要调整仓位，最好将旧脚本做备份。调制一套新的脚本，重新编译。<br>从小开始：默认仓位应该较低，谨慎加大仓位，最好自己修改并验证。毕竟用别人的东西有风险。</p><p><font color="#3232CD">脚本类型</font>：<br>操作：<br>设置：单边必止损，震荡必止赢。亏损必锁单，众亏必反单。<br>分析：打破规律，了解常用技术的弱点。尊重基础分析与数据统计。了解真实的被控制行情。<br>指标：自研形态码。<br>策略：<br>EA：</p><h3 id="脚本目录"><a href="#脚本目录" class="headerlink" title="脚本目录"></a>脚本目录</h3><p><font color="#3232CD">脚本目录</font>：</p><p>&#x2F;&#x2F; 脚本 (默认下载目录，整理过的，会移动新目录)<br>Serial:Mql5\Scripts\Downloads<br>&#x2F;&#x2F; 脚本–操作<br>Serial:Mql5\Scripts\_OrderOpen<br>Serial:Mql5\Scripts\_OrderClose<br>Serial:Mql5\Scripts\_OrderSetting<br>&#x2F;&#x2F; 脚本–分析回测<br>Serial:Mql5\Scripts\_Analyze<br>&#x2F;&#x2F; 脚本–画图辅助<br>Serial:Mql5\Scripts\_Draw<br>&#x2F;&#x2F; 脚本–其他<br>Serial:Mql5\Scripts\_Other<br>&#x2F;&#x2F; EA交易<br>&#x2F;&#x2F; 指标<br>Serial:Mql5\Scripts\_Other\</p><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p><font color="#3232CD">预览持仓和订单的接口参数</font>：<br>Scripts\_OrderTest\PreviewOrderParam.mq5</p><p>功能说明：</p><p><font color="#3232CD">修改幻数</font>：<br>Scripts\_OrderTest\UpdateMagicNumber.mq5<br>Scripts\_OrderTest\UpdateMagicNumber2.mq5</p><p>功能说明：脚本1 设置失败，先用下一种设置办法。</p><p><font color="#3232CD">优化最合适的仓位大小</font>：<br>Scripts\_OrderTest\OptimizeAccountLot.mq5</p><p>功能说明：兼容最小步，均匀散开，小重大轻。</p><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p><font color="#3232CD">减仓</font>：按价减仓，或按量减仓。</p><p>(加仓后减新仓)<br>逆势减仓：逆势用不上减仓，一般全平。<br>顺势减仓：平掉2美金以内的单子，包括亏损。(行情大时考虑自动平)(应该只用第3个就行)<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllPairs.mq5</p><p>(反转后减旧仓)<br>逆势反转：平掉2美金以上的单子。如锁仓时发现或觉得要转势，先平赢利单子。<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllPairs.mq5</p><p>(赢利减仓，亏损减仓)<br>顺势反转：震荡遇阻先减部分仓位，再遇阻赢利锁仓。<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllPairs.mq5</p><p>(测试)(先不写没收益的脚本)<br>减仓1单：可能比点订单右侧的叉子快。</p><p>(长短结合)(先不考虑)<br>小单平仓：平掉0.3手以下单子，如0.3为最大仓位。</p><p>预平仓：参考后面预平仓设置。</p><p><font color="#3232CD">网格开仓–设置</font>：</p><p>平铺下单：加仓。将上面的仓位重复一遍，有时间再作仓位上限处理。(不要反复点，翻倍不能失误) ($10平铺有10%，不建议加仓)</p><p>平铺下单：加仓。将之前的仓位重复一遍。<br>&#x2F;&#x2F;——加仓方法。<br>&#x2F;&#x2F;——–先 4Int2，再 repeat，再 4Out2。这种组合方式可能考虑当前价格风险小一点。<br>&#x2F;&#x2F;——–先 4Int2，再 repeat，再 4Int2。这种组合方式可能考虑中间价格风险小一点。<br>&#x2F;&#x2F;——犯错。不要反复点，失误会翻倍<br>&#x2F;&#x2F;——–有时间再作仓位上限处理。最好按比例加仓如1%。脚本更少。<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatBuyLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatSellLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatPairsLimitOrder.mq5<br>平铺下单：加仓。<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatBuyStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatSellStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatPairsStopOrder.mq5<br>平铺下单：修改止赢止损。<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_20_20.mq5   # 止损 -2、止赢 +2<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_20_40.mq5   # 止损 -2、止赢 +4，长线这样做吧<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_10_30.mq5   # 止损 -1、止赢 +3<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_0_20.mq5   # 没有止损</p><p><font color="#3232CD">锁单换仓</font>：尽量做到自动解锁。应该做EA，我现在不会。<br>研究怎么锁单，让脚本处理</p><p>Serial:Mql5\Scripts\_OrderLock\</p><p>N字解锁：多空多时平多，空多空时平空。<br>Serial:Mql5\Scripts\_OrderLock\</p><p><font color="#3232CD">赢利锁仓</font>：</p><p>赢利锁仓：最高点反向锁仓。用最近的顶点。并计算支撑点主动解锁。解锁后又开锁仓单。更新旧单子止损在支撑点下。<br>Serial:Mql5\Scripts\_OrderLock\</p><p>赢利换仓：多次触及解锁点，应该平仓旧单子。并下移开仓位置。<br>Serial:Mql5\Scripts\_OrderLock\</p><p>赢利锁仓：整点快速盈利锁仓。<br>Serial:Mql5\Scripts\_OrderLock\</p><p>隔夜赢利锁仓：预测会向上挖坑。<br>Serial:Mql5\Scripts\_OrderLock\</p><p>无方向锁仓：在成本区上下成对锁仓。<br>Serial:Mql5\Scripts\_OrderLock\</p><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p><font color="#3232CD">账户分析</font>：</p><p>MAX_LOT：最大手数，CreateTLabel<br>Serial:Mql5\Scripts\_Analyze\MAX_LOT.mq5</p><p><font color="#3232CD">形态分析</font>：</p><p>单边形态：早上进场。统计所有的单边形态。<br>Serial:Mql5\Scripts\_Analyze\</p><p>区间形态：下午做区间。<br>Serial:Mql5\Scripts\_Analyze\</p><p>5分钟指标：试下形态码有效果吗<br>&#x2F;&#x2F;——验证0 ~ 4, 作为M5起始时间，效果有区别吗？<br>Serial:Mql5\Scripts\_Analyze\</p><p>检查犯错程度：当前交易是否犯错，是否考虑平仓。<br>检查交易不致性：是否方向变来变去。</p><p><font color="#3232CD">波动分析</font>：<br>A：<br>B：<br>C：晚上CA，上保险，C要准确止盈。<br>CA：CA不做反转，所以经常假反转。</p><p><font color="#3232CD">速度分析</font>：</p><p>快跟随：震荡后突破。<br>Serial:Mql5\Scripts\_Analyze\</p><p>慢跟随：等待浪结束，再次突涨。如波浪2涨1跌，才再涨创新高。<br>Serial:Mql5\Scripts\_Analyze\</p><p><font color="#3232CD">趋势分析</font>：找时间点。<br>07:30<br>09:00<br>10:00<br>15:15<br>17:25<br>20:30, 这个是重点</p><p>中午反转：检测技术反转，m5，杀多再多，不杀空不空。<br>Serial:Mql5\Scripts\_Analyze\</p><p><font color="#3232CD">常用统计</font>：</p><p>常用统计：如每年涨跌幅+比例。不确认数据有没有。只有2021-02以后数据。<br>Serial:Mql5\Scripts\_Analyze\</p><p>(价格关系)<br>周末持仓：估计风险。从几点开始持仓？<br>历史成本：在成本区附近有压力。<br>Serial:Mql5\Scripts\_Analyze\</p><p>(时间关系)<br>每天波动：统计周1~周5，一般哪天波动大<br>Serial:Mql5\Scripts\_Analyze\</p><p>每天波动：统计周1~周5，哪天是单边<br>Serial:Mql5\Scripts\_Analyze\</p><p>转势时间：二分法查看美盘哪个时间转势最准<br>Serial:Mql5\Scripts\_Analyze\</p><p>吃饭时间，统计1点，5点，6点，与全天方向的关系，希望不反就入场，即使强度弱。<br>Serial:Mql5\Scripts\_Analyze\</p><p>(消息影响)<br>非农：统计非农盘前10Min 盘后10Min关联，如黄金，欧美。如最高，最低。<br>Serial:Mql5\Scripts\_Analyze\</p><p>(品种)<br>品种选择：统计哪天应该做哪种。<br>Serial:Mql5\Scripts\_Analyze\</p><p><font color="#3232CD">随机试验</font>：</p><p>反单试验：9点半，5损10赢。<br>跟单试验：9点半，5损10赢。<br>Serial:Mql5\Scripts\_Analyze\</p><h3 id="画图辅助"><a href="#画图辅助" class="headerlink" title="画图辅助"></a>画图辅助</h3><p><font color="#3232CD">复盘</font>：</p><p>标时间：在图上标时间，便于复盘<br>Serial:Mql5\Scripts\_Draw\</p><h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD">随机试验</font>：</p><p>全多：<br>全空：<br>只做反转：只反转一次。错误后再反转。<br>只做跟随：只做N形，1~2次。<br>贪心：追求更高点。<br>启动点：寻找大浪和小浪的启动点，否则概率太低。<br>自动解锁：<br>Serial:Mql5\Scripts\_Draw\</p><p><font color="#3232CD">回测信号</font>：看效果。<br>3分信号：<br>早上反转信号：<br>整点风险单：<br>N字信号：最低点升高做多。</p><h3 id="EA-1"><a href="#EA-1" class="headerlink" title="EA"></a>EA</h3><p><a href="https://seefs.github.io/2023/11/06/attitude_predict_EA"><font color="#99CC32">EA参考➬</font></a></p><h3 id="指标"><a href="#指标" class="headerlink" title="指标"></a>指标</h3><p>震荡指标：最好明确给出左右。左空右多。<br>Serial:Mql5\Scripts\_Other\</p><h3 id="其他思路"><a href="#其他思路" class="headerlink" title="其他思路"></a>其他思路</h3><p><font color="#3232CD">宏</font>：<br>宏：是否设置参数</p><p><font color="#3232CD">EA</font>：<br>定时开脚本：15秒不赚自动关闭。<br>修改止损：先做</p><p><font color="#3232CD">EA</font>：<br>一定要有一单止赢不止损–+1<br>一定要反单<br>大赚反单，大亏反单(势未尽反单，操作不快要什么脚本)<br>只要连续波动，就准备动手</p><p><font color="#3232CD">操作</font>：<br>反单：自动获取均线解锁位置<br>平仓：可能有持仓集中平仓函数<br>预开单：test,一单。1.删，2突破时准备反转，3不能大损，能保本必保本<br>开单：每个位置补一单<br>set订单：从当前价格网格开仓，可能缺少set脚本锁定利润。</p><p><font color="#3232CD">代码编辑</font>：</p><ol><li>加仓<br>建议每周调一次，甚至每月<br>稳定后不用调</li></ol><p>趋势平铺法：省精力<br>1.在最低点平铺上去<br>2.在最高点平铺下来<br>3.震荡不赚钱<br>4.没有止损<br>5.预测顶点反单</p><p>不整理一套，不分享</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;一套脚本。&lt;/p&gt;</summary>
+    <content type="html"><![CDATA[<p>单个模块测试。</p><span id="more"></span><h2 id="测试脚本"><a href="#测试脚本" class="headerlink" title="测试脚本"></a>测试脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">代码用法测试</font>：<br>API测试：</p><p><font color="#3232CD">单个模块测试</font>：<br>仓位测试：</p><h3 id="API测试"><a href="#API测试" class="headerlink" title="API测试"></a>API测试</h3><p><font color="#3232CD">预览持仓和订单的接口参数</font>：<br>Scripts\_OrderTest\PreviewOrderParam.mq5</p><p>功能说明：操作订单的示例。</p><p><font color="#3232CD">预览开单的接口参数</font>：<br>Scripts\_OrderTest\PreviewOpenOrderParam.mq5</p><p>功能说明：避免使用真实交易去测试，导致亏损。</p><p><font color="#3232CD">修改幻数</font>：<br>Scripts\_OrderTest\UpdateMagicNumber.mq5</p><p>功能说明：脚本1 设置失败，先用下一种设置办法。<br>注释1：先打开交易面版–列–显示幻数。</p><h3 id="仓位测试"><a href="#仓位测试" class="headerlink" title="仓位测试"></a>仓位测试</h3><p><font color="#3232CD">优化最合适的仓位大小</font>：<br>Scripts\_OrderTest\OptimizeAccountLot.mq5</p><p>功能说明：兼容最小步，均匀散开，小重大轻。</p>]]></content>
     
     
-    
-    
-    <category term="脚本" scheme="https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>A single open script</title>
-    <link href="https://seefs.github.io/2024/05/03/custom_scripts_open/"/>
-    <id>https://seefs.github.io/2024/05/03/custom_scripts_open/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-26T11:00:44.968Z</updated>
-    
-    <content type="html"><![CDATA[<p>A single opening script is basically not used, so there is no operation video.</p><span id="more"></span><h2 id="Single-open-script"><a href="#Single-open-script" class="headerlink" title="Single open script"></a>Single open script</h2><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p><font color="#3232CD"> MT5 to open a position with one click</font>: this is a script on the forum. Download it in the code base on 2019.05.25.</p><p><font color="#3232CD" > second set of scripts for opening positions</font>: this is a script on the forum. Download in the code base on 2017.06.05.</p><h3 id="MT5-one-click-position-opening"><a href="#MT5-one-click-position-opening" class="headerlink" title="MT5 one-click position opening"></a>MT5 one-click position opening</h3><p><font color="#3232CD">1. Single Buy or Sell</font>: Reference script. Download it in the code base on 2021.06.30<br>Scripts\_OrderOpenDemo\OpenBuy.mq5<br>Scripts\_OrderOpenDemo\OpenSell.mq5</p><h3 id="The-second-set-of-scripts-for-opening-positions"><a href="#The-second-set-of-scripts-for-opening-positions" class="headerlink" title="The second set of scripts for opening positions"></a>The second set of scripts for opening positions</h3><p><font color="#3232CD">2. Limit to open a position</font>:<br>Scripts\_OrderOpenDemo\OpenBuyLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellLimitOrders.mq5</p><p><font color="#3232CD">3. Stop to open a position</font><br>Scripts\_OrderOpenDemo\OpenBuyStopOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellStopOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellStopOrders.mq5</p><p><font color="#3232CD">4. StopLimit to open a position</font><br>Scripts\_OrderOpenDemo\OpenBuyStopLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellStopLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellStopLimitOrders.mq5</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;A single opening script is basically not used, so there is no operation video.&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;单个模块测试。&lt;/p&gt;</summary>
     
     
     
     
-    <category term="Open" scheme="https://seefs.github.io/tags/Open/"/>
+    <category term="测试" scheme="https://seefs.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -329,82 +399,6 @@
     
     
     <category term="下载" scheme="https://seefs.github.io/tags/%E4%B8%8B%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>平仓脚本</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_scripts_close/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_scripts_close/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-20T03:21:46.346Z</updated>
-    
-    <content type="html"><![CDATA[<p>mt5电脑软件有自带的一键平仓功能，用脚本不一定快。因为使用脚本是一个个的平仓，有时更慢。</p><span id="more"></span><h2 id="平仓脚本"><a href="#平仓脚本" class="headerlink" title="平仓脚本"></a>平仓脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">第一组平仓脚本</font>：这是论坛上的一组脚本。在代码库下载，时间是2019.05.25。<br>功能同mt5电脑软件，批量操作–所有持仓平仓。</p><p><font color="#3232CD">第二组平仓脚本</font>：这是mt5 帮助文档中的示例脚本，拿出来使用。前一组删不掉未成交的订单，不够完善。<br>功能同mt5电脑软件，批量操作–删除所有订单。<br>在IDE编辑软件中，选中变量按F1，即可查看帮忙文档。</p><h3 id="第一组平仓脚本"><a href="#第一组平仓脚本" class="headerlink" title="第一组平仓脚本"></a>第一组平仓脚本</h3><p><font color="#3232CD">1. 平仓所有多单</font>：仅关闭当前窗口相同品种的订单。<br>Scripts\_OrderClose\CloseAllBuy.mq5</p><p><font color="#3232CD">2. 平仓所有空单</font>：仅关闭当前窗口相同品种的订单。<br>Scripts\_OrderClose\CloseAllSell.mq5</p><p><font color="#3232CD">3. 平仓所有多单和空单</font>：仅关闭当前窗口相同品种的订单。<br>备注：论坛上原脚本会关闭所有品种的订单。我提供的脚本加了限制条件。<br>Scripts\_OrderClose\CloseAllPairs.mq5</p><p><font color="#3232CD">操作视频</font>：(手机请点全屏播放)</p><div style="position: relative; width: 100%; height: 0; padding-bottom: 50%;"><iframe src="https://www.kuaishou.com/short-video/3xgkd32gndx7w7m?fid=4038014158"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></div><h3 id="第二组平仓脚本"><a href="#第二组平仓脚本" class="headerlink" title="第二组平仓脚本"></a>第二组平仓脚本</h3><p><font color="#3232CD">4. 删除所有订单</font>：关闭当前窗口相同品种的 stop + limit 订单，和 buy + sell 订单。<br>Scripts\_OrderClose\RemoveAllOrder.mq5</p><p>功能说明：</p><p><font color="#3232CD">5. 删除stop + limit 订单</font>：仅关闭当前窗口相同品种的 stop + limit 订单。<br>Scripts\_OrderClose\RemoveAllStopLimitOrder.mq5</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;mt5电脑软件有自带的一键平仓功能，用脚本不一定快。因为使用脚本是一个个的平仓，有时更慢。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="平仓" scheme="https://seefs.github.io/tags/%E5%B9%B3%E4%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>平仓并反单脚本</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_scripts_invert/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_scripts_invert/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-18T07:00:18.760Z</updated>
-    
-    <content type="html"><![CDATA[<p>考虑异外情况，平仓并反单。</p><span id="more"></span><h2 id="平仓并反单脚本"><a href="#平仓并反单脚本" class="headerlink" title="平仓并反单脚本"></a>平仓并反单脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">主动反单</font>：脚本作用不大</p><p><font color="#3232CD">被动反单</font>：</p><p><font color="#3232CD">被动间隔反单</font>：</p><h3 id="主动反单"><a href="#主动反单" class="headerlink" title="主动反单"></a>主动反单</h3><p><font color="#3232CD">1. 主动反单</font>：应该赢利中，才考虑反单。亏损中多认怂吧。<br>应用场景：多空分界点，不想确认直接反。<br>场景1：逆势赚够。<br>场景2：回调，遇到大周期均线支撑。<br>场景3：手动忙不过来。<br>功能说明：需要计算仓位</p><h3 id="被动反单"><a href="#被动反单" class="headerlink" title="被动反单"></a>被动反单</h3><p><font color="#3232CD">2. 风险反单</font>：<br>场景1：行情背离散户持仓。<br>场景2：明显诱多诱空行情。</p><p><font color="#3232CD">3. 回调反单</font>：场景太少，先不做功能<br>场景1：早盘突破后，止赢2开始回调。<br>场景2：右侧下跌后，回调1开始继续跌。<br>场景3：早盘下跌2后，有建仓信号，回调反单。<br>场景4：早盘突破3后，取消反单。</p><p><font color="#3232CD">4. 震荡反单</font>：先不做<br>场景1：等高不等低。<br>场景2：等低不等高。</p><h3 id="被动间隔反单"><a href="#被动间隔反单" class="headerlink" title="被动间隔反单"></a>被动间隔反单</h3><p><font color="#3232CD">5. 被动间隔反单</font>：有必要做<br>Scripts\_OrderOpenInvert\PreClose_5_5_10.mq5<br>Scripts\_OrderOpenInvert\PreClose_5_5_15.mq5<br>Scripts\_OrderOpenInvert\PreClose_5_10_15.mq5</p><p>应用场景：以当前价0.5反转止赢，并再间隔0.5开stop反单。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;考虑异外情况，平仓并反单。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="反单" scheme="https://seefs.github.io/tags/%E5%8F%8D%E5%8D%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单个开仓脚本</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_scripts_open/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_scripts_open/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-17T17:21:33.345Z</updated>
-    
-    <content type="html"><![CDATA[<p>单个开仓脚本基本用不上，也就不拍操作视频了。</p><span id="more"></span><h2 id="单个开仓脚本"><a href="#单个开仓脚本" class="headerlink" title="单个开仓脚本"></a>单个开仓脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">MT5一键开仓</font>：这个是论坛上的脚本。在代码库下载，时间是2019.05.25。</p><p><font color="#3232CD">第二组开仓脚本</font>：这个是论坛上的脚本。在代码库下载，时间是2017.06.05。</p><h3 id="MT5一键开仓"><a href="#MT5一键开仓" class="headerlink" title="MT5一键开仓"></a>MT5一键开仓</h3><p><font color="#3232CD">1. 单个Buy 或 Sell</font>：参考脚本。在代码库下载，时间是2021.06.30<br>Scripts\_OrderOpenDemo\OpenBuy.mq5<br>Scripts\_OrderOpenDemo\OpenSell.mq5</p><h3 id="第二组开仓脚本"><a href="#第二组开仓脚本" class="headerlink" title="第二组开仓脚本"></a>第二组开仓脚本</h3><p><font color="#3232CD">2. Limit 开仓</font>：<br>Scripts\_OrderOpenDemo\OpenBuyLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellLimitOrders.mq5</p><p><font color="#3232CD">3. Stop 开仓</font><br>Scripts\_OrderOpenDemo\OpenBuyStopOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellStopOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellStopOrders.mq5</p><p><font color="#3232CD">4. StopLimit 开仓</font><br>Scripts\_OrderOpenDemo\OpenBuyStopLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenSellStopLimitOrder.mq5<br>Scripts\_OrderOpenDemo\OpenBuySellStopLimitOrders.mq5</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;单个开仓脚本基本用不上，也就不拍操作视频了。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="开仓" scheme="https://seefs.github.io/tags/%E5%BC%80%E4%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单向批量开仓脚本</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_scripts_open_grid/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_scripts_open_grid/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-05-22T15:13:11.800Z</updated>
-    
-    <content type="html"><![CDATA[<p>我做顺势单比较少，有经验再补充。</p><span id="more"></span><h2 id="单向批量开仓脚本"><a href="#单向批量开仓脚本" class="headerlink" title="单向批量开仓脚本"></a>单向批量开仓脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">Limit 开仓</font>：</p><p><font color="#3232CD">Stop 开仓</font>：</p><p><font color="#3232CD">StopLimit 开仓</font>：</p><p><font color="#3232CD">缺点</font>：<br>整体感觉，做短线用不上。<br>如果做短线，从当前价格网格开仓，应该缺少设置参数脚本锁定利润。以后看下如何用在EA上。</p><h3 id="操作截图"><a href="#操作截图" class="headerlink" title="操作截图"></a>操作截图</h3><p><img src="/img/habit/open_grid.png"></p><h3 id="Limit-开仓"><a href="#Limit-开仓" class="headerlink" title="Limit 开仓"></a>Limit 开仓</h3><p><font color="#3232CD">1. 从当前价格网格开仓</font>：从当前价格向上或向下平铺开仓。<br>Scripts\_OrderGridOpen\OpenBuyLimitOrder.mq5<br>Scripts\_OrderGridOpen\OpenSellLimitOrder.mq5</p><p>应用场景：以当前价更低的成本网格下单。<br>场景1：上涨趋势初期，回调开多，我想要更低的价格，然而它出现的时间很短。<br>场景2：抓住一些超预期机会，如上涨中大幅度回调。<br>场景3：行情尾部，猜底猜顶，可能网格下单更好。<br>场景4：经常出现在战斗中反转的行情。</p><p><font color="#3232CD">2. 以指定价格网格开仓</font>：以指定价格向上或向下平铺开仓。<br>Scripts\_OrderGridOpen4\OpenBuyLimitOrder_4In2.mq5<br>Scripts\_OrderGridOpen4\OpenBuyLimitOrder_4Out2.mq5<br>Scripts\_OrderGridOpen4\OpenSellLimitOrder_4In2.mq5<br>Scripts\_OrderGridOpen4\OpenSellLimitOrder_4Out2.mq5</p><p>应用场景：以预估的成本下单。<br>场景1：最初这么做，是为了考虑 Limit+Stop 组合。如看多时考虑回调，-$4以内用Limit开多单，+$2以上用Stop开多单<br>场景2：震荡行情应该用limit。若用stop会亏损。<br>场景3：关键位置反转。<br>平铺范围：每次平铺，在$2价格范围内。可多次点次扩大范围。<br>(多次点次，测试发现并未改变价格范围，下次再修改下)</p><p>多单功能：从 -$4处 向上或向下平铺开多单。再次点击，即从-$6或-$2处平铺。<br>空单功能：从 +$4处 向上或向下平铺开空单。再次点击，即从+$6或+$2处平铺。<br>仓位：每次操作的仓位在1%左右，请看13行的参数，可加大重新编译。<br>止赢止损：现在不知道带止赢止损，是否有好外。</p><h3 id="Stop-开仓"><a href="#Stop-开仓" class="headerlink" title="Stop 开仓"></a>Stop 开仓</h3><p><font color="#3232CD">3. 从当前价格网格开仓</font>：从当前价格向上或向下平铺开仓。<br>Scripts\_OrderGridOpen\OpenBuyStopOrder.mq5<br>Scripts\_OrderGridOpen\OpenSellStopOrder.mq5</p><p>应用场景：略。</p><p><font color="#3232CD">4. 以指定价格网格开仓</font>：以指定价格向上或向下平铺开仓。<br>Scripts\_OrderGridOpen4\OpenBuyStopOrder_4In2.mq5<br>Scripts\_OrderGridOpen4\OpenBuyStopOrder_4Out2.mq5<br>Scripts\_OrderGridOpen4\OpenSellStopOrder_4In2.mq5<br>Scripts\_OrderGridOpen4\OpenSellStopOrder_4Out2.mq5</p><p>应用场景：小行情尽量别用，热度低的行情可时间尽量别用。<br>场景1：重大消息行情，可在最后30秒内开单。但要考虑波动范围有多大。<br>场景2：散户筹码集中，快速开反向风险单。<br>场景3：利空反涨，波动会比较大，开风险单。<br>场景4：单边行情，或顺势，或被机构操控上下洗的行情，突破后波动比较大。<br>场景5：预估会上下拉，只开正负$4以外的单子。<br>平铺范围：每次平铺，在$2价格范围内。可多次点次扩大范围。<br>多单功能：从 +$4处 向上或向下平铺开多单。再次点击，即从+$6或+$2处平铺。<br>空单功能：从 -$4处 向上或向下平铺开空单。再次点击，即从-$6或-$2处平铺。<br>止赢止损：止损必须带。如果带止赢仓位可加大。试过止赢会滑点(有利于自己)。</p><p>(删除止赢，我后面别写一个脚本)</p><h3 id="StopLimit-开仓"><a href="#StopLimit-开仓" class="headerlink" title="StopLimit 开仓"></a>StopLimit 开仓</h3><p><font color="#3232CD">5. 从当前价格网格开仓</font>：</p><p>应用场景：略。因为我不知道功能有什么用。</p><p><font color="#3232CD">6. StopLimit 开仓</font>：没用过。<br>Scripts\_OrderGridOpen4\OpenBuyStopLimitOrder.mq5<br>Scripts\_OrderGridOpen4\OpenSellStopLimitOrder.mq5</p><p>应用场景：不配合均线很难做<br>多单功能：价格向上突破，低位开多。<br>空单功能：价格向下突破，高位开空。<br>止赢止损：最好不带止损，因为偏长线。或改成止损止赢10可能好点</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;我做顺势单比较少，有经验再补充。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="开仓" scheme="https://seefs.github.io/tags/%E5%BC%80%E4%BB%93/"/>
     
   </entry>
   

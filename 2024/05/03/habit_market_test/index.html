@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>下载我的脚本文件 | Mql5 Scripts</title>
+  <title>测试脚本 | Mql5 Scripts</title>
 
   
   <meta name="author" content="seefss">
@@ -21,7 +21,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <meta property="og:title" content="下载我的脚本文件"/>
+  <meta property="og:title" content="测试脚本"/>
 
   <meta property="og:site_name" content="Mql5 Scripts"/>
 
@@ -74,13 +74,13 @@
 
   
     
-    <h3 class="article-title"><span>下载我的脚本文件</span></h3>
+    <h3 class="article-title"><span>测试脚本</span></h3>
     
   
 
   <div class="article-top-meta">
     <span class="posted-on">
-      <a href="/2024/05/03/habit_market_install/" rel="bookmark">
+      <a href="/2024/05/03/habit_market_test/" rel="bookmark">
         <time class="entry-date published" datetime="2024-05-03T10:00:00.000Z">
           2024-05-03
         </time>
@@ -113,7 +113,7 @@
 
 <div id="toc" class="toc-article">
       <div class="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E8%84%9A%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="toc-text">下载脚本文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95%E4%B8%8E%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5"><span class="toc-text">更新记录与下载链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E8%B7%AF%E5%BE%84"><span class="toc-text">安装路径</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC"><span class="toc-text">测试脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#API%E6%B5%8B%E8%AF%95"><span class="toc-text">API测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%93%E4%BD%8D%E6%B5%8B%E8%AF%95"><span class="toc-text">仓位测试</span></a></li></ol></li></ol>
       </div>
 </div>
 <style>
@@ -125,22 +125,19 @@
 
 
 
-        <p>下载脚本文件。</p>
+        <p>单个模块测试。</p>
 <span id="more"></span>
 
-<h2 id="下载脚本文件"><a href="#下载脚本文件" class="headerlink" title="下载脚本文件"></a>下载脚本文件</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">下载脚本文件</font>：必需编译一次。<br>从mt5软件的代码库中下载脚本，是会自动编译的。但从其他位置复制脚本文件，需要手动编译。<br>下载后，请打开IDE软件，右键编译 “scripts”文件夹。不清楚可以搜索网络上的步骤，或问我，谢谢！</p>
-<p><font color="#3232CD">如何编译</font>：<br>a. “开始&#x2F;恢复编译”按钮，有两个，点左边一个。若点右边一个可能会直接下单。<br>b. 左侧栏，选中当前文件名，右键编译。<br>c. 左侧栏，选中文件夹，右键编译。<br>d. 切换交易软件，刷新再使用脚本。</p>
-<p><font color="#3232CD">注意事项</font>：<br>a. 只能正常用于XAUUSD品种，其他品种的价格、止赢止损不准确。</p>
-<h3 id="更新记录与下载链接"><a href="#更新记录与下载链接" class="headerlink" title="更新记录与下载链接"></a>更新记录与下载链接</h3><p><font color="#3232CD">第05版 2024&#x2F;06&#x2F;02</font>：<br>a. 调整余额在1000内的仓位大小。参考另一篇文章关于修改仓位的说明。<br>b. 合并重复代码，便于后期维护。注意导入 Include\Custom\OrderGrid.mqh。参考本篇文章末尾的安装路径截图。<br><a href="https://seefs.github.io/zip/mt5_scripts_20240602.zip"><font color="#99CC32">下载 mt5_scripts_20240602.zip➬</font></a></p>
-<p><font color="#3232CD">第04版 2024&#x2F;05&#x2F;25</font>：<br>a. 调整仓位大小。功能参考另一篇文章关于修改仓位的说明。<br>b. 兼容不同平台价格位数不同引起的bug。<br><a href="https://seefs.github.io/zip/mt5_scripts_20240525.zip"><font color="#99CC32">下载 mt5_scripts_20240525.zip➬</font></a></p>
-<p><font color="#3232CD">第03版 2024&#x2F;05&#x2F;20</font>：<br>a. 修改批量开单时，连续点击不能切换价格范围。</p>
-<p><a href="https://seefs.github.io/zip/mt5_scripts_20240520.zip"><font color="#99CC32">下载 mt5_scripts_20240520.zip➬</font></a></p>
-<p><font color="#3232CD">第02版 2024&#x2F;05&#x2F;18</font>：<br>a. 修改批量开单时，连续点击不能切换价格范围。(实际未改好)<br>b. 增加反单脚本。<br>c. 批量开单，双向stop单，增加不带止赢脚本。这种更贪婪。</p>
-<p><a href="https://seefs.github.io/zip/mt5_scripts_20240518.zip"><font color="#99CC32">下载 mt5_scripts_20240518.zip➬</font></a></p>
-<p><font color="#3232CD">第01版 2024&#x2F;05&#x2F;16</font>：</p>
-<p><a href="https://seefs.github.io/zip/mt5_scripts_20240516.zip"><font color="#99CC32">下载 mt5_scripts_20240516.zip➬</font></a></p>
-<h3 id="安装路径"><a href="#安装路径" class="headerlink" title="安装路径"></a>安装路径</h3><p><font color="#3232CD">安装路径</font>：</p>
-<p><img src="/img/habit/install_path.png"></p>
+<h2 id="测试脚本"><a href="#测试脚本" class="headerlink" title="测试脚本"></a>测试脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">代码用法测试</font>：<br>API测试：</p>
+<p><font color="#3232CD">单个模块测试</font>：<br>仓位测试：</p>
+<h3 id="API测试"><a href="#API测试" class="headerlink" title="API测试"></a>API测试</h3><p><font color="#3232CD">预览持仓和订单的接口参数</font>：<br>Scripts\_OrderTest\PreviewOrderParam.mq5</p>
+<p>功能说明：操作订单的示例。</p>
+<p><font color="#3232CD">预览开单的接口参数</font>：<br>Scripts\_OrderTest\PreviewOpenOrderParam.mq5</p>
+<p>功能说明：避免使用真实交易去测试，导致亏损。</p>
+<p><font color="#3232CD">修改幻数</font>：<br>Scripts\_OrderTest\UpdateMagicNumber.mq5</p>
+<p>功能说明：脚本1 设置失败，先用下一种设置办法。<br>注释1：先打开交易面版–列–显示幻数。</p>
+<h3 id="仓位测试"><a href="#仓位测试" class="headerlink" title="仓位测试"></a>仓位测试</h3><p><font color="#3232CD">优化最合适的仓位大小</font>：<br>Scripts\_OrderTest\OptimizeAccountLot.mq5</p>
+<p>功能说明：兼容最小步，均匀散开，小重大轻。</p>
 
       
     </div>
@@ -151,20 +148,13 @@
     <div class="article-meta pull-left">
 
     
-      
-
-    <span class="post-categories">
-      <i class="icon-categories"></i>
-        <a href="/categories/脚本/">脚本</a>
-    </span>
-    
 
     
     
 
     <span class="post-tags">
       <i class="icon-tags"></i>
-        <a href="/tags/下载/">下载</a>
+        <a href="/tags/测试/">测试</a>
     </span>
     
 
