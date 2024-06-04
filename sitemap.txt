@@ -39,8 +39,8 @@ https://seefs.github.io/tags/single/
 https://seefs.github.io/tags/Open/
 https://seefs.github.io/tags/Settings/
 https://seefs.github.io/tags/%E7%BB%9F%E8%AE%A1/
-https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/
 https://seefs.github.io/tags/%E4%BB%93%E4%BD%8D/
+https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/
 https://seefs.github.io/tags/%E8%AE%BA%E5%9D%9B/
 https://seefs.github.io/tags/%E5%9B%BE%E8%A1%A8/
 https://seefs.github.io/tags/%E4%B8%8B%E8%BD%BD/
