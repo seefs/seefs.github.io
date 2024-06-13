@@ -136,40 +136,7 @@
 <p><font color="#3232CD">脚本类型</font>：<br>操作：<br>设置：单边必止损，震荡必止赢。亏损必锁单，众亏必反单。<br>分析：打破规律，了解常用技术的弱点。尊重基础分析与数据统计。了解真实的被控制行情。<br>指标：自研形态码。<br>策略：<br>EA：</p>
 <h3 id="脚本目录"><a href="#脚本目录" class="headerlink" title="脚本目录"></a>脚本目录</h3><p><font color="#3232CD">脚本目录</font>：</p>
 <p>&#x2F;&#x2F; 脚本 (默认下载目录，整理过的，会移动新目录)<br>Serial:Mql5\Scripts\Downloads<br>&#x2F;&#x2F; 脚本–操作<br>Serial:Mql5\Scripts\_OrderOpen<br>Serial:Mql5\Scripts\_OrderClose<br>Serial:Mql5\Scripts\_OrderSetting<br>&#x2F;&#x2F; 脚本–分析回测<br>Serial:Mql5\Scripts\_Analyze<br>&#x2F;&#x2F; 脚本–画图辅助<br>Serial:Mql5\Scripts\_Draw<br>&#x2F;&#x2F; 脚本–其他<br>Serial:Mql5\Scripts\_Other<br>&#x2F;&#x2F; EA交易<br>&#x2F;&#x2F; 指标<br>Serial:Mql5\Scripts\_Other\</p>
-<h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p><font color="#3232CD">减仓</font>：按价减仓，或按量减仓。</p>
-<p>(加仓后减新仓)<br>逆势减仓：逆势用不上减仓，一般全平。<br>顺势减仓：平掉2美金以内的单子，包括亏损。(行情大时考虑自动平)(应该只用第3个就行)<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\ShortCloseAllPairs.mq5</p>
-<p>(反转后减旧仓)<br>逆势反转：平掉2美金以上的单子。如锁仓时发现或觉得要转势，先平赢利单子。<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\LongCloseAllPairs.mq5</p>
-<p>(赢利减仓，亏损减仓)<br>顺势反转：震荡遇阻先减部分仓位，再遇阻赢利锁仓。<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllBuy.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllSell.mq5<br>Serial:Mql5\Scripts\_OrderCloseEx\HalfCloseAllPairs.mq5</p>
-<p>(测试)(先不写没收益的脚本)<br>减仓1单：可能比点订单右侧的叉子快。</p>
-<p>(长短结合)(先不考虑)<br>小单平仓：平掉0.3手以下单子，如0.3为最大仓位。</p>
-<p>预平仓：参考后面预平仓设置。</p>
-<p><font color="#3232CD">网格开仓–设置</font>：</p>
-<p>平铺下单：加仓。将上面的仓位重复一遍，有时间再作仓位上限处理。(不要反复点，翻倍不能失误) ($10平铺有10%，不建议加仓)</p>
-<p>平铺下单：加仓。将之前的仓位重复一遍。<br>&#x2F;&#x2F;——加仓方法。<br>&#x2F;&#x2F;——–先 4Int2，再 repeat，再 4Out2。这种组合方式可能考虑当前价格风险小一点。<br>&#x2F;&#x2F;——–先 4Int2，再 repeat，再 4Int2。这种组合方式可能考虑中间价格风险小一点。<br>&#x2F;&#x2F;——犯错。不要反复点，失误会翻倍<br>&#x2F;&#x2F;——–有时间再作仓位上限处理。最好按比例加仓如1%。脚本更少。<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatBuyLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatSellLimitOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatPairsLimitOrder.mq5<br>平铺下单：加仓。<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatBuyStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatSellStopOrder.mq5<br>Serial:Mql5\Scripts\_OrderGridRepeat\RepeatPairsStopOrder.mq5<br>平铺下单：修改止赢止损。<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_20_20.mq5	   # 止损 -2、止赢 +2<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_20_40.mq5	   # 止损 -2、止赢 +4，长线这样做吧<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_10_30.mq5	   # 止损 -1、止赢 +3<br>&#x2F;&#x2F;Serial:Mql5\Scripts\_OrderGridClose\UpdateSetting_0_20.mq5	   # 没有止损</p>
-<p><font color="#3232CD">锁单换仓</font>：尽量做到自动解锁。应该做EA，我现在不会。<br>研究怎么锁单，让脚本处理</p>
-<p>Serial:Mql5\Scripts\_OrderLock\</p>
-<p>N字解锁：多空多时平多，空多空时平空。<br>Serial:Mql5\Scripts\_OrderLock\</p>
-<p><font color="#3232CD">赢利锁仓</font>：</p>
-<p>赢利锁仓：最高点反向锁仓。用最近的顶点。并计算支撑点主动解锁。解锁后又开锁仓单。更新旧单子止损在支撑点下。<br>Serial:Mql5\Scripts\_OrderLock\</p>
-<p>赢利换仓：多次触及解锁点，应该平仓旧单子。并下移开仓位置。<br>Serial:Mql5\Scripts\_OrderLock\</p>
-<p>赢利锁仓：整点快速盈利锁仓。<br>Serial:Mql5\Scripts\_OrderLock\</p>
-<p>隔夜赢利锁仓：预测会向上挖坑。<br>Serial:Mql5\Scripts\_OrderLock\</p>
-<p>无方向锁仓：在成本区上下成对锁仓。<br>Serial:Mql5\Scripts\_OrderLock\</p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p><font color="#3232CD">形态分析</font>：</p>
-<p>单边形态：早上进场。统计所有的单边形态。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p>区间形态：下午做区间。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p>5分钟指标：试下形态码有效果吗<br>&#x2F;&#x2F;——验证0 ~ 4, 作为M5起始时间，效果有区别吗？<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p>检查犯错程度：当前交易是否犯错，是否考虑平仓。<br>检查交易不致性：是否方向变来变去。</p>
-<p>杀急，急对应的形态是什么？<br>如何识别行情分类，用形态码？<br>从月到时，分析效果。</p>
-<p><font color="#3232CD">波动分析</font>：<br>A：<br>B：<br>C：晚上CA，上保险，C要准确止盈。<br>CA：CA不做反转，所以经常假反转。</p>
-<p><font color="#3232CD">速度分析</font>：</p>
-<p>快跟随：震荡后突破。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p>慢跟随：等待浪结束，再次突涨。如波浪2涨1跌，才再涨创新高。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p><font color="#3232CD">趋势分析</font>：找时间点。<br>07:30<br>09:00<br>10:00<br>15:15<br>17:25<br>20:30, 这个是重点</p>
-<p>中午反转：检测技术反转，m5，杀多再多，不杀空不空。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p><font color="#3232CD">随机试验</font>：</p>
-<p>反单试验：9点半，5损10赢。<br>跟单试验：9点半，5损10赢。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<h3 id="画图辅助"><a href="#画图辅助" class="headerlink" title="画图辅助"></a>画图辅助</h3><p><font color="#3232CD">复盘</font>：</p>
+<h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><h3 id="画图辅助"><a href="#画图辅助" class="headerlink" title="画图辅助"></a>画图辅助</h3><p><font color="#3232CD">复盘</font>：</p>
 <p>标时间：在图上标时间，便于复盘<br>Serial:Mql5\Scripts\_Draw\</p>
 <p>MAX_LOT：最大手数，CreateTLabel<br>Serial:Mql5\Scripts\_Analyze\MAX_LOT.mq5</p>
 <h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD">随机试验</font>：</p>
