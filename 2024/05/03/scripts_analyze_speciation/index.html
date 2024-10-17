@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>形态分析 | Mql5 Scripts</title>
+  <title>波动分析 | Mql5 Scripts</title>
 
   
   <meta name="author" content="seefss">
@@ -21,7 +21,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <meta property="og:title" content="形态分析"/>
+  <meta property="og:title" content="波动分析"/>
 
   <meta property="og:site_name" content="Mql5 Scripts"/>
 
@@ -74,7 +74,7 @@
 
   
     
-    <h3 class="article-title"><span>形态分析</span></h3>
+    <h3 class="article-title"><span>波动分析</span></h3>
     
   
 
@@ -113,7 +113,7 @@
 
 <div id="toc" class="toc-article">
       <div class="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A2%E6%80%81%E5%88%86%E6%9E%90"><span class="toc-text">形态分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%A2%E6%80%81%E5%88%86%E6%9E%90-1"><span class="toc-text">形态分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A2%E5%8A%A8%E5%88%86%E6%9E%90"><span class="toc-text">波动分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9F%E5%BA%A6%E5%88%86%E6%9E%90"><span class="toc-text">速度分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%8B%E5%8A%BF%E5%88%86%E6%9E%90"><span class="toc-text">趋势分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E8%AF%95%E9%AA%8C"><span class="toc-text">随机试验</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A2%E5%8A%A8%E5%88%86%E6%9E%90"><span class="toc-text">波动分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A2%E5%8A%A8%E5%88%86%E6%9E%90-1"><span class="toc-text">波动分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9F%E5%BA%A6%E5%88%86%E6%9E%90"><span class="toc-text">速度分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B6%8B%E5%8A%BF%E5%88%86%E6%9E%90"><span class="toc-text">趋势分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E8%AF%95%E9%AA%8C"><span class="toc-text">随机试验</span></a></li></ol></li></ol>
       </div>
 </div>
 <style>
@@ -125,21 +125,14 @@
 
 
 
-        <p>形态分析。</p>
+        <p>波动分析。</p>
 <span id="more"></span>
 
-<h2 id="形态分析"><a href="#形态分析" class="headerlink" title="形态分析"></a>形态分析</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">形态分析</font>：</p>
-<p><font color="#3232CD">波动分析</font>：</p>
+<h2 id="波动分析"><a href="#波动分析" class="headerlink" title="波动分析"></a>波动分析</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">波动分析</font>：</p>
 <p><font color="#3232CD">速度分析</font>：</p>
 <p><font color="#3232CD">趋势分析</font>：</p>
 <p><font color="#3232CD">随机试验</font>：</p>
-<h3 id="形态分析-1"><a href="#形态分析-1" class="headerlink" title="形态分析"></a>形态分析</h3><p><font color="#3232CD">形态分析</font>：</p>
-<p>单边形态：早上进场。统计所有的单边形态。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p>区间形态：下午做区间。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p>5分钟指标：试下形态码有效果吗<br>&#x2F;&#x2F;——验证0 ~ 4, 作为M5起始时间，效果有区别吗？<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p>检查犯错程度：当前交易是否犯错，是否考虑平仓。<br>检查交易不致性：是否方向变来变去。</p>
-<p>杀急，急对应的形态是什么？<br>如何识别行情分类，用形态码？<br>从月到时，分析效果。</p>
-<h3 id="波动分析"><a href="#波动分析" class="headerlink" title="波动分析"></a>波动分析</h3><p><font color="#3232CD">波动分析</font>：<br>A：<br>B：<br>C：晚上CA，上保险，C要准确止盈。<br>CA：CA不做反转，所以经常假反转。</p>
+<h3 id="波动分析-1"><a href="#波动分析-1" class="headerlink" title="波动分析"></a>波动分析</h3><p><font color="#3232CD">波动分析</font>：<br>A：<br>B：<br>C：晚上CA，上保险，C要准确止盈。<br>CA：CA不做反转，所以经常假反转。</p>
 <h3 id="速度分析"><a href="#速度分析" class="headerlink" title="速度分析"></a>速度分析</h3><p><font color="#3232CD">速度分析</font>：</p>
 <p>快跟随：震荡后突破。<br>Serial:Mql5\Scripts\_Analyze\</p>
 <p>慢跟随：等待浪结束，再次突涨。如波浪2涨1跌，才再涨创新高。<br>Serial:Mql5\Scripts\_Analyze\</p>
@@ -157,13 +150,20 @@
     <div class="article-meta pull-left">
 
     
+      
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/开发/">开发</a>
+    </span>
+    
 
     
     
 
     <span class="post-tags">
       <i class="icon-tags"></i>
-        <a href="/tags/形态/">形态</a>
+        <a href="/tags/波动/">波动</a>
     </span>
     
 

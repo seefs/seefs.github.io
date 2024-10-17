@@ -125,23 +125,15 @@
 
 
 
-        <p>下载脚本文件。</p>
+        <p>请下载zip压缩文件。</p>
 <span id="more"></span>
 
 <h2 id="下载脚本文件"><a href="#下载脚本文件" class="headerlink" title="下载脚本文件"></a>下载脚本文件</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">下载脚本文件</font>：必需编译一次。<br>从mt5软件的代码库中下载脚本，是会自动编译的。但从其他位置复制脚本文件，需要手动编译。<br>下载后，请打开IDE软件，右键编译 “scripts”文件夹。不清楚可以搜索网络上的步骤，或问我，谢谢！</p>
 <p><font color="#3232CD">如何编译</font>：<br>a. “开始&#x2F;恢复编译”按钮，有两个，点左边一个。若点右边一个可能会直接下单。<br>b. 左侧栏，选中当前文件名，右键编译。<br>c. 左侧栏，选中文件夹，右键编译。<br>d. 切换交易软件，刷新再使用脚本。</p>
-<p><font color="#3232CD">注意事项</font>：<br>a. 只能正常用于XAUUSD品种，其他品种的价格、止赢止损不准确。</p>
-<h3 id="更新记录与下载链接"><a href="#更新记录与下载链接" class="headerlink" title="更新记录与下载链接"></a>更新记录与下载链接</h3><p><font color="#3232CD">第08版 2024&#x2F;06&#x2F;13</font>：<br>a. 仅仅修改测试脚本名称。<br><a href="https://seefs.github.io/zip/mt5_scripts_20240613.zip"><font color="#99CC32">下载 mt5_scripts_20240613.zip➬</font></a></p>
-<p><font color="#3232CD">第07版 2024&#x2F;06&#x2F;04</font>：<br>a. 去掉杠杆修改。采用自带的api获取杠杆比例。<br><a href="https://seefs.github.io/zip/mt5_scripts_20240604.zip"><font color="#99CC32">下载 mt5_scripts_20240604.zip➬</font></a></p>
-<p><font color="#3232CD">第06版 2024&#x2F;06&#x2F;03</font>：<br>a. 增加杠杆与仓位百分比参数。参考_OrderTest的介绍。<br>b. 杠杆必须设置，否则仓位区别太大。用 OptimizeAccountLot 预览当前资金的仓位大小，直到调合适为止。<br><a href="https://seefs.github.io/zip/mt5_scripts_20240603.zip"><font color="#99CC32">下载 mt5_scripts_20240603.zip➬</font></a></p>
-<p><font color="#3232CD">第05版 2024&#x2F;06&#x2F;02</font>：<br>a. 调整余额在1000内的仓位大小。参考另一篇文章关于修改仓位的说明。<br>b. 合并重复代码，便于后期维护。注意导入 Include\Custom\OrderGrid.mqh。参考本篇文章末尾的安装路径截图。<br><a href="https://seefs.github.io/zip/mt5_scripts_20240602.zip"><font color="#99CC32">下载 mt5_scripts_20240602.zip➬</font></a></p>
-<p><font color="#3232CD">第04版 2024&#x2F;05&#x2F;25</font>：<br>a. 调整仓位大小。功能参考另一篇文章关于修改仓位的说明。<br>b. 兼容不同平台价格位数不同引起的bug。<br><a href="https://seefs.github.io/zip/mt5_scripts_20240525.zip"><font color="#99CC32">下载 mt5_scripts_20240525.zip➬</font></a></p>
-<p><font color="#3232CD">第03版 2024&#x2F;05&#x2F;20</font>：<br>a. 修改批量开单时，连续点击不能切换价格范围。</p>
-<p><a href="https://seefs.github.io/zip/mt5_scripts_20240520.zip"><font color="#99CC32">下载 mt5_scripts_20240520.zip➬</font></a></p>
-<p><font color="#3232CD">第02版 2024&#x2F;05&#x2F;18</font>：<br>a. 修改批量开单时，连续点击不能切换价格范围。(实际未改好)<br>b. 增加反单脚本。<br>c. 批量开单，双向stop单，增加不带止赢脚本。这种更贪婪。</p>
-<p><a href="https://seefs.github.io/zip/mt5_scripts_20240518.zip"><font color="#99CC32">下载 mt5_scripts_20240518.zip➬</font></a></p>
-<p><font color="#3232CD">第01版 2024&#x2F;05&#x2F;16</font>：</p>
-<p><a href="https://seefs.github.io/zip/mt5_scripts_20240516.zip"><font color="#99CC32">下载 mt5_scripts_20240516.zip➬</font></a></p>
+<p><font color="#3232CD">注意事项</font>：<br>a. 只能正常用于XAUUSD品种，其他品种未调整。<br>b. 由于Mql5论坛的验证码收不到，尝试了一下，能上传但不能共享下载。</p>
+<h3 id="更新记录与下载链接"><a href="#更新记录与下载链接" class="headerlink" title="更新记录与下载链接"></a>更新记录与下载链接</h3><p><font color="#3232CD">第09版 2024&#x2F;10&#x2F;17</font>：<br>a. 整体修改简化功能，按操作需求确定是否带输入参数。<br><a href="https://seefs.github.io/zip/mt5_scripts_20241017.zip"><font color="#99CC32">下载 mt5_scripts_20241017.zip➬</font></a></p>
+<p><font color="#3232CD">更新记录</font>：<br>第08版 mt5_scripts_20240613. 仅仅修改测试脚本名称<br>第07版 mt5_scripts_20240604. 去掉杠杆修改。采用自带的api获取杠杆比例。<br>第06版 mt5_scripts_20240603. 修改不同杠杆的仓位bug</p>
+<p>第05版 mt5_scripts_20240602. 调整仓位大小，合并重复代码<br>第04版 mt5_scripts_20240525. 调整仓位大小<br>第03版 mt5_scripts_20240520. 修改批量开单bug<br>第02版 mt5_scripts_20240518. 修改批量开单bug<br>第01版 mt5_scripts_20240516</p>
 <h3 id="安装路径"><a href="#安装路径" class="headerlink" title="安装路径"></a>安装路径</h3><p><font color="#3232CD">安装路径</font>：</p>
 <p><img src="/img/habit/install_path.png"></p>
 
@@ -158,7 +150,7 @@
 
     <span class="post-categories">
       <i class="icon-categories"></i>
-        <a href="/categories/脚本/">脚本</a>
+        <a href="/categories/下载/">下载</a>
     </span>
     
 

@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>刷单脚本 | Mql5 Scripts</title>
+
+  
+  <meta name="author" content="seefss">
+  
+
+  
+  <meta name="description" content="Help Documentation">
+  
+
+  
+  <meta name="keywords" content="Mql5,mt5,Scripts">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="刷单脚本"/>
+
+  <meta property="og:site_name" content="Mql5 Scripts"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Mql5 Scripts" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+  <link href="https://fonts.lug.ustc.edu.cn/css?family=Lato|Rubik" rel="stylesheet">
+  <script src="/js/pangu-407.min.js"></script>
+<meta name="generator" content="Hexo 7.2.0"></head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    pangu.autoSpacingPage();
+  });
+</script>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Mql5 Scripts</a>
+    </h1>
+    <p class="site-description">Losses must be controlled</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/categories">分类</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/atom.xml">订阅</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>刷单脚本</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2024/05/03/mt5_scripts_short/" rel="bookmark">
+        <time class="entry-date published" datetime="2024-05-03T10:00:00.000Z">
+          2024-05-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+
+<script type="text/javascript">
+    function convertRemToPixels(rem) {    
+        return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    }
+    window.onscroll = function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > convertRemToPixels(40)) {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'visible';
+        } else {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'hidden';
+        }
+    }
+</script>
+
+
+<div id="toc" class="toc-article">
+      <div class="toc-content">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B7%E5%8D%95%E8%84%9A%E6%9C%AC"><span class="toc-text">刷单脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B3%E9%93%BA%E6%8C%82%E5%8D%95"><span class="toc-text">平铺挂单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%85%B3%E9%97%AD%E6%88%96%E5%8F%8D%E5%8D%95"><span class="toc-text">准备关闭或反单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bug"><span class="toc-text">Bug</span></a></li></ol></li></ol>
+      </div>
+</div>
+<style>
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+
+
+        <p>挂单或关闭，反单。</p>
+<span id="more"></span>
+
+<h2 id="刷单脚本"><a href="#刷单脚本" class="headerlink" title="刷单脚本"></a>刷单脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">小间隔平铺挂单</font>：</p>
+<p><font color="#3232CD">准备关闭或反单</font>：</p>
+<h3 id="平铺挂单"><a href="#平铺挂单" class="headerlink" title="平铺挂单"></a>平铺挂单</h3><p><font color="#3232CD">小间隔平铺挂单</font>：使用limit单，降低成本。<br>Scripts\_OrderShort\SettingShortParam.mq5<br>Scripts\_OrderShort\OpenBuyLimitShort.mq5<br>Scripts\_OrderShort\OpenSellLimitShort.mq5</p>
+<p>1.先用setting脚本设置参数<br>2.批量开多单<br>3.批量开空单<br>4.不设止赢止损，需等待赢利时用 WaitingClose 再设置。</p>
+<h3 id="准备关闭或反单"><a href="#准备关闭或反单" class="headerlink" title="准备关闭或反单"></a>准备关闭或反单</h3><p><font color="#3232CD">准备关闭或反单</font>：仅关闭当前窗口相同品种的订单。<br>Scripts\_OrderShort\WaitingClose.mq5<br>Scripts\_OrderShort\WaitingInvert.mq5</p>
+<p>参数说明：<br>1.自动区分波动大小。短线不接受手动调整参数。<br>若是大波动 止损0.6 止赢1.2 (使用0.5时经常失效)<br>若是小波动 止损0.6 止赢0.6<br>2.反单的脚本，在止损价再相隔0.4开单<br>3.做了不同品种价格差异兼容，可能效果不大好。建议只用于XAUUSD。</p>
+<p>应用场景：<br>1.在准备获利出场时，动态争取最大收益。<br>2.逆势，或追涨追跌时也可使用。宁可止损，不要亏。<br>3.有些行情，波动异常，频繁回撤，不没止赢抓不到。<br>4.早盘可能波动小，希望自动区分波动大小有用。</p>
+<p>操作说明：<br>1.觉得利润还能扩大时，再点击一次脚本，更新设置。<br>2.缓慢回调时，也可多点击几次更新设置，不让单子被止损。急速加速必须走。<br>3.目标是让一波行情走到反转时出场。<br>4.及时关注和调整退出条件。</p>
+<p>备注：<br>1.比主动反单可能稍好一点，因为被动操作是同步短期信号的。<br>主动反单主观，更依赖盘感。若风险可控，没有盘感可以刷单。<br>主动开单可用于中途的手动加仓。<br>2.为了适应快节奏操作，认错也快。<br>3.如果做长线老是做反，可能做短线会改变逆势习惯。</p>
+<h3 id="Bug"><a href="#Bug" class="headerlink" title="Bug"></a>Bug</h3><p><font color="#3232CD">Bug记录</font>：<br>Invert的脚本，如果有双方向订单，应该无法处理。<br>后面考虑选择赢利的单子的方向，来处理。</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/mt5/">mt5</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+	<section id="comment" class="comment">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'kidhaibara';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Deployed by <a href="https://github.com/kaedea/notion-down" target="_blank">notion-down</a> and
+    Theme by <a href="https://github.com/kaedea/hexo-theme-hacker" target="_blank">hexo-theme-hacker</a>
+    </br>
+    
+    &copy; 2024 seefss
+    
+  </p>
+</footer>
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'G-J38N5N288S', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </div>
+</div>
+</body>
+</html>

@@ -113,7 +113,7 @@
 
 <div id="toc" class="toc-article">
       <div class="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC"><span class="toc-text">测试脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#API%E6%B5%8B%E8%AF%95"><span class="toc-text">API测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E8%AF%95%E8%AE%A2%E5%8D%95%E5%8F%82%E6%95%B0"><span class="toc-text">调试订单参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E4%BB%93%E4%BD%8D%E6%AF%94%E4%BE%8B"><span class="toc-text">配置仓位比例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E8%AF%95%E4%BB%93%E4%BD%8D%E5%A4%A7%E5%B0%8F"><span class="toc-text">调试仓位大小</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A9%E5%B1%95%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91"><span class="toc-text">扩展功能开发</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E8%84%9A%E6%9C%AC"><span class="toc-text">测试脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#API%E6%B5%8B%E8%AF%95"><span class="toc-text">API测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E8%AF%95%E8%AE%A2%E5%8D%95%E5%8F%82%E6%95%B0"><span class="toc-text">调试订单参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E8%AF%95Demo"><span class="toc-text">调试Demo</span></a></li></ol></li></ol>
       </div>
 </div>
 <style>
@@ -128,27 +128,17 @@
         <p>单个模块测试。</p>
 <span id="more"></span>
 
-<h2 id="测试脚本"><a href="#测试脚本" class="headerlink" title="测试脚本"></a>测试脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">应用测试</font>：<br>API测试：</p>
-<p><font color="#3232CD">调试固定参数</font>：先调试，后下单。<br>调试订单参数：<br>调试仓位大小：</p>
-<p><font color="#3232CD">设置可变参数</font>：少亏，多赚。<br>配置仓位比例：<br>扩展功能开发：功能不成熟，请不要使用。</p>
+<h2 id="测试脚本"><a href="#测试脚本" class="headerlink" title="测试脚本"></a>测试脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">测试脚本</font>：<br>API测试：<br>调试订单参数：<br>调试仓位大小：<br>调试订单参数：<br>调试全局变量：</p>
 <h3 id="API测试"><a href="#API测试" class="headerlink" title="API测试"></a>API测试</h3><p><font color="#3232CD">预览账号信息</font>：<br>Scripts\_OrderTest\PreviewAccountInfo.mq5</p>
 <p>功能说明：预览杠杆余额和杠杆等信息。</p>
-<p><font color="#3232CD">预览持仓和订单的接口参数</font>：<br>Scripts\_OrderTest\PreviewExistOrderParam.mq5</p>
+<p><font color="#3232CD">预览持仓和订单的接口参数</font>：<br>Scripts\_OrderTest\PreviewOrderInfo.mq5</p>
 <p>功能说明：操作订单的示例。</p>
-<p><font color="#3232CD">修改幻数</font>：无法修改。<br>Scripts\_OrderTest\UpdateMagicNumber.mq5</p>
-<p>功能说明：脚本1 设置失败，先用下一种设置办法。<br>注释1：为测试方便，先打开交易面版–列–显示幻数。</p>
-<h3 id="调试订单参数"><a href="#调试订单参数" class="headerlink" title="调试订单参数"></a>调试订单参数</h3><p><font color="#3232CD">预览开单的价格参数</font>：<br>Scripts\_OrderTest\PreviewOpenOrderParam.mq5</p>
+<h3 id="调试订单参数"><a href="#调试订单参数" class="headerlink" title="调试订单参数"></a>调试订单参数</h3><p><font color="#3232CD">预览开单的价格参数</font>：<br>Scripts\_OrderTest\PreviewOpenParam.mq5</p>
 <p>功能说明：仅预览不开单。避免使用真实交易去测试，导致亏损。</p>
-<h3 id="配置仓位比例"><a href="#配置仓位比例" class="headerlink" title="配置仓位比例"></a>配置仓位比例</h3><p><font color="#3232CD">调试全局变量</font>：仅仅测试。<br>Scripts\_OrderTest\TestGlobalVariable.mq5</p>
+<p><font color="#3232CD">预览开单的手数与余额对照表</font>：<br>Scripts\_OrderTest\PreviewOpenLot.mq5</p>
+<p>功能说明：兼容最小步数。<br>注释1：看运行后打印信息。</p>
+<h3 id="调试Demo"><a href="#调试Demo" class="headerlink" title="调试Demo"></a>调试Demo</h3><p><font color="#3232CD">调试全局变量</font>：测试变量变量读写，从而保存全局配置。<br>Scripts\_OrderTest\TestGlobalVariable.mq5</p>
 <p>功能说明：请运行看打印信息。</p>
-<p><font color="#3232CD">配置单次仓位比例</font>：根据次数与胜算调整。<br>Scripts\_OrderTest\Config_GridLotRatio.mq5</p>
-<p>功能说明：打印仓位比例信息。并循环设置仓位比例为默认值6%的50%, 75%, 100%。会影响批量开单。<br>功能1：次数越多，比例应该更低。例如想将平铺范围增加到$6左右，即3次批量开单时，采用较低的比例。<br>功能2：胜算越低，比例应该更低。例如没把握时，控制到1次批量开单，或者采用较低的比例。</p>
-<h3 id="调试仓位大小"><a href="#调试仓位大小" class="headerlink" title="调试仓位大小"></a>调试仓位大小</h3><p><font color="#3232CD">显示不同余额的仓位比例与大小</font>：调试整体仓位大小，并查看当前余额仓位。<br>Scripts\_OrderTest\CalcAccountLot.mq5</p>
-<p>功能说明：兼容最小步，步数合适，仓位小重大轻。<br>注释1：看运行后打印信息。<br>注释2：未验证仓位上限。</p>
-<h3 id="扩展功能开发"><a href="#扩展功能开发" class="headerlink" title="扩展功能开发"></a>扩展功能开发</h3><p><font color="#3232CD">加减仓位</font>：开发中，请不要使用。<br>Scripts\_OrderClose\Config_CloseLotRatio.mq5</p>
-<p>功能说明：适合赢利减仓，亏损减仓。如亏损时慢慢补救。<br>功能1：必须先减后加。减仓时记录减了多少仓。加仓时清除记录。如记录单次仓位+次数。<br>功能2：减仓比例可以控制。脚本在test中。下次登录软件，不会保存仓位+次数记录。减仓比例可以保存。<br>功能3：如果有未成交订单，那么只会关闭订单，并将开仓位降低并重新开单。<br>功能4：反转时回调遇阻，假震荡，第1次遇阻先减仓，第2次遇阻考虑出局。<br>注释1：后期增加一个autoLot_OpenClose的脚本。</p>
-<p><font color="#3232CD">锁定平仓范围</font>：开发中，请不要使用。<br>Scripts\_OrderClose\Config_LockPriceRange.mq5</p>
-<p>功能说明：适合长短结合。<br>功能1：只有范围外可以平仓。<br>注释2：使用 RemoveAllOrder 会检查范围。使用 CloseAllPairs 不会。急平直接用后者。</p>
 
       
     </div>

@@ -125,29 +125,16 @@
 
 
 
-        <p>脚本学习。</p>
+        <p>记录脚本学习的过程。</p>
 <span id="more"></span>
 
-<h2 id="脚本学习"><a href="#脚本学习" class="headerlink" title="脚本学习"></a>脚本学习</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本分类</font>：<br>EA交易：<br>指标：<br>脚本：</p>
-<p><font color="#3232CD">功能分类</font>：<br>操作：<br>画图辅助：<br>分析：回测<br>EA：</p>
-<h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p><font color="#3232CD">OpenSellPosition_X</font>：<br>时间：2014.01.10<br>OpenSellPosition_X.mq5：学一下输入参数</p>
-<p><font color="#3232CD">setselllimitorder</font>：set limit<br>时间：2014.01.20<br>setselllimitorder.mq5：</p>
-<p><font color="#3232CD">InvertPosition</font>：以当前价位开反向单<br>时间：2014.01.20<br>invertposition.mq5：</p>
-<p><font color="#3232CD">一触取消其它</font>：当一个挂单被触发, 脚本删除所有(!)当前符号剩余订单并退出<br>时间：2014.02.10<br>oncecancelotherscript.mq5：</p>
-<p><font color="#3232CD">围绕当前价位平铺订单</font>：一个脚本来创建平铺的买、卖挂单<br>时间：2014.06.11<br>announcementstrategy.mq5：有bug。会把已有单子平仓，可能代码过时。</p>
-<p><font color="#3232CD">空头挂单</font>：当您将此脚本拖拽进图表, 它将计算价格当前价格并据此价格判断是否放置 Sell Stop 或 Sell Limit 挂单。<br>时间：2015.02.06<br>sellorder.mq5：</p>
-<p><font color="#3232CD">Modify SL TP</font>：修改止赢止损。<br>时间：2017.05.03<br>Modify_SL_TP.mq5：</p>
-<p><font color="#3232CD">OpenSellStopOrder</font>：用于设置止损卖出(SellStop)挂单的脚本程序。<br>时间：2017.06.05<br>OpenSellStopOrder.mq5：<br>一套操作。</p>
-<p><font color="#3232CD">CloseOrdersBySymbolByType</font>：本脚本程序在当前交易品种中根据设置中指定的类型删除所有订单<br>时间：2017.06.05<br>CloseOrdersBySymbolByType.mq5：</p>
-<p><font color="#3232CD">MAX_LOT</font>：本脚本程序计算使用存款中的全部可用保证金来建立仓位的最大手数。<br>时间：2017.06.05<br>MAX_LOT.mq5：<br>修改功能，平铺订单。</p>
+<h2 id="脚本学习"><a href="#脚本学习" class="headerlink" title="脚本学习"></a>脚本学习</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">历史</font>：<br>第1步：记录功能相关的现有脚本。如交易、画图、分析、回测、EA。<br>第2步：删除与稳定功能重复的记录。</p>
+<p><font color="#3232CD">想法</font>：<br>自动平仓：自动计算，如果止赢+止损不符合比例，直接平台。</p>
+<h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><p><font color="#3232CD">空头挂单</font>：当您将此脚本拖拽进图表, 它将计算价格当前价格并据此价格判断是否放置 Sell Stop 或 Sell Limit 挂单。<br>时间：2015.02.06<br>sellorder.mq5：</p>
 <p><font color="#3232CD">AutoSLTP</font>：为所有开启的订单设置止损和获利的辅助工具。交易品种设置，仓位类型，止损和获利是在外部文件中指定的.<br>时间：2017.11.16<br>AutoSLTP.mq5：</p>
-<p><font color="#3232CD">一键平仓</font>：速度不够快。<br>时间：2019.05.25。<br>CloseAllBuy.mq5：平当前图表品种的多单。<br>CloseAllSell.mq5：平当前图表品种的空单。<br>CloseAllPairs.mq5：平所有品种的多单和空单。</p>
-<p><font color="#3232CD">六类挂单一键取消脚本</font>：<br>时间：2021.06.23<br>six pend cancel.mq5：</p>
-<p><font color="#3232CD">MT5一键开仓</font>：<br>时间：2021.06.30<br>OpenBuy.mq5：<br>OpenSell.mq5：</p>
 <h3 id="画图辅助"><a href="#画图辅助" class="headerlink" title="画图辅助"></a>画图辅助</h3><p><font color="#3232CD">Widescreenshooter</font>：本脚本自动计算图片文件的宽度并调整图表的最小 最大值以适应截图的边界<br>时间：2014.02.03<br>wideshooter.mq5：</p>
 <p><font color="#3232CD">蜡烛统计 2</font>：此为 蜡烛统计 脚本的修改版。计算一系列牛市和熊市柱线的数量。作为图表显示。保存结果图表的截屏。使用了 CGraphic 类。<br>时间：2018.01.29<br>Statistics of candles 2.mq5：</p>
 <h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p><font color="#3232CD">输出历史数据</font>：此脚本目的是输出历史数据为指定格式, 转换用于外部程序分析<br>时间：2014.01.23<br>history_in_mathcad.mq5：</p>
-<p><font color="#3232CD">ytg_Percent_Lot</font>：此脚本使用指定的资金风险百分比计算下单交易量<br>时间：2014.01.24<br>ytg_percent_lot.mq5：</p>
 <p><font color="#3232CD">YURAZ_CreateCSV_HistoryFile_From_MT5_For_MT4</font>：我发现一些交易商并未提供完整的历史数据<br>时间：2014.01.24<br>yuraz_create_history_csv_from_mt5_for_mt4.mq5：</p>
 <p><font color="#3232CD">保存和显示测试图表对象</font>：回测。本脚本的作用就是先保存测试图表上的对象，然后再新的图表上显示出来。<br>时间：2018.02.15<br>SaveAndShowTestingChartObjects.mq5：</p>
 <h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD">简单 EA</font>：最简单的买卖机器人!<br>时间：2014.06.16<br>simple.mq5：</p>
@@ -165,6 +152,13 @@
   <div class="article-footer">
     <div class="article-meta pull-left">
 
+    
+      
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/信息/">信息</a>
+    </span>
     
 
     

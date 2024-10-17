@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>常用统计 | Mql5 Scripts</title>
+
+  
+  <meta name="author" content="seefss">
+  
+
+  
+  <meta name="description" content="Help Documentation">
+  
+
+  
+  <meta name="keywords" content="Mql5,mt5,Scripts">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="常用统计"/>
+
+  <meta property="og:site_name" content="Mql5 Scripts"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Mql5 Scripts" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+  <link href="https://fonts.lug.ustc.edu.cn/css?family=Lato|Rubik" rel="stylesheet">
+  <script src="/js/pangu-407.min.js"></script>
+<meta name="generator" content="Hexo 7.2.0"></head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    pangu.autoSpacingPage();
+  });
+</script>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Mql5 Scripts</a>
+    </h1>
+    <p class="site-description">Losses must be controlled</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/categories">分类</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/atom.xml">订阅</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>常用统计</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2024/05/03/scripts_analyze_common/" rel="bookmark">
+        <time class="entry-date published" datetime="2024-05-03T10:00:00.000Z">
+          2024-05-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+
+<script type="text/javascript">
+    function convertRemToPixels(rem) {    
+        return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    }
+    window.onscroll = function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > convertRemToPixels(40)) {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'visible';
+        } else {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'hidden';
+        }
+    }
+</script>
+
+
+<div id="toc" class="toc-article">
+      <div class="toc-content">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%BB%9F%E8%AE%A1"><span class="toc-text">常用统计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%A0%81%E5%BA%93%EF%BC%8C%E5%B9%B6%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C"><span class="toc-text">下载代码库，并验证效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%BB%9F%E8%AE%A1-1"><span class="toc-text">常用统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%B7%E6%A0%BC%E5%85%B3%E7%B3%BB"><span class="toc-text">价格关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%85%B3%E7%B3%BB"><span class="toc-text">时间关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B6%88%E6%81%AF%E5%BD%B1%E5%93%8D"><span class="toc-text">消息影响</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%81%E7%A7%8D"><span class="toc-text">品种</span></a></li></ol></li></ol>
+      </div>
+</div>
+<style>
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+
+
+        <p>常用统计。</p>
+<span id="more"></span>
+
+<h2 id="常用统计"><a href="#常用统计" class="headerlink" title="常用统计"></a>常用统计</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">数据</font>：采用MT5数据。MT5数据比MT4更全。<br>MN ~ H1：数据范围是2008.12.26至今。<br>M30： 数据范围是2015.10.16至今。<br>M15： 数据范围是2020.03.03至今。<br>M5： 数据范围是2022.12.27至今。<br>M1： 数据范围是2024.02.14至今。</p>
+<p><font color="#3232CD">绘图</font>：<br>如果后期图片过多，会分成多个文章。</p>
+<h3 id="下载代码库，并验证效果"><a href="#下载代码库，并验证效果" class="headerlink" title="下载代码库，并验证效果"></a>下载代码库，并验证效果</h3><p><font color="#3232CD">下载路径</font>：<br>Scripts\Downloads\</p>
+<p><font color="#3232CD">1. 输出历史数据</font>：<br>Scripts\_Analyze\history_in_mathcad.mq5<br>时间：2014.01.23</p>
+<h3 id="常用统计-1"><a href="#常用统计-1" class="headerlink" title="常用统计"></a>常用统计</h3><p><font color="#3232CD">2. 年和月数据</font>：<br>Scripts\_Analyze\Data_for_month.mq5</p>
+<p><font color="#3232CD"></font>：此脚本目的是输出历史数据为指定格式, 转换用于外部程序分析<br>时间：2014.01.23<br>history_in_mathcad.mq5：</p>
+<p>Scripts\_OrderClose\CloseAllBuy.mq5</p>
+<p><font color="#3232CD">1. 主动反单</font>：应该赢利中，才考虑反单。亏损中多认怂吧。<br>应用场景：</p>
+<p>常用统计：如每年涨跌幅+比例。不确认数据有没有。只有2021-02以后数据。<br>Serial:Mql5\Scripts\_Analyze\</p>
+<p><font color="#3232CD">常用统计</font>：</p>
+<h3 id="价格关系"><a href="#价格关系" class="headerlink" title="价格关系"></a>价格关系</h3><p><font color="#3232CD">价格关系</font>：</p>
+<p>(价格关系)<br>周末持仓：估计风险。从几点开始持仓？<br>历史成本：在成本区附近有压力。<br>Serial:Mql5\Scripts\_Analyze\</p>
+<h3 id="时间关系"><a href="#时间关系" class="headerlink" title="时间关系"></a>时间关系</h3><p><font color="#3232CD">时间关系</font>：</p>
+<p>每天波动：统计周1~周5，一般哪天波动大<br>Serial:Mql5\Scripts\_Analyze\</p>
+<p>每天波动：统计周1~周5，哪天是单边<br>Serial:Mql5\Scripts\_Analyze\</p>
+<p>转势时间：二分法查看美盘哪个时间转势最准<br>Serial:Mql5\Scripts\_Analyze\</p>
+<p>吃饭时间，统计1点，5点，6点，与全天方向的关系，希望不反就入场，即使强度弱。<br>Serial:Mql5\Scripts\_Analyze\</p>
+<h3 id="消息影响"><a href="#消息影响" class="headerlink" title="消息影响"></a>消息影响</h3><p><font color="#3232CD">消息影响</font>：<br>消息新闻，是否回撤，是否连续回撤。</p>
+<p>非农：统计非农盘前10Min 盘后10Min关联，如黄金，欧美。如最高，最低。<br>Serial:Mql5\Scripts\_Analyze\</p>
+<h3 id="品种"><a href="#品种" class="headerlink" title="品种"></a>品种</h3><p><font color="#3232CD">品种选择</font>：</p>
+<p>品种选择：统计哪天应该做哪种。<br>Serial:Mql5\Scripts\_Analyze\</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+      
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/开发/">开发</a>
+    </span>
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/统计/">统计</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+	<section id="comment" class="comment">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'kidhaibara';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Deployed by <a href="https://github.com/kaedea/notion-down" target="_blank">notion-down</a> and
+    Theme by <a href="https://github.com/kaedea/hexo-theme-hacker" target="_blank">hexo-theme-hacker</a>
+    </br>
+    
+    &copy; 2024 seefss
+    
+  </p>
+</footer>
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'G-J38N5N288S', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </div>
+</div>
+</body>
+</html>

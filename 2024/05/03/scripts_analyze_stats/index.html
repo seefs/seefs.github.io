@@ -113,7 +113,7 @@
 
 <div id="toc" class="toc-article">
       <div class="toc-content">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E7%A0%81%E5%88%86%E6%9E%90"><span class="toc-text">状态码分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%A0%81%E5%BA%93%EF%BC%8C%E5%B9%B6%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C"><span class="toc-text">下载代码库，并验证效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%BB%9F%E8%AE%A1"><span class="toc-text">常用统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%B7%E6%A0%BC%E5%85%B3%E7%B3%BB"><span class="toc-text">价格关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%85%B3%E7%B3%BB"><span class="toc-text">时间关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B6%88%E6%81%AF%E5%BD%B1%E5%93%8D"><span class="toc-text">消息影响</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%81%E7%A7%8D"><span class="toc-text">品种</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E7%A0%81%E5%88%86%E6%9E%90"><span class="toc-text">状态码分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E7%A0%81%E5%88%86%E6%9E%90-1"><span class="toc-text">状态码分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a></li></ol></li></ol>
       </div>
 </div>
 <style>
@@ -128,27 +128,26 @@
         <p>一个反人性工具。</p>
 <span id="more"></span>
 
-<h2 id="状态码分析"><a href="#状态码分析" class="headerlink" title="状态码分析"></a>状态码分析</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">数据</font>：采用MT5数据。MT5数据比MT4更全。<br>MN ~ H1：数据范围是2008.12.26至今。<br>M30： 数据范围是2015.10.16至今。<br>M15： 数据范围是2020.03.03至今。<br>M5： 数据范围是2022.12.27至今。<br>M1： 数据范围是2024.02.14至今。</p>
-<p><font color="#3232CD">绘图</font>：<br>如果后期图片过多，会分成多个文章。</p>
-<h3 id="下载代码库，并验证效果"><a href="#下载代码库，并验证效果" class="headerlink" title="下载代码库，并验证效果"></a>下载代码库，并验证效果</h3><p><font color="#3232CD">下载路径</font>：<br>Scripts\Downloads\</p>
-<p><font color="#3232CD">1. 输出历史数据</font>：<br>Scripts\_Analyze\history_in_mathcad.mq5<br>时间：2014.01.23</p>
-<h3 id="常用统计"><a href="#常用统计" class="headerlink" title="常用统计"></a>常用统计</h3><p><font color="#3232CD">2. 年和月数据</font>：<br>Scripts\_Analyze\Data_for_month.mq5</p>
-<p><font color="#3232CD"></font>：此脚本目的是输出历史数据为指定格式, 转换用于外部程序分析<br>时间：2014.01.23<br>history_in_mathcad.mq5：</p>
-<p>Scripts\_OrderClose\CloseAllBuy.mq5</p>
-<p><font color="#3232CD">1. 主动反单</font>：应该赢利中，才考虑反单。亏损中多认怂吧。<br>应用场景：</p>
-<p>常用统计：如每年涨跌幅+比例。不确认数据有没有。只有2021-02以后数据。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p><font color="#3232CD">常用统计</font>：</p>
-<h3 id="价格关系"><a href="#价格关系" class="headerlink" title="价格关系"></a>价格关系</h3><p><font color="#3232CD">价格关系</font>：</p>
-<p>(价格关系)<br>周末持仓：估计风险。从几点开始持仓？<br>历史成本：在成本区附近有压力。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<h3 id="时间关系"><a href="#时间关系" class="headerlink" title="时间关系"></a>时间关系</h3><p><font color="#3232CD">时间关系</font>：</p>
-<p>每天波动：统计周1~周5，一般哪天波动大<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p>每天波动：统计周1~周5，哪天是单边<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p>转势时间：二分法查看美盘哪个时间转势最准<br>Serial:Mql5\Scripts\_Analyze\</p>
-<p>吃饭时间，统计1点，5点，6点，与全天方向的关系，希望不反就入场，即使强度弱。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<h3 id="消息影响"><a href="#消息影响" class="headerlink" title="消息影响"></a>消息影响</h3><p><font color="#3232CD">消息影响</font>：</p>
-<p>非农：统计非农盘前10Min 盘后10Min关联，如黄金，欧美。如最高，最低。<br>Serial:Mql5\Scripts\_Analyze\</p>
-<h3 id="品种"><a href="#品种" class="headerlink" title="品种"></a>品种</h3><p><font color="#3232CD">品种选择</font>：</p>
-<p>品种选择：统计哪天应该做哪种。<br>Serial:Mql5\Scripts\_Analyze\</p>
+<h2 id="状态码分析"><a href="#状态码分析" class="headerlink" title="状态码分析"></a>状态码分析</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">目标</font>：看图总结规律，用公式验证规律，再去校正方向。总共要给出本+校信号。<br>研究规律，如何配制最大准确率。<br>研究风险，查看哪些形态容易看反。<br>研究波动，当天的波动是哪种，先X后X再X。</p>
+<p><font color="#3232CD">正常状态码</font>：逆势早跟，顺势等。做全天。<br>有反反转：慢回加速<br>多信号+多信号，大跌继续多。</p>
+<p>未反反转：等反弹<br>空信号+多信号，大跌低位仍看多。</p>
+<p>超效回调：慢跌再跌<br>高位空，必空，低位多，必多。众对坚持反。</p>
+<p><font color="#3232CD">异常状态码</font>：做锁，晚了别追，是说追逆不追顺。<br>低效反转：先跌再跌，先涨再涨<br>横盘多+空，看多。横盘空+多，看空。平转很难，不要勉强。好机会不要看。<br>—-验证需要拟合，如多小比例为横盘</p>
+<p>超效反转：先涨后跌<br>突破反+多，看大空。突破反+空，看大多。<br>—-验证需要拟合，如多大比例为突破。是否考虑多几天。</p>
+<p>低效不反：<br>久反未跌，逢涨必跌。等散户犯错，错上加错。</p>
+<p>连对变破：<br>空多空信号，涨对变跌，必突破，未必跌。</p>
+<p><font color="#3232CD">可靠状态</font>：</p>
+<p><font color="#3232CD">不可靠状态</font>：<br>微涨中的下跌形态，极易诱空。</p>
+<p><font color="#3232CD">注意事项</font>：<br>如果状态看涨，当天先跌后涨时，不要做空。</p>
+<p><font color="#3232CD">其他</font>：<br>用未来日期1-2-3-4综合作为依据判断预测结果。</p>
+<h3 id="状态码分析-1"><a href="#状态码分析-1" class="headerlink" title="状态码分析"></a>状态码分析</h3><p><font color="#3232CD">形态分析</font>：</p>
+<p>单边形态：早上进场。统计所有的单边形态。<br>Serial:Mql5\Scripts\_Analyze\</p>
+<p>区间形态：下午做区间。<br>Serial:Mql5\Scripts\_Analyze\</p>
+<p>5分钟指标：试下形态码有效果吗<br>&#x2F;&#x2F;——验证0 ~ 4, 作为M5起始时间，效果有区别吗？<br>Serial:Mql5\Scripts\_Analyze\</p>
+<p>检查犯错程度：当前交易是否犯错，是否考虑平仓。<br>检查交易不致性：是否方向变来变去。</p>
+<p>杀急，急对应的形态是什么？<br>如何识别行情分类，用形态码？<br>从月到时，分析效果。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><font color="#3232CD">弱点</font>：缺少综合考虑。<br>大小周期问题。</p>
+<p><font color="#3232CD">局限</font>：<br>即使采用：A匹配B，B匹配A，估计也没有用。不要试了。</p>
 
       
     </div>
@@ -158,6 +157,13 @@
   <div class="article-footer">
     <div class="article-meta pull-left">
 
+    
+      
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/开发/">开发</a>
+    </span>
     
 
     

@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>平仓脚本 | Mql5 Scripts</title>
+
+  
+  <meta name="author" content="seefss">
+  
+
+  
+  <meta name="description" content="Help Documentation">
+  
+
+  
+  <meta name="keywords" content="Mql5,mt5,Scripts">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="平仓脚本"/>
+
+  <meta property="og:site_name" content="Mql5 Scripts"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Mql5 Scripts" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+  <link href="https://fonts.lug.ustc.edu.cn/css?family=Lato|Rubik" rel="stylesheet">
+  <script src="/js/pangu-407.min.js"></script>
+<meta name="generator" content="Hexo 7.2.0"></head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    pangu.autoSpacingPage();
+  });
+</script>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Mql5 Scripts</a>
+    </h1>
+    <p class="site-description">Losses must be controlled</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/categories">分类</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/atom.xml">订阅</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>平仓脚本</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2024/05/03/mt5_scripts_close/" rel="bookmark">
+        <time class="entry-date published" datetime="2024-05-03T10:00:00.000Z">
+          2024-05-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+
+<script type="text/javascript">
+    function convertRemToPixels(rem) {    
+        return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    }
+    window.onscroll = function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > convertRemToPixels(40)) {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'visible';
+        } else {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'hidden';
+        }
+    }
+</script>
+
+
+<div id="toc" class="toc-article">
+      <div class="toc-content">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B3%E4%BB%93%E8%84%9A%E6%9C%AC"><span class="toc-text">平仓脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B3%E4%BB%93%E6%8C%81%E4%BB%93%E4%B8%AD%E7%9A%84%E5%AE%9A%E5%8D%95"><span class="toc-text">平仓持仓中的定单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B3%E4%BB%93%E6%9C%AA%E6%88%90%E4%BA%A4%E7%9A%84%E6%8C%82%E5%8D%95"><span class="toc-text">平仓未成交的挂单</span></a></li></ol></li></ol>
+      </div>
+</div>
+<style>
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+
+
+        <p>用起来方便，但比交易软件自带的平仓功能慢。</p>
+<span id="more"></span>
+
+<h2 id="平仓脚本"><a href="#平仓脚本" class="headerlink" title="平仓脚本"></a>平仓脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">平仓持仓中的定单</font>：参考论坛上的一组脚本。时间是2019.05.25。<br>功能同mt5电脑软件，批量操作–所有持仓平仓。</p>
+<p><font color="#3232CD">平仓未成交的挂单</font>：参考mt5 帮助文档中的示例脚本，拿出来直接使用。<br>功能同mt5电脑软件，批量操作–删除所有订单。<br>在IDE编辑软件中，选中变量按F1，即可查看帮忙文档。</p>
+<h3 id="平仓持仓中的定单"><a href="#平仓持仓中的定单" class="headerlink" title="平仓持仓中的定单"></a>平仓持仓中的定单</h3><p><font color="#3232CD">平仓持仓</font>：仅关闭当前窗口相同品种的订单。<br>Scripts\_OrderClose\CloseAllBuy.mq5<br>Scripts\_OrderClose\CloseAllSell.mq5<br>Scripts\_OrderClose\CloseAllPairs.mq5<br>Scripts\_OrderClose\CustomClosePart.mq5<br>Scripts\_OrderClose\CustomCloseRange.mq5</p>
+<p>1.平仓所有多单<br>2.平仓所有空单<br>3.平仓所有多单和空单<br>4.平仓1&#x2F;3，可修改比例参数。<br>5.平仓指定范围的订单。</p>
+<h3 id="平仓未成交的挂单"><a href="#平仓未成交的挂单" class="headerlink" title="平仓未成交的挂单"></a>平仓未成交的挂单</h3><p><font color="#3232CD">平仓挂单</font>：仅关闭当前打开窗口相同品种的挂单或订单。<br>Scripts\_OrderClose\RemoveAllOrder.mq5</p>
+<p>功能说明：<br>1.删除所有stop + limit挂单。</p>
+<p><font color="#3232CD">操作视频</font>：(手机请点全屏播放)</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 50%;"><iframe 
+src="https://www.kuaishou.com/short-video/3xgkd32gndx7w7m?fid=4038014158"  scrolling="no" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;">
+</iframe></div>
+
+
+
+
+
+
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/mt5/">mt5</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+	<section id="comment" class="comment">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'kidhaibara';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Deployed by <a href="https://github.com/kaedea/notion-down" target="_blank">notion-down</a> and
+    Theme by <a href="https://github.com/kaedea/hexo-theme-hacker" target="_blank">hexo-theme-hacker</a>
+    </br>
+    
+    &copy; 2024 seefss
+    
+  </p>
+</footer>
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'G-J38N5N288S', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>挂单脚本 | Mql5 Scripts</title>
+
+  
+  <meta name="author" content="seefss">
+  
+
+  
+  <meta name="description" content="Help Documentation">
+  
+
+  
+  <meta name="keywords" content="Mql5,mt5,Scripts">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="挂单脚本"/>
+
+  <meta property="og:site_name" content="Mql5 Scripts"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Mql5 Scripts" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+  <link href="https://fonts.lug.ustc.edu.cn/css?family=Lato|Rubik" rel="stylesheet">
+  <script src="/js/pangu-407.min.js"></script>
+<meta name="generator" content="Hexo 7.2.0"></head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    pangu.autoSpacingPage();
+  });
+</script>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Mql5 Scripts</a>
+    </h1>
+    <p class="site-description">Losses must be controlled</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/categories">分类</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/atom.xml">订阅</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>挂单脚本</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2024/05/03/mt5_scripts_grid/" rel="bookmark">
+        <time class="entry-date published" datetime="2024-05-03T10:00:00.000Z">
+          2024-05-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+
+<script type="text/javascript">
+    function convertRemToPixels(rem) {    
+        return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+    }
+    window.onscroll = function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > convertRemToPixels(40)) {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'visible';
+        } else {
+            document.getElementsByClassName('toc-article')[0].style.visibility = 'hidden';
+        }
+    }
+</script>
+
+
+<div id="toc" class="toc-article">
+      <div class="toc-content">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%82%E5%8D%95%E8%84%9A%E6%9C%AC"><span class="toc-text">挂单脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%88%AA%E5%9B%BE"><span class="toc-text">操作截图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E5%90%91%E6%8C%82%E5%8D%95"><span class="toc-text">单向挂单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E6%8C%82%E5%8D%95"><span class="toc-text">双向挂单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E8%A7%86%E9%A2%91"><span class="toc-text">操作视频</span></a></li></ol></li></ol>
+      </div>
+</div>
+<style>
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+
+
+        <p>挂单不能乱做。需要配合分析。</p>
+<span id="more"></span>
+
+<h2 id="挂单脚本"><a href="#挂单脚本" class="headerlink" title="挂单脚本"></a>挂单脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">单向挂单&#x2F;font&gt;：</p>
+<p><font color="#3232CD">双向挂单</font>：</p>
+<h3 id="操作截图"><a href="#操作截图" class="headerlink" title="操作截图"></a>操作截图</h3><p><img src="/img/habit/open_grid.png"></p>
+<h3 id="单向挂单"><a href="#单向挂单" class="headerlink" title="单向挂单"></a>单向挂单</h3><p><font color="#3232CD">单向挂单</font>：从当前价格向上或向下平铺开仓。<br>Scripts\_OrderOpenGrid\OpenBuyLimitOrder.mq5<br>Scripts\_OrderOpenGrid\OpenSellLimitOrder.mq5<br>Scripts\_OrderOpenGrid\OpenBuyStopOrder.mq5<br>Scripts\_OrderOpenGrid\OpenSellStopOrder.mq5</p>
+<p>参数说明：<br>1.以指定价格差价向上或向下平铺开仓，差价默认是$4，以前波动小用的是$2。<br>2.止赢止损，可带可不带。如果带止赢仓位可加大。试过止赢可能会滑点(有利于自己)。</p>
+<p>应用场景：<br>1.刚刚转势时，用limit开单比较好。机会出现的时间应该很短。<br>2.不盯盘时，挂单交易可能比直接追涨追跌好。<br>3.行情尾部，猜底猜顶，可能网格下单比直接下单好。<br>4.行情尾部，波动加速，可能网格下单比错过反转好。<br>5.时间少，以指定价格网格开仓。</p>
+<p>操作说明：<br>1.批量开单成交后，可能会按需求删除或设置止赢，或关闭订单，配合其他脚本。<br>2.不清楚压力+支撑位，很难做。</p>
+<p>备注：<br>1.小行情尽量别用Stop挂单，热度低的数据行情也慎用。<br>2.重大消息行情，可在最后30秒内开Stop单。但要考虑波动范围有多大。<br>3.利空反涨，波动会比较大，用limit开单有风险。<br>4.散户筹码集中，用limit开单有风险。</p>
+<h3 id="双向挂单"><a href="#双向挂单" class="headerlink" title="双向挂单"></a>双向挂单</h3><p><font color="#3232CD">双向挂单</font>：从当前价格向上或向下平铺开仓。<br>Scripts\_OrderOpenGrid\PairsOpenLimitOrder.mq5<br>Scripts\_OrderOpenGrid\PairsOpenStopOrder.mq5<br>Scripts\_OrderOpenGrid\PairsOpenStopLimitOrder.mq5</p>
+<p>参数说明：<br>1.一种是止赢止损分开，一种是止赢止损统计设置。还未整理<br>2.不带止赢止损，更贪婪</p>
+<p>应用场景：<br>1.适用大单边行情。</p>
+<p>操作说明：<br>1.行情启动前10 ~ 20秒下单</p>
+<p>备注：<br>1.注意不同风险用不同仓位。<br>2.不带止损，怕上下拉。<br>3.StopLimit单，我几乎没用过。</p>
+<h3 id="操作视频"><a href="#操作视频" class="headerlink" title="操作视频"></a>操作视频</h3><p><a href="https://seefs.github.io/2024/06/13/review_20240515"><font color="#99CC32">操作视频，参考2024-05-15交易记录</font></a></p>
+<p><a href="https://seefs.github.io/2024/06/13/grow_insist_trade"><font color="#99CC32">所有交易视频➬</font></a></p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/mt5/">mt5</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+	<section id="comment" class="comment">
+	  <div id="disqus_thread">
+	  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  </div>
+	</section>
+
+	<script type="text/javascript">
+	var disqus_shortname = 'kidhaibara';
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	(function(){
+	  var dsq = document.createElement('script');
+	  dsq.type = 'text/javascript';
+	  dsq.async = true;
+	  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}());
+	</script>
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Deployed by <a href="https://github.com/kaedea/notion-down" target="_blank">notion-down</a> and
+    Theme by <a href="https://github.com/kaedea/hexo-theme-hacker" target="_blank">hexo-theme-hacker</a>
+    </br>
+    
+    &copy; 2024 seefss
+    
+  </p>
+</footer>
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'G-J38N5N288S', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </div>
+</div>
+</body>
+</html>
