@@ -129,23 +129,25 @@
 <span id="more"></span>
 
 <h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">功能介绍</font>：</p>
-<h3 id="指标参数"><a href="#指标参数" class="headerlink" title="指标参数"></a>指标参数</h3><p><font color="#3232CD">安装路径</font>：指标名称改名，或移动到子目录，不影响使用。<br>MQL5\Indicators\</p>
-<p><font color="#3232CD">加载流程</font>：<br>注意第1次安装，会有1分钟延时。加载完成会提示Log:<br>save, normal&#x3D;Demo\XAUUSDm\normal.csv, row&#x3D;370(天数据)<br>偶尔会有刷新问题，我还没改，请切换一下时间周期(刷新显示)。</p>
-<p><img src="/img/review/20241127_log.png"></p>
+<h3 id="指标参数"><a href="#指标参数" class="headerlink" title="指标参数"></a>指标参数</h3><p><font color="#3232CD">安装路径</font>：指标的名称改名，或移动到子目录，不影响使用。<br>MQL5\Indicators\</p>
+<p><font color="#3232CD">加载流程</font>：<br>注意第1次安装，会有1分钟延时。加载完成会提示Log:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">save, normal=Demo\XAUUSDm\normal.csv, row=<span class="number">370</span>(天数据)</span><br></pre></td></tr></table></figure>
+<p>另外，偶尔会有刷新问题，我还没改，请切换一下时间周期(刷新显示)。</p>
+<p><img src="/img/analyse/20241127_log.png"></p>
 <p><font color="#3232CD">指标参数</font>：</p>
-<p><img src="/img/review/20241127_param.png"><br>有需要我再配一套白底参数。</p>
-<h3 id="直线"><a href="#直线" class="headerlink" title="直线"></a>直线</h3><p><font color="#3232CD">直线</font>：显示3 ~ 4条。没有区间切换，只显示3条。<br>强度：昨天的强弱参数，分为1日值和5日平均值。<br>强度中值：1日和5日的平均值。<br>外线：强度中值上下旋转30或60度。</p>
-<p><img src="/img/review/20241127_line.png"></p>
-<p>显示上有5类直线，保留后3条。因为当前价格在这个区间。<br>下方外线 &lt; 1日强度 &lt; 强度中值 &lt; 5日强度 &lt; 上方外线</p>
-<p><img src="/img/review/20241127_line_tip.png"></p>
-<h3 id="时间段"><a href="#时间段" class="headerlink" title="时间段"></a>时间段</h3><p><font color="#3232CD">4个时间段</font>：便于分开分析行情，减少干扰。<br>4个时间段：01:00到07:30，07:30到13:00，13:00到19:00，19:00到24:00。<br>已转化为本地时间，自动区分夏令时和冬令时。</p>
-<p><img src="/img/review/20241127_time.png"></p>
-<h3 id="价格区间"><a href="#价格区间" class="headerlink" title="价格区间"></a>价格区间</h3><p><font color="#3232CD">分界线</font>：判断区间的条件。效果待定。图上没显示，下一版可能会显示在区间备注里。<br>多空分界线：1日强度线与强度中值线的中点线。(随意调的，效果待定。)<br>1倍分界线：1日强度线与强度中值线，向外偏移1倍距离。</p>
-<p><img src="/img/review/20241127_range.png"></p>
+<p><img src="/img/analyse/20241127_param.png"><br>若有需要，我再配一套白底参数。</p>
+<h3 id="直线"><a href="#直线" class="headerlink" title="直线"></a>直线</h3><p><font color="#3232CD">直线</font>：显示3 ~ 4条强弱直线。第4条是相邻区间延长线，可能没有，重叠显示颜色有点乱。<br>强度：昨天的强弱参数，分为1日值和5日平均值。<br>强度中值：1日和5日的平均值。<br>外线：强度中值上下旋转30或60度。</p>
+<p><img src="/img/analyse/20241127_line.png"></p>
+<p>实际上有5类强弱直线，显示上保留3条。因为今天的最新价格在区间上方，即显示后3条。<br>下方外线 &lt; 1日强度 &lt; 强度中值 &lt; 5日强度 &lt; 上方外线</p>
+<p><img src="/img/analyse/20241127_line_tip.png"></p>
+<h3 id="时间段"><a href="#时间段" class="headerlink" title="时间段"></a>时间段</h3><p><font color="#3232CD">4个时间段</font>：为了分区间分析行情，减少干扰。<br>4个时间段：01:00到07:30，07:30到13:00，13:00到19:00，19:00到24:00。</p>
+<p><img src="/img/analyse/20241127_time.png"><br>已转化为本地时间，自动区分夏令时和冬令时。</p>
+<h3 id="价格区间"><a href="#价格区间" class="headerlink" title="价格区间"></a>价格区间</h3><p><font color="#3232CD">分界线</font>：判断区间的条件，图上没显示。效果待定。下一版可能会显示在区间备注里。<br>多空分界线：1日强度线与强度中值线的中点线。(随意定的，效果待定。)<br>1倍分界线：1日强度线与强度中值线，向外偏移1倍距离。</p>
+<p><img src="/img/analyse/20241127_range.png"></p>
 <p><font color="#3232CD">4类价格区间</font>：注意切换区间时，调整策略。<br>当昨天的1日强度&lt;5日强度时，显示为下列3种区间：<br>偏多区间：多空分界线以上，且1倍分界线以上。<br>偏空区间：多空分界线以上，且1倍分界线以下。<br>空头区间：多空分界线以下。</p>
 <h3 id="分析结果"><a href="#分析结果" class="headerlink" title="分析结果"></a>分析结果</h3><p><font color="#3232CD">分析结果</font>：用于判断长期趋势转势，效果待定。避免用于短线刷单。</p>
-<p>状态：多头或空头。<br>标签：昨天行情的方向+强弱表示，如“都看多-转涨”。仅强弱对今天有影响。标签也是模型的7个大分类名称。<br>模型：7个大分类，60个模型，用来判断所有行情。感觉效果正常，后面重点介绍。<br>胜率：不准。<br>波动：不准。</p>
-<p><img src="/img/review/20241127_result.png"><br>后续版本还会调整，但差异不大。</p>
+<p>状态：多头或空头。<br>标签：昨天行情的方向+强弱表示，如“都看多-转涨”。仅强弱对今天有影响。标签也是模型的7个大分类名称。<br>模型：7个大分类，60个模型，用来判断所有行情。感觉效果还算正常，后面重点介绍。<br>胜率：不准。<br>波动：不准。</p>
+<p><img src="/img/analyse/20241127_result.png"><br>后续版本还会调整，但差异不大。</p>
 <h3 id="行情总结"><a href="#行情总结" class="headerlink" title="行情总结"></a>行情总结</h3><p><font color="#3232CD">行情总结</font>：<br>区间3：冬令时–10:00到12:00。一般会震荡+突破反转。今天没有反复突破或反转。</p>
 
       

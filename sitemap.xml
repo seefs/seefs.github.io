@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seefs.github.io/2024/11/28/analyse_review_20241127/</loc>
+    
+    <lastmod>2024-11-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://seefs.github.io/2024/11/28/mt5_analyse_1/</loc>
     
     <lastmod>2024-11-29</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://seefs.github.io/2024/11/28/analyse_install/</loc>
-    
-    <lastmod>2024-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://seefs.github.io/2024/11/28/analyse_review_20241127/</loc>
     
     <lastmod>2024-11-29</lastmod>
     
@@ -360,6 +360,13 @@
   </url>
   
   <url>
+    <loc>https://seefs.github.io/tags/%E7%BB%9F%E8%AE%A1/</loc>
+    <lastmod>2024-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seefs.github.io/tags/%E8%A7%86%E9%A2%91/</loc>
     <lastmod>2024-11-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -396,13 +403,6 @@
   
   <url>
     <loc>https://seefs.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2024-11-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seefs.github.io/tags/%E7%BB%9F%E8%AE%A1/</loc>
     <lastmod>2024-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
