@@ -128,15 +128,15 @@
         <p>挂单或关闭，反单。</p>
 <span id="more"></span>
 
-<h2 id="刷单脚本"><a href="#刷单脚本" class="headerlink" title="刷单脚本"></a>刷单脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">小间隔平铺挂单</font>：</p>
-<p><font color="#3232CD">准备关闭或反单</font>：</p>
+<h2 id="刷单脚本"><a href="#刷单脚本" class="headerlink" title="刷单脚本"></a>刷单脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">刷单脚本</font>：如果做长线总是做反，可能做短线会改变逆势习惯。<br>小间隔平铺挂单：<br>关闭或反单：</p>
 <h3 id="平铺挂单"><a href="#平铺挂单" class="headerlink" title="平铺挂单"></a>平铺挂单</h3><p><font color="#3232CD">小间隔平铺挂单</font>：使用limit单，降低成本。<br>Scripts\_OrderShort\SettingShortParam.mq5<br>Scripts\_OrderShort\OpenBuyLimitShort.mq5<br>Scripts\_OrderShort\OpenSellLimitShort.mq5</p>
 <p>1.先用setting脚本设置参数<br>2.批量开多单<br>3.批量开空单<br>4.不设止赢止损，需等待赢利时用 WaitingClose 再设置。</p>
-<h3 id="准备关闭或反单"><a href="#准备关闭或反单" class="headerlink" title="准备关闭或反单"></a>准备关闭或反单</h3><p><font color="#3232CD">准备关闭或反单</font>：仅关闭当前窗口相同品种的订单。<br>Scripts\_OrderShort\WaitingClose.mq5<br>Scripts\_OrderShort\WaitingInvert.mq5</p>
-<p>参数说明：<br>1.自动区分波动大小。短线不接受手动调整参数。<br>若是大波动 止损0.6 止赢1.2 (使用0.5时经常失效)<br>若是小波动 止损0.6 止赢0.6<br>2.反单的脚本，在止损价再相隔0.4开单<br>3.做了不同品种价格差异兼容，可能效果不大好。建议只用于XAUUSD。</p>
-<p>应用场景：<br>1.在准备获利出场时，动态争取最大收益。<br>2.逆势，或追涨追跌时也可使用。宁可止损，不要亏。<br>3.有些行情，波动异常，频繁回撤，不没止赢抓不到。<br>4.早盘可能波动小，希望自动区分波动大小有用。</p>
-<p>操作说明：<br>1.觉得利润还能扩大时，再点击一次脚本，更新设置。<br>2.缓慢回调时，也可多点击几次更新设置，不让单子被止损。急速加速必须走。<br>3.目标是让一波行情走到反转时出场。<br>4.及时关注和调整退出条件。</p>
-<p>备注：<br>1.比主动反单可能稍好一点，因为被动操作是同步短期信号的。<br>主动反单主观，更依赖盘感。若风险可控，没有盘感可以刷单。<br>主动开单可用于中途的手动加仓。<br>2.为了适应快节奏操作，认错也快。<br>3.如果做长线老是做反，可能做短线会改变逆势习惯。</p>
+<h3 id="准备关闭或反单"><a href="#准备关闭或反单" class="headerlink" title="准备关闭或反单"></a>准备关闭或反单</h3><p><font color="#3232CD">关闭或反单</font>：仅关闭当前窗口相同品种的订单。<br>Scripts\_OrderShort\WaitingClose.mq5<br>Scripts\_OrderShort\WaitingInvert.mq5<br>Scripts\_OrderShort\VerifyInvert.mq5</p>
+<p>1.准备关闭。有利时反复调整参数，不利时让单子被动止损。<br>2.准备反单。避免快速反转时跟不上。<br>3.直接反单。用于快速认错。</p>
+<p><font color="#3232CD">参数说明</font>：<br>1.短线若采取手动调整参数，会影响效果。<br>因此使用自动区分波动大小。。<br>若是大波动 止损0.6 止赢1.2 (使用0.5时经常失效)<br>若是小波动 止损0.6 止赢0.6<br>2.反单的脚本，在止损价相隔0.4再开单<br>3.不同品种存在价格差异。仅做了简单兼容。保险为主，建议只应用于XAUUSD。</p>
+<p><font color="#3232CD">应用场景</font>：<br>1.锁定获利。在获利并准备出场时，选择被动关闭方式，可以争取不确定的收益。<br>2.逆势，或追涨追跌。在风险高时，顺势逆势都可能倒亏。学会做小单，防止倒亏的情况出现。<br>3.方向明确时，也可能波动异常，频繁回撤，不没止赢抓不到机会。<br>4.早盘可能波动小，使用了自动区分波动大小，分别采用2组大小参数。</p>
+<p><font color="#3232CD">操作说明</font>：<br>1.急速突破防回调。<br>2.急速反转自动走。<br>3.缓慢回调时，看情况是否需要更新设置。<br>4.目标是让一波行情走到反转时出场。人工判断太累。<br>5.及时关注和调整退出条件。</p>
+<p><font color="#3232CD">备注</font>：<br>1.被动反单适合方向混乱行情。有信号能快速跟上。<br>2.主动反单适合方向确认行情。<br>3.没有盘感时也可以刷单。</p>
 <h3 id="Bug"><a href="#Bug" class="headerlink" title="Bug"></a>Bug</h3><p><font color="#3232CD">Bug记录</font>：<br>Invert的脚本，如果有双方向订单，应该无法处理。<br>后面考虑选择赢利的单子的方向，来处理。</p>
 
       

@@ -6,7 +6,7 @@
   <link href="https://seefs.github.io/atom.xml" rel="self"/>
   
   <link href="https://seefs.github.io/"/>
-  <updated>2024-10-18T02:13:43.307Z</updated>
+  <updated>2024-11-29T11:31:32.739Z</updated>
   <id>https://seefs.github.io/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>功能介绍-2024-11-29</title>
+    <link href="https://seefs.github.io/2024/11/29/analyse_review_20241127/"/>
+    <id>https://seefs.github.io/2024/11/29/analyse_review_20241127/</id>
+    <published>2024-11-29T10:00:00.000Z</published>
+    <updated>2024-11-29T11:31:32.739Z</updated>
+    
+    <content type="html"><![CDATA[<p>对指标功能作一些简单介绍。</p><span id="more"></span><h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">功能介绍</font>：</p><h3 id="指标参数"><a href="#指标参数" class="headerlink" title="指标参数"></a>指标参数</h3><p><font color="#3232CD">安装路径</font>：指标名称改名，或移动到子目录，不影响使用。<br>MQL5\Indicators\</p><p><font color="#3232CD">加载流程</font>：<br>注意第1次安装，会有1分钟延时。加载完成会提示Log:<br>save, normal&#x3D;Demo\XAUUSDm\normal.csv, row&#x3D;370(天数据)<br>偶尔会有刷新问题，我还没改，请切换一下时间周期(刷新显示)。</p><p><img src="/img/review/20241127_log.png"></p><p><font color="#3232CD">指标参数</font>：</p><p><img src="/img/review/20241127_param.png"><br>有需要我再配一套白底参数。</p><h3 id="直线"><a href="#直线" class="headerlink" title="直线"></a>直线</h3><p><font color="#3232CD">直线</font>：显示3 ~ 4条。没有区间切换，只显示3条。<br>强度：昨天的强弱参数，分为1日值和5日平均值。<br>强度中值：1日和5日的平均值。<br>外线：强度中值上下旋转30或60度。</p><p><img src="/img/review/20241127_line.png"></p><p>显示上有5类直线，保留后3条。因为当前价格在这个区间。<br>下方外线 &lt; 1日强度 &lt; 强度中值 &lt; 5日强度 &lt; 上方外线</p><p><img src="/img/review/20241127_line_tip.png"></p><h3 id="时间段"><a href="#时间段" class="headerlink" title="时间段"></a>时间段</h3><p><font color="#3232CD">4个时间段</font>：便于分开分析行情，减少干扰。<br>4个时间段：01:00到07:30，07:30到13:00，13:00到19:00，19:00到24:00。<br>已转化为本地时间，自动区分夏令时和冬令时。</p><p><img src="/img/review/20241127_time.png"></p><h3 id="价格区间"><a href="#价格区间" class="headerlink" title="价格区间"></a>价格区间</h3><p><font color="#3232CD">分界线</font>：判断区间的条件。效果待定。图上没显示，下一版可能会显示在区间备注里。<br>多空分界线：1日强度线与强度中值线的中点线。(随意调的，效果待定。)<br>1倍分界线：1日强度线与强度中值线，向外偏移1倍距离。</p><p><img src="/img/review/20241127_range.png"></p><p><font color="#3232CD">4类价格区间</font>：注意切换区间时，调整策略。<br>当昨天的1日强度&lt;5日强度时，显示为下列3种区间：<br>偏多区间：多空分界线以上，且1倍分界线以上。<br>偏空区间：多空分界线以上，且1倍分界线以下。<br>空头区间：多空分界线以下。</p><h3 id="分析结果"><a href="#分析结果" class="headerlink" title="分析结果"></a>分析结果</h3><p><font color="#3232CD">分析结果</font>：用于判断长期趋势转势，效果待定。避免用于短线刷单。</p><p>状态：多头或空头。<br>标签：昨天行情的方向+强弱表示，如“都看多-转涨”。仅强弱对今天有影响。标签也是模型的7个大分类名称。<br>模型：7个大分类，60个模型，用来判断所有行情。感觉效果正常，后面重点介绍。<br>胜率：不准。<br>波动：不准。</p><p><img src="/img/review/20241127_result.png"><br>后续版本还会调整，但差异不大。</p><h3 id="行情总结"><a href="#行情总结" class="headerlink" title="行情总结"></a>行情总结</h3><p><font color="#3232CD">行情总结</font>：<br>区间3：冬令时–10:00到12:00。一般会震荡+突破反转。今天没有反复突破或反转。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;对指标功能作一些简单介绍。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="功能" scheme="https://seefs.github.io/tags/%E5%8A%9F%E8%83%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分析指标下载</title>
+    <link href="https://seefs.github.io/2024/11/28/mt5_analyse_1/"/>
+    <id>https://seefs.github.io/2024/11/28/mt5_analyse_1/</id>
+    <published>2024-11-28T10:00:00.000Z</published>
+    <updated>2024-11-29T11:31:37.280Z</updated>
+    
+    <content type="html"><![CDATA[<p>功能说明。</p><span id="more"></span><h2 id="分析指标下载"><a href="#分析指标下载" class="headerlink" title="分析指标下载"></a>分析指标下载</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">指标作用</font>：主要是显示强弱、发现转势。<br>a.大行情转势：一般综合看每天的分析结果。分析结果可能连续对，也可能连续错。<br>b.小行情转势：一般看当天每个区间的类型。<br>c.判断趋势：综合看大小趋势是否转势，决定当天主要做单方向。<br>d.区间内：刷单，注意时间区间和价格区间，区间切换时调整策略。<br>e.过滤行情：可能有个人习惯和风险喜好的区别，选择适合自己的行情。</p><h3 id="功能说明"><a href="#功能说明" class="headerlink" title="功能说明"></a>功能说明</h3><p><font color="#3232CD">原理说明</font>：编码–&gt;统计–&gt;强弱–&gt;分析<br>编码：将1小时行情价格编码。有些编码利涨，有些编码利跌。概率不高，直接用不上。<br>统计：按编码统计小时涨跌，取一个综合值。舍弃一些编码，保留的编码有利于预测第2天结果。<br>强弱：上一步的综合值。如它值小看涨，值大看涨。概率不高，不能直接用。(值小表示强度大，开始就这样，后面没改)<br>预测：预测和动态统计，一个是歪路，一个是正路。过度预测影响正常分析。<br>画图：没有图即没有证明，空讲看法，只会干扰他人分析。正常分析不应该左右摆动。<br>分析：结合强弱、区间、形态、综合参数。细分约60个模型，用来适配所有行情。<br>优化：调整参数和模型顺序，尽可能兼容不同平台、价格差异。<br>缺点：只能用于xauusd。</p><p><font color="#3232CD">功能说明</font>：<br>3类线：显示3 ~ 4条。没有区间切换时，只显示3条。有切换时，显示其他区间延长线。<br>强度：前一步讲到的强弱参数，分为1日值和5日平均值。<br>强度中值：1日和5日的中间值。<br>外线：强度中值上下旋转30或60度。</p><p>4个时间段：通过分析非农行情变化，分为4个时间段，有利于分开分析，也为了避免被过去行情干扰。<br>01:00到07:30，07:30到13:00，13:00到19:00，19:00到24:00</p><p>分界线：判断区间的条件。<br>多空分界线：1日强度线与强度中值线的中点线。(按画图效果初步看是这个，还没具体研究)<br>1倍分界线：1日强度线与强度中值线，向外偏移1倍距离。</p><p>4类价格区间：便于切换区间时，提醒交易者调整策略。(最开始画区间，是因为猜不到主力意图，没有更好方法)<br>当昨天的1日强度&lt;5日强度时，显示为下列3种区间：(用途未知，画完再研究)<br>偏多区间：多空分界线以上，且1倍分界线以上。<br>偏空区间：多空分界线以上，且1倍分界线以下。(涨幅不够)<br>空头区间：多空分界线以下。</p><p>当昨天的1日强度&gt;5日强度时，显示为下列3种区间：<br>多头区间：多空分界线以上。<br>偏多区间：多空分界线以下，且1倍分界线以上。(跌幅不够)<br>偏空区间：多空分界线以下，且1倍分界线以下。</p><p>1个分析结果：用于判断长期趋势转势，效果待定。避免用于短线刷单。<br>状态：多头或空头。<br>标签：昨天行情的方向+强弱表示，如“都看多-转涨”。仅强弱对今天有影响。也是模型的7个大分类名称。<br>模型：7个大分类，60个模型，用来判断所有行情。<br>胜率：对历史数据的胜率统计，可能很久会更新一次。<br>波动：大或小。这个效果较差，数据差异较大。</p><p><font color="#3232CD">指标功能截图介绍</font>：对指标功能作一些简单介绍。</p><p><a href="https://seefs.github.io/2024/11/27/analyse_review_20241127"><font color="#99CC32">功能介绍-2024-11-29</font></a></p><p>详细的模型介绍比较复杂，有时间我会整理成复盘文章，在盘感分类下。不过我会慢慢做。</p><p>Code.ex5</p><h3 id="mt5指标下载"><a href="#mt5指标下载" class="headerlink" title="mt5指标下载"></a>mt5指标下载</h3><p><font color="#3232CD">第01版 2024&#x2F;11&#x2F;28</font>：<br>a. 基础功能接近完善，先发出来。<br><a href="https://seefs.github.io/zip/Code.ex5"><font color="#99CC32">下载 v1_Code.ex5➬</font></a></p><p><font color="#3232CD">其他更新记录</font>：<br>第02版<br>第01版 </p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;功能说明。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="指标" scheme="https://seefs.github.io/tags/%E6%8C%87%E6%A0%87/"/>
+    
+  </entry>
   
   <entry>
     <title>用脚本配合交易的视频</title>
@@ -114,21 +152,40 @@
   </entry>
   
   <entry>
-    <title>常用指标与EA效果</title>
-    <link href="https://seefs.github.io/2024/05/03/ea_index_common/"/>
-    <id>https://seefs.github.io/2024/05/03/ea_index_common/</id>
+    <title>脚本下载与安装</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_2/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_2/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-10-18T02:27:09.226Z</updated>
+    <updated>2024-10-18T02:14:46.364Z</updated>
     
-    <content type="html"><![CDATA[<p>常用指标与EA效果。</p><span id="more"></span><h2 id="常用统计"><a href="#常用统计" class="headerlink" title="常用统计"></a>常用统计</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">常用统计</font>：</p><h3 id="下载代码库与验证效果"><a href="#下载代码库与验证效果" class="headerlink" title="下载代码库与验证效果"></a>下载代码库与验证效果</h3><p><font color="#3232CD">下载路径</font>：</p><p><font color="#3232CD">简单EA，基于简单均线与ADX</font>：<br>Experts\_Demo\simple_ma-adx_ea_en.mq5<br>时间：2014.01.23</p><h3 id="期望功能"><a href="#期望功能" class="headerlink" title="期望功能"></a>期望功能</h3><p><font color="#3232CD">自动解锁</font>：我经历过不受控制的状态，导致大错。<br>上锁：研究怎么锁单，让脚本处理<br>N字解锁：多空多时平多，空多空时平空。<br>逐步解锁：赢利锁仓</p><p><font color="#3232CD">赢利锁仓</font>：<br>赢利锁仓：最高点反向锁仓。用最近的顶点。并计算支撑点主动解锁。解锁后又开锁仓单。更新旧单子止损在支撑点下。<br>赢利锁仓：整点快速盈利锁仓。<br>赢利换仓：多次触及解锁点，应该平仓旧单子。并下移开仓位置。<br>隔夜赢利锁仓：预测会向上挖坑。<br>无方向锁仓：在成本区上下成对锁仓。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;常用指标与EA效果。&lt;/p&gt;</summary>
+    <content type="html"><![CDATA[<p>如何使用这套脚本、或者论坛上的脚本。</p><span id="more"></span><h2 id="脚本安装"><a href="#脚本安装" class="headerlink" title="脚本安装"></a>脚本安装</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">下载与安装</font>：<br>功能更新：参考 “mt5脚本分类与功能说明”。<br>更新说明：参考 “修改记录”。</p><h3 id="脚本下载地址"><a href="#脚本下载地址" class="headerlink" title="脚本下载地址"></a>脚本下载地址</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_install"><font color="#99CC32">下载脚本文件➬</font></a></p><p>请下载zip压缩文件。</p><p><a href="https://seefs.github.io/2024/05/03/habit_market_custom_usage"><font color="#99CC32">脚本使用示例➬</font></a></p><p>从下载到使用。</p><h3 id="交易视频"><a href="#交易视频" class="headerlink" title="交易视频"></a>交易视频</h3><p><a href="https://seefs.github.io/2024/06/13/grow_insist_trade"><font color="#99CC32">用脚本配合交易的视频➬</font></a></p><p>交易视频整理。</p><h3 id="论坛上的脚本"><a href="#论坛上的脚本" class="headerlink" title="论坛上的脚本"></a>论坛上的脚本</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_usage"><font color="#99CC32">如何下载Mql5论坛上的脚本➬</font></a></p><p>记录下载步骤。</p>]]></content>
     
     
+    <summary type="html">&lt;p&gt;如何使用这套脚本、或者论坛上的脚本。&lt;/p&gt;</summary>
     
     
-    <category term="统计" scheme="https://seefs.github.io/tags/%E7%BB%9F%E8%AE%A1/"/>
+    
+    
+    <category term="脚本" scheme="https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>脚本开发中</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_3/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_3/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-10-18T02:25:00.294Z</updated>
+    
+    <content type="html"><![CDATA[<p>分析与画图。</p><span id="more"></span><h2 id="脚本开发中"><a href="#脚本开发中" class="headerlink" title="脚本开发中"></a>脚本开发中</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本开发中</font>：</p><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_script"><font color="#99CC32">其他脚本修改➬</font></a></p><p>一些未整理好的文档放到最后。</p><p><a href="https://seefs.github.io/2024/05/03/habit_market_other"><font color="#99CC32">其他➬</font></a></p><p>备注上传视频中遇到的问题。</p><p><a href="https://seefs.github.io/2024/05/03/habit_market_init"><font color="#99CC32">图表脚本➬</font></a></p><p>完成图表模板的加载。</p><h3 id="分析与画图"><a href="#分析与画图" class="headerlink" title="分析与画图"></a>分析与画图</h3><p><a href="https://seefs.github.io/2024/05/03/scripts_analyze_stats"><font color="#99CC32">常用统计➬</font></a></p><p>常用统计。</p><p><a href="https://seefs.github.io/2024/05/03/scripts_analyze_speciation"><font color="#99CC32">波动分析➬</font></a></p><p>波动分析。工作未做。</p><p><a href="https://seefs.github.io/2024/05/03/scripts_analyze_stats"><font color="#99CC32">状态码分析➬</font></a></p><p>一个反人性工具。</p><p><a href="https://seefs.github.io/2024/05/03/scripts_analyze_stats"><font color="#99CC32">常用指标与EA效果➬</font></a></p><p>常用指标与EA效果。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;分析与画图。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="脚本" scheme="https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
     
   </entry>
   
@@ -143,25 +200,6 @@
     
     
     <summary type="html">&lt;p&gt;使用记录。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="脚本" scheme="https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>脚本下载与安装</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_market_2/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_market_2/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-10-18T02:14:46.364Z</updated>
-    
-    <content type="html"><![CDATA[<p>如何使用这套脚本、或者论坛上的脚本。</p><span id="more"></span><h2 id="脚本安装"><a href="#脚本安装" class="headerlink" title="脚本安装"></a>脚本安装</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">下载与安装</font>：<br>功能更新：参考 “mt5脚本分类与功能说明”。<br>更新说明：参考 “修改记录”。</p><h3 id="脚本下载地址"><a href="#脚本下载地址" class="headerlink" title="脚本下载地址"></a>脚本下载地址</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_install"><font color="#99CC32">下载脚本文件➬</font></a></p><p>请下载zip压缩文件。</p><p><a href="https://seefs.github.io/2024/05/03/habit_market_custom_usage"><font color="#99CC32">脚本使用示例➬</font></a></p><p>从下载到使用。</p><h3 id="交易视频"><a href="#交易视频" class="headerlink" title="交易视频"></a>交易视频</h3><p><a href="https://seefs.github.io/2024/06/13/grow_insist_trade"><font color="#99CC32">用脚本配合交易的视频➬</font></a></p><p>交易视频整理。</p><h3 id="论坛上的脚本"><a href="#论坛上的脚本" class="headerlink" title="论坛上的脚本"></a>论坛上的脚本</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_usage"><font color="#99CC32">如何下载Mql5论坛上的脚本➬</font></a></p><p>记录下载步骤。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;如何使用这套脚本、或者论坛上的脚本。&lt;/p&gt;</summary>
     
     
     
@@ -190,67 +228,6 @@
   </entry>
   
   <entry>
-    <title>其他</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_market_other/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_market_other/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-06-13T13:46:35.051Z</updated>
-    
-    <content type="html"><![CDATA[<p>备注上传视频中遇到的问题。</p><span id="more"></span><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">其他</font>：<br>EA交易：<br>指标：<br>脚本：</p><h3 id="发布视频"><a href="#发布视频" class="headerlink" title="发布视频"></a>发布视频</h3><p><font color="#3232CD">其他</font>：<br>第1个url会变化，不建议用。如 v.kuaishou.com</p><p>&#x2F;&#x2F; 平仓视频<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/APCqxQ">https://v.kuaishou.com/APCqxQ</a><br>cmd_f:start chrome.exe <a href="https://www.kuaishou.com/short-video/3xgkd32gndx7w7m">https://www.kuaishou.com/short-video/3xgkd32gndx7w7m</a><br>&#x2F;&#x2F; 平铺开仓视频 cpi<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/ECJY0C">https://v.kuaishou.com/ECJY0C</a><br>cmd_f:start chrome.exe <a href="https://www.kuaishou.com/short-video/3xgbdjqyuu2u92g">https://www.kuaishou.com/short-video/3xgbdjqyuu2u92g</a></p><p>&#x2F;&#x2F; 大非农<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/F0jGML">https://v.kuaishou.com/F0jGML</a><br>cmd_f:start chrome.exe <a href="https://www.kuaishou.com/short-video/3xeija5a8jiqifm">https://www.kuaishou.com/short-video/3xeija5a8jiqifm</a><br>&#x2F;&#x2F; cpi<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/CVWWYo">https://v.kuaishou.com/CVWWYo</a><br>cmd_f:start chrome.exe <a href="https://www.kuaishou.com/short-video/3x8nacdxvyvq2sq">https://www.kuaishou.com/short-video/3x8nacdxvyvq2sq</a><br>&#x2F;&#x2F; 失业金<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/CuqyE3">https://v.kuaishou.com/CuqyE3</a><br>cmd_f:start chrome.exe <a href="https://www.kuaishou.com/short-video/3xtzsi77aqcpqzs">https://www.kuaishou.com/short-video/3xtzsi77aqcpqzs</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;备注上传视频中遇到的问题。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="脚本" scheme="https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>脚本使用示例【过时了】</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_market_custom_usage/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_market_custom_usage/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-10-18T02:14:44.927Z</updated>
-    
-    <content type="html"><![CDATA[<p>从下载到使用。</p><span id="more"></span><h2 id="脚本使用示例"><a href="#脚本使用示例" class="headerlink" title="脚本使用示例"></a>脚本使用示例</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">使用示例</font>：</p><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p><font color="#3232CD">1. 下载最新脚本</font>：参考下载与更新记录页面。</p><p><font color="#3232CD">2. 复制脚本文件，并编译</font>：</p><p>a. 打开编辑工具。<br><img src="/img/market/usage_ide.png"></p><p>b. 打开任一一个脚本的目录。<br><img src="/img/market/usage_get_dir.png"></p><p>c. 与下载包对比，并复制以下文件。<br><img src="/img/market/usage_path_info.png"></p><p>d. 编译以下脚本文件。有些文件不需要编译。<br><img src="/img/market/usage_build.png"></p><p>如果编译出错，请联系我。<br><img src="/img/market/usage_build_log.png"></p><p>e. 验证能否运行。可以用这3个脚本测试。<br><img src="/img/market/usage_verify.png"></p><p>查看是否正常输出log。<br><img src="/img/market/usage_verify_log.png"></p><p>f. 打开算法交易。</p><h3 id="模拟开单"><a href="#模拟开单" class="headerlink" title="模拟开单"></a>模拟开单</h3><p>a. 调整仓位比例为50% ~ 100%。默认100%。<br><img src="/img/review/review_20240613_set.png"></p><p><img src="/img/review/review_20240613_set_log.png"></p><p>b. 预览批量开单的仓位与价格<br><img src="/img/market/usage_test_open.png"></p><p>查看仓位是否合适，价格间隔是否合理。<br><img src="/img/market/usage_test_open_log.png"></p><p>c. 模拟开单<br><img src="/img/review/review_20240613_sel.png"></p><p><img src="/img/review/review_20240613_err.png"></p><p>d. 正式使用</p><h3 id="正式使用"><a href="#正式使用" class="headerlink" title="正式使用"></a>正式使用</h3><p><font color="#3232CD">准备工作</font>：<br>a. 切换到真实交易账号。<br>b. 使用更好的wifi信号。<br>c. 打开交易品种图表窗口。<br>可用LoadTemplate 脚本快速加载模板。<br>不过需要将脚本中的模板名称改为自己使用的模板名称。并移动模板到file位置。<br>d. 检查算法交易是否开启。切换账号默认会关闭算法交易。</p><p><font color="#3232CD">准备交易</font>：<br>a. 注意时间，设置电脑时间格式，显示秒数。<br>b. 集中精力，预估行情波动。它将影响交易结果。<br>c. 选择仓位比例、开单次数、是否带止损止赢。找到对应的脚本，准备点击。<br>d. 提前10秒用手机录像，并用电脑开单。时间自己控制。</p><p><font color="#3232CD">做记录</font>：<br>a. 记录行情波动，如何预测更准确。<br>b. 记录策略，如何选择最佳策略。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;从下载到使用。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="下载" scheme="https://seefs.github.io/categories/%E4%B8%8B%E8%BD%BD/"/>
-    
-    
-    <category term="下载" scheme="https://seefs.github.io/tags/%E4%B8%8B%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>下载脚本文件【最新20241017】</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_market_install/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_market_install/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-10-18T02:47:23.533Z</updated>
-    
-    <content type="html"><![CDATA[<p>下载zip文件后，需要复制到指定目标，然后打开IDE，编译一次，即可使用。</p><span id="more"></span><h2 id="下载脚本文件"><a href="#下载脚本文件" class="headerlink" title="下载脚本文件"></a>下载脚本文件</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">如何查看脚本目标</font>：<br>请打开IDE软件，右键编译 “scripts”文件夹。</p><h3 id="下载链接与更新记录"><a href="#下载链接与更新记录" class="headerlink" title="下载链接与更新记录"></a>下载链接与更新记录</h3><p><font color="#3232CD">第09版 2024&#x2F;10&#x2F;17</font>：<br>a. 整体修改简化功能，按操作需求确定是否带输入参数。<br><a href="https://seefs.github.io/zip/mt5_scripts_20241017.zip"><font color="#99CC32">下载 mt5_scripts_20241017.zip➬</font></a></p><p><font color="#3232CD">更新记录</font>：<br>第08版 mt5_scripts_20240613. 仅仅修改测试脚本名称<br>第07版 mt5_scripts_20240604. 去掉杠杆修改。采用自带的api获取杠杆比例。<br>第06版 mt5_scripts_20240603. 修改不同杠杆的仓位bug</p><p>第05版 mt5_scripts_20240602. 调整仓位大小，合并重复代码<br>第04版 mt5_scripts_20240525. 调整仓位大小<br>第03版 mt5_scripts_20240520. 修改批量开单bug<br>第02版 mt5_scripts_20240518. 修改批量开单bug<br>第01版 mt5_scripts_20240516</p><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p><font color="#3232CD">注意事项</font>：<br>a. 只能正常用于XAUUSD品种，其他品种未调整。<br>b. 由于Mql5论坛的验证码收不到，导致账号受限。能上传脚本但不能共享给其他人下载。</p><p><font color="#3232CD">如何编译</font>：<br>a. “开始&#x2F;恢复编译”按钮，有两个，点左边一个。若点右边一个可能会直接下单。<br>b. 左侧栏，选中当前文件名，右键编译。<br>c. 左侧栏，选中文件夹，右键编译。<br>d. 切换交易软件，刷新再使用脚本。</p><h3 id="安装路径"><a href="#安装路径" class="headerlink" title="安装路径"></a>安装路径</h3><p><font color="#3232CD">安装路径</font>：以“EX mt5电脑版工具”为例</p><p>软件目录：<br>C:\Users\xxxx\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\</p><p>存放模板文件：<br>5378…\MQL5\Files<br>5378…\MQL5\Profiles\Templates</p><p>存放脚本头文件：<br>5378…\MQL5\Include\Custom\</p><p>存放脚本文件：<br>5378…\MQL5\Scripts\</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;下载zip文件后，需要复制到指定目标，然后打开IDE，编译一次，即可使用。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="下载" scheme="https://seefs.github.io/categories/%E4%B8%8B%E8%BD%BD/"/>
-    
-    
-    <category term="下载" scheme="https://seefs.github.io/tags/%E4%B8%8B%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
     <title>图表脚本</title>
     <link href="https://seefs.github.io/2024/05/03/habit_market_init/"/>
     <id>https://seefs.github.io/2024/05/03/habit_market_init/</id>
@@ -270,16 +247,56 @@
   </entry>
   
   <entry>
-    <title>脚本开发中</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_market_3/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_market_3/</id>
+    <title>常用指标与EA效果</title>
+    <link href="https://seefs.github.io/2024/05/03/ea_index_common/"/>
+    <id>https://seefs.github.io/2024/05/03/ea_index_common/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-10-18T02:25:00.294Z</updated>
+    <updated>2024-10-18T02:27:09.226Z</updated>
     
-    <content type="html"><![CDATA[<p>分析与画图。</p><span id="more"></span><h2 id="脚本开发中"><a href="#脚本开发中" class="headerlink" title="脚本开发中"></a>脚本开发中</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本开发中</font>：</p><h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_script"><font color="#99CC32">其他脚本修改➬</font></a></p><p>一些未整理好的文档放到最后。</p><p><a href="https://seefs.github.io/2024/05/03/habit_market_other"><font color="#99CC32">其他➬</font></a></p><p>备注上传视频中遇到的问题。</p><p><a href="https://seefs.github.io/2024/05/03/habit_market_init"><font color="#99CC32">图表脚本➬</font></a></p><p>完成图表模板的加载。</p><h3 id="分析与画图"><a href="#分析与画图" class="headerlink" title="分析与画图"></a>分析与画图</h3><p><a href="https://seefs.github.io/2024/05/03/scripts_analyze_stats"><font color="#99CC32">常用统计➬</font></a></p><p>常用统计。</p><p><a href="https://seefs.github.io/2024/05/03/scripts_analyze_speciation"><font color="#99CC32">波动分析➬</font></a></p><p>波动分析。工作未做。</p><p><a href="https://seefs.github.io/2024/05/03/scripts_analyze_stats"><font color="#99CC32">状态码分析➬</font></a></p><p>一个反人性工具。</p><p><a href="https://seefs.github.io/2024/05/03/scripts_analyze_stats"><font color="#99CC32">常用指标与EA效果➬</font></a></p><p>常用指标与EA效果。</p>]]></content>
+    <content type="html"><![CDATA[<p>常用指标与EA效果。</p><span id="more"></span><h2 id="常用统计"><a href="#常用统计" class="headerlink" title="常用统计"></a>常用统计</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">常用统计</font>：</p><h3 id="下载代码库与验证效果"><a href="#下载代码库与验证效果" class="headerlink" title="下载代码库与验证效果"></a>下载代码库与验证效果</h3><p><font color="#3232CD">下载路径</font>：</p><p><font color="#3232CD">简单EA，基于简单均线与ADX</font>：<br>Experts\_Demo\simple_ma-adx_ea_en.mq5<br>时间：2014.01.23</p><h3 id="期望功能"><a href="#期望功能" class="headerlink" title="期望功能"></a>期望功能</h3><p><font color="#3232CD">自动解锁</font>：我经历过不受控制的状态，导致大错。<br>上锁：研究怎么锁单，让脚本处理<br>N字解锁：多空多时平多，空多空时平空。<br>逐步解锁：赢利锁仓</p><p><font color="#3232CD">赢利锁仓</font>：<br>赢利锁仓：最高点反向锁仓。用最近的顶点。并计算支撑点主动解锁。解锁后又开锁仓单。更新旧单子止损在支撑点下。<br>赢利锁仓：整点快速盈利锁仓。<br>赢利换仓：多次触及解锁点，应该平仓旧单子。并下移开仓位置。<br>隔夜赢利锁仓：预测会向上挖坑。<br>无方向锁仓：在成本区上下成对锁仓。</p>]]></content>
     
     
-    <summary type="html">&lt;p&gt;分析与画图。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;常用指标与EA效果。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="统计" scheme="https://seefs.github.io/tags/%E7%BB%9F%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>下载脚本文件【最新20241017】</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_install/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_install/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-11-28T10:25:43.119Z</updated>
+    
+    <content type="html"><![CDATA[<p>下载zip文件后，需要复制到指定目标，然后打开IDE，编译一次，即可使用。</p><span id="more"></span><h2 id="下载脚本文件"><a href="#下载脚本文件" class="headerlink" title="下载脚本文件"></a>下载脚本文件</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">如何查看脚本目标</font>：<br>请打开IDE软件，右键编译 “scripts”文件夹。</p><h3 id="下载链接与更新记录"><a href="#下载链接与更新记录" class="headerlink" title="下载链接与更新记录"></a>下载链接与更新记录</h3><p><font color="#3232CD">第09版 2024&#x2F;10&#x2F;17</font>：<br>a. 整体修改简化功能，按操作需求确定是否带输入参数。<br><a href="https://seefs.github.io/zip/mt5_scripts_20241017.zip"><font color="#99CC32">下载 mt5_scripts_20241017.zip➬</font></a></p><p><font color="#3232CD">其他更新记录</font>：<br>第08版 mt5_scripts_20240613. 仅仅修改测试脚本名称<br>第07版 mt5_scripts_20240604. 去掉杠杆修改。采用自带的api获取杠杆比例。<br>第06版 mt5_scripts_20240603. 修改不同杠杆的仓位bug</p><p>第05版 mt5_scripts_20240602. 调整仓位大小，合并重复代码<br>第04版 mt5_scripts_20240525. 调整仓位大小<br>第03版 mt5_scripts_20240520. 修改批量开单bug<br>第02版 mt5_scripts_20240518. 修改批量开单bug<br>第01版 mt5_scripts_20240516</p><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p><font color="#3232CD">注意事项</font>：<br>a. 只能正常用于XAUUSD品种，其他品种未调整。<br>b. 由于Mql5论坛的验证码收不到，导致账号受限。能上传脚本但不能共享给其他人下载。</p><p><font color="#3232CD">如何编译</font>：<br>a. “开始&#x2F;恢复编译”按钮，有两个，点左边一个。若点右边一个可能会直接下单。<br>b. 左侧栏，选中当前文件名，右键编译。<br>c. 左侧栏，选中文件夹，右键编译。<br>d. 切换交易软件，刷新再使用脚本。</p><h3 id="安装路径"><a href="#安装路径" class="headerlink" title="安装路径"></a>安装路径</h3><p><font color="#3232CD">安装路径</font>：以“EX mt5电脑版工具”为例</p><p>软件目录：<br>C:\Users\xxxx\AppData\Roaming\MetaQuotes\Terminal\53785E099C927DB68A545C249CDBCE06\</p><p>存放模板文件：<br>5378…\MQL5\Files<br>5378…\MQL5\Profiles\Templates</p><p>存放脚本头文件：<br>5378…\MQL5\Include\Custom\</p><p>存放脚本文件：<br>5378…\MQL5\Scripts\</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;下载zip文件后，需要复制到指定目标，然后打开IDE，编译一次，即可使用。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="下载" scheme="https://seefs.github.io/categories/%E4%B8%8B%E8%BD%BD/"/>
+    
+    
+    <category term="下载" scheme="https://seefs.github.io/tags/%E4%B8%8B%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>其他脚本修改</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_script/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_script/</id>
+    <published>2024-05-03T10:00:00.000Z</published>
+    <updated>2024-06-08T12:48:22.799Z</updated>
+    
+    <content type="html"><![CDATA[<p>一套脚本。</p><span id="more"></span><h2 id="其他脚本修改"><a href="#其他脚本修改" class="headerlink" title="其他脚本修改"></a>其他脚本修改</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本的好处</font>：完全策略化，下单就不怎么管了。<br>风险：<br>增加批量止损：不带损不敢冲，浑水区直接不做。优势质疑冒险，劣势不敢冒险。<br>限制亏损：防止大亏损，防止黑天鹅，不被恶庄咬伤。<br>状态差：防止生病时，高估能力与反应。<br>考虑极端行情：两边坑，只有我赚钱。因为手快，有更多时间思考。</p><p>策略：<br>机会差：完善策略搭配与快速操作。错过最好的策略，会被垃圾策略控制。<br>融入变背离：可能过度观望，导致判断失误，从而背离市场。一般参与者更了解市场。<br>短拿变长拿：看可能是大风险，不看可能是小风险。长拿会躲，不追。<br>减少等待：买潜不买急，方向确定时，不会被当前行情控制。如等回调做多。<br>扩展：扩展到如美股。</p><p>市场：<br>大机会长拿，小机会短拿。<br>不专业：长期受自己的盈利能力影响，自信时有时无。</p><p>损失：<br>先设置风险，后确认风险。先防备风险，后调整方向。</p><p><font color="#3232CD">应用脚本注意事项</font>：<br>参数配置：可以考虑用参数文件，来调整仓位。<br>仓位固定：如果需要调整仓位，最好将旧脚本做备份。调制一套新的脚本，重新编译。<br>从小开始：默认仓位应该较低，谨慎加大仓位，最好自己修改并验证。毕竟用别人的东西有风险。</p><p><font color="#3232CD">脚本类型</font>：<br>操作：<br>设置：单边必止损，震荡必止赢。亏损必锁单，众亏必反单。<br>分析：打破规律，了解常用技术的弱点。尊重基础分析与数据统计。了解真实的被控制行情。<br>指标：自研形态码。<br>策略：<br>EA：</p><h3 id="脚本目录"><a href="#脚本目录" class="headerlink" title="脚本目录"></a>脚本目录</h3><p><font color="#3232CD">脚本目录</font>：</p><p>&#x2F;&#x2F; 脚本 (默认下载目录，整理过的，会移动新目录)<br>Serial:Mql5\Scripts\Downloads<br>&#x2F;&#x2F; 脚本–操作<br>Serial:Mql5\Scripts\_OrderOpen<br>Serial:Mql5\Scripts\_OrderClose<br>Serial:Mql5\Scripts\_OrderSetting<br>&#x2F;&#x2F; 脚本–分析回测<br>Serial:Mql5\Scripts\_Analyze<br>&#x2F;&#x2F; 脚本–画图辅助<br>Serial:Mql5\Scripts\_Draw<br>&#x2F;&#x2F; 脚本–其他<br>Serial:Mql5\Scripts\_Other<br>&#x2F;&#x2F; EA交易<br>&#x2F;&#x2F; 指标<br>Serial:Mql5\Scripts\_Other\</p><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><h3 id="画图辅助"><a href="#画图辅助" class="headerlink" title="画图辅助"></a>画图辅助</h3><p><font color="#3232CD">复盘</font>：</p><p>标时间：在图上标时间，便于复盘<br>Serial:Mql5\Scripts\_Draw\</p><p>MAX_LOT：最大手数，CreateTLabel<br>Serial:Mql5\Scripts\_Analyze\MAX_LOT.mq5</p><h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD">随机试验</font>：</p><p>全多：<br>全空：<br>只做反转：只反转一次。错误后再反转。<br>只做跟随：只做N形，1~2次。<br>贪心：追求更高点。<br>启动点：寻找大浪和小浪的启动点，否则概率太低。<br>自动解锁：<br>Serial:Mql5\Scripts\_Draw\</p><p><font color="#3232CD">回测信号</font>：看效果。<br>3分信号：<br>早上反转信号：<br>整点风险单：<br>N字信号：最低点升高做多。</p><h3 id="EA-1"><a href="#EA-1" class="headerlink" title="EA"></a>EA</h3><p><a href="https://seefs.github.io/2023/11/06/attitude_predict_EA"><font color="#99CC32">EA参考➬</font></a></p><h3 id="指标"><a href="#指标" class="headerlink" title="指标"></a>指标</h3><p>震荡指标：最好明确给出左右。左空右多。<br>Serial:Mql5\Scripts\_Other\</p><h3 id="其他思路"><a href="#其他思路" class="headerlink" title="其他思路"></a>其他思路</h3><p><font color="#3232CD">宏</font>：<br>宏：是否设置参数</p><p><font color="#3232CD">EA</font>：<br>定时开脚本：15秒不赚自动关闭。<br>修改止损：先做</p><p><font color="#3232CD">EA</font>：<br>一定要有一单止赢不止损–+1<br>一定要反单<br>大赚反单，大亏反单(势未尽反单，操作不快要什么脚本)<br>只要连续波动，就准备动手</p><p><font color="#3232CD">操作</font>：<br>反单：自动获取均线解锁位置<br>平仓：可能有持仓集中平仓函数<br>预开单：test,一单。1.删，2突破时准备反转，3不能大损，能保本必保本<br>开单：每个位置补一单<br>set订单：从当前价格网格开仓，可能缺少set脚本锁定利润。</p><p><font color="#3232CD">代码编辑</font>：</p><ol><li>加仓<br>建议每周调一次，甚至每月<br>稳定后不用调</li></ol><p>趋势平铺法：省精力<br>1.在最低点平铺上去<br>2.在最高点平铺下来<br>3.震荡不赚钱<br>4.没有止损<br>5.预测顶点反单</p><p>不整理一套，不分享</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;一套脚本。&lt;/p&gt;</summary>
     
     
     
@@ -308,25 +325,6 @@
   </entry>
   
   <entry>
-    <title>其他脚本修改</title>
-    <link href="https://seefs.github.io/2024/05/03/habit_market_script/"/>
-    <id>https://seefs.github.io/2024/05/03/habit_market_script/</id>
-    <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-06-08T12:48:22.799Z</updated>
-    
-    <content type="html"><![CDATA[<p>一套脚本。</p><span id="more"></span><h2 id="其他脚本修改"><a href="#其他脚本修改" class="headerlink" title="其他脚本修改"></a>其他脚本修改</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本的好处</font>：完全策略化，下单就不怎么管了。<br>风险：<br>增加批量止损：不带损不敢冲，浑水区直接不做。优势质疑冒险，劣势不敢冒险。<br>限制亏损：防止大亏损，防止黑天鹅，不被恶庄咬伤。<br>状态差：防止生病时，高估能力与反应。<br>考虑极端行情：两边坑，只有我赚钱。因为手快，有更多时间思考。</p><p>策略：<br>机会差：完善策略搭配与快速操作。错过最好的策略，会被垃圾策略控制。<br>融入变背离：可能过度观望，导致判断失误，从而背离市场。一般参与者更了解市场。<br>短拿变长拿：看可能是大风险，不看可能是小风险。长拿会躲，不追。<br>减少等待：买潜不买急，方向确定时，不会被当前行情控制。如等回调做多。<br>扩展：扩展到如美股。</p><p>市场：<br>大机会长拿，小机会短拿。<br>不专业：长期受自己的盈利能力影响，自信时有时无。</p><p>损失：<br>先设置风险，后确认风险。先防备风险，后调整方向。</p><p><font color="#3232CD">应用脚本注意事项</font>：<br>参数配置：可以考虑用参数文件，来调整仓位。<br>仓位固定：如果需要调整仓位，最好将旧脚本做备份。调制一套新的脚本，重新编译。<br>从小开始：默认仓位应该较低，谨慎加大仓位，最好自己修改并验证。毕竟用别人的东西有风险。</p><p><font color="#3232CD">脚本类型</font>：<br>操作：<br>设置：单边必止损，震荡必止赢。亏损必锁单，众亏必反单。<br>分析：打破规律，了解常用技术的弱点。尊重基础分析与数据统计。了解真实的被控制行情。<br>指标：自研形态码。<br>策略：<br>EA：</p><h3 id="脚本目录"><a href="#脚本目录" class="headerlink" title="脚本目录"></a>脚本目录</h3><p><font color="#3232CD">脚本目录</font>：</p><p>&#x2F;&#x2F; 脚本 (默认下载目录，整理过的，会移动新目录)<br>Serial:Mql5\Scripts\Downloads<br>&#x2F;&#x2F; 脚本–操作<br>Serial:Mql5\Scripts\_OrderOpen<br>Serial:Mql5\Scripts\_OrderClose<br>Serial:Mql5\Scripts\_OrderSetting<br>&#x2F;&#x2F; 脚本–分析回测<br>Serial:Mql5\Scripts\_Analyze<br>&#x2F;&#x2F; 脚本–画图辅助<br>Serial:Mql5\Scripts\_Draw<br>&#x2F;&#x2F; 脚本–其他<br>Serial:Mql5\Scripts\_Other<br>&#x2F;&#x2F; EA交易<br>&#x2F;&#x2F; 指标<br>Serial:Mql5\Scripts\_Other\</p><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><h3 id="画图辅助"><a href="#画图辅助" class="headerlink" title="画图辅助"></a>画图辅助</h3><p><font color="#3232CD">复盘</font>：</p><p>标时间：在图上标时间，便于复盘<br>Serial:Mql5\Scripts\_Draw\</p><p>MAX_LOT：最大手数，CreateTLabel<br>Serial:Mql5\Scripts\_Analyze\MAX_LOT.mq5</p><h3 id="EA"><a href="#EA" class="headerlink" title="EA"></a>EA</h3><p><font color="#3232CD">随机试验</font>：</p><p>全多：<br>全空：<br>只做反转：只反转一次。错误后再反转。<br>只做跟随：只做N形，1~2次。<br>贪心：追求更高点。<br>启动点：寻找大浪和小浪的启动点，否则概率太低。<br>自动解锁：<br>Serial:Mql5\Scripts\_Draw\</p><p><font color="#3232CD">回测信号</font>：看效果。<br>3分信号：<br>早上反转信号：<br>整点风险单：<br>N字信号：最低点升高做多。</p><h3 id="EA-1"><a href="#EA-1" class="headerlink" title="EA"></a>EA</h3><p><a href="https://seefs.github.io/2023/11/06/attitude_predict_EA"><font color="#99CC32">EA参考➬</font></a></p><h3 id="指标"><a href="#指标" class="headerlink" title="指标"></a>指标</h3><p>震荡指标：最好明确给出左右。左空右多。<br>Serial:Mql5\Scripts\_Other\</p><h3 id="其他思路"><a href="#其他思路" class="headerlink" title="其他思路"></a>其他思路</h3><p><font color="#3232CD">宏</font>：<br>宏：是否设置参数</p><p><font color="#3232CD">EA</font>：<br>定时开脚本：15秒不赚自动关闭。<br>修改止损：先做</p><p><font color="#3232CD">EA</font>：<br>一定要有一单止赢不止损–+1<br>一定要反单<br>大赚反单，大亏反单(势未尽反单，操作不快要什么脚本)<br>只要连续波动，就准备动手</p><p><font color="#3232CD">操作</font>：<br>反单：自动获取均线解锁位置<br>平仓：可能有持仓集中平仓函数<br>预开单：test,一单。1.删，2突破时准备反转，3不能大损，能保本必保本<br>开单：每个位置补一单<br>set订单：从当前价格网格开仓，可能缺少set脚本锁定利润。</p><p><font color="#3232CD">代码编辑</font>：</p><ol><li>加仓<br>建议每周调一次，甚至每月<br>稳定后不用调</li></ol><p>趋势平铺法：省精力<br>1.在最低点平铺上去<br>2.在最高点平铺下来<br>3.震荡不赚钱<br>4.没有止损<br>5.预测顶点反单</p><p>不整理一套，不分享</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;一套脚本。&lt;/p&gt;</summary>
-    
-    
-    
-    
-    <category term="脚本" scheme="https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
-    
-  </entry>
-  
-  <entry>
     <title>单个开仓脚本Demo</title>
     <link href="https://seefs.github.io/2024/05/03/habit_scripts_open/"/>
     <id>https://seefs.github.io/2024/05/03/habit_scripts_open/</id>
@@ -346,54 +344,58 @@
   </entry>
   
   <entry>
-    <title>脚本下载</title>
-    <link href="https://seefs.github.io/2024/05/03/mt5_analyse_1/"/>
-    <id>https://seefs.github.io/2024/05/03/mt5_analyse_1/</id>
+    <title>如何下载Mql5论坛上的脚本</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_usage/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_usage/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-10-13T05:14:42.344Z</updated>
+    <updated>2024-10-18T02:06:29.693Z</updated>
     
-    <content type="html"><![CDATA[<p>脚本说明与下载，以及如何修改。</p><span id="more"></span><h2 id="脚本下载"><a href="#脚本下载" class="headerlink" title="脚本下载"></a>脚本下载</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本下载</font>：</p><h3 id="脚本说明与下载"><a href="#脚本说明与下载" class="headerlink" title="脚本说明与下载"></a>脚本说明与下载</h3>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;脚本说明与下载，以及如何修改。&lt;/p&gt;</summary>
+    <content type="html"><![CDATA[<p>记录下载步骤。</p><span id="more"></span><h2 id="如何下载Mql5论坛上的脚本"><a href="#如何下载Mql5论坛上的脚本" class="headerlink" title="如何下载Mql5论坛上的脚本"></a>如何下载Mql5论坛上的脚本</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本的下载与使用</font>：用一个脚本，“一键平仓”，演示如何使用它。</p><h3 id="下载与使用"><a href="#下载与使用" class="headerlink" title="下载与使用"></a>下载与使用</h3><p><font color="#3232CD">下载</font>：需要先注册mql5账号，登录后，点击下载</p><p><img src="/img/habit/market/test_01.png"></p><p>或者右键选择“查看”并从浏览器下载，论坛上一般有使用说明</p><p><img src="/img/habit/market/test_06.png"></p><p><font color="#3232CD">注册登录</font>：</p><p><img src="/img/habit/market/test_02.png"></p><p><font color="#3232CD">保存位置</font>：</p><p><img src="/img/habit/market/test_03.png"></p><p><font color="#3232CD">如何使用</font>：打开开关，再双击脚本</p><p><img src="/img/habit/market/test_04.png"></p><p><font color="#3232CD">使用效果</font>：约1秒平掉2个单子，没手机端自带功能快</p><p><img src="/img/habit/market/test_05.png"></p><h3 id="编辑脚本"><a href="#编辑脚本" class="headerlink" title="编辑脚本"></a>编辑脚本</h3><p><font color="#3232CD">打开编辑工具</font>：</p><p><img src="/img/habit/market/edit_01.png"></p><p><font color="#3232CD">修改代码</font>：修改后，点击运行，重新编译</p><p><img src="/img/habit/market/edit_02.png"></p><p><font color="#3232CD">相互复制</font>：不同的交易软件，脚本路径不一样。可相互复制后使用</p><p><img src="/img/habit/market/edit_03.png"></p>]]></content>
     
     
+    <summary type="html">&lt;p&gt;记录下载步骤。&lt;/p&gt;</summary>
     
     
-    <category term="脚本" scheme="https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+    <category term="下载" scheme="https://seefs.github.io/categories/%E4%B8%8B%E8%BD%BD/"/>
+    
+    
+    <category term="下载" scheme="https://seefs.github.io/tags/%E4%B8%8B%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
-    <title>脚本分类与功能说明</title>
-    <link href="https://seefs.github.io/2024/05/03/mt4_scripts/"/>
-    <id>https://seefs.github.io/2024/05/03/mt4_scripts/</id>
+    <title>脚本使用示例【过时了】</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_custom_usage/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_custom_usage/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-10-13T05:44:26.084Z</updated>
+    <updated>2024-10-18T02:14:44.927Z</updated>
     
-    <content type="html"><![CDATA[<p>包括平仓、预平仓、反单、单个Demo、批量开仓、设置。</p><span id="more"></span><h2 id="mt4脚本分类与功能说明"><a href="#mt4脚本分类与功能说明" class="headerlink" title="mt4脚本分类与功能说明"></a>mt4脚本分类与功能说明</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">脚本分类</font>：</p><h3 id="平仓"><a href="#平仓" class="headerlink" title="平仓"></a>平仓</h3>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;包括平仓、预平仓、反单、单个Demo、批量开仓、设置。&lt;/p&gt;</summary>
+    <content type="html"><![CDATA[<p>从下载到使用。</p><span id="more"></span><h2 id="脚本使用示例"><a href="#脚本使用示例" class="headerlink" title="脚本使用示例"></a>脚本使用示例</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">使用示例</font>：</p><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p><font color="#3232CD">1. 下载最新脚本</font>：参考下载与更新记录页面。</p><p><font color="#3232CD">2. 复制脚本文件，并编译</font>：</p><p>a. 打开编辑工具。<br><img src="/img/market/usage_ide.png"></p><p>b. 打开任一一个脚本的目录。<br><img src="/img/market/usage_get_dir.png"></p><p>c. 与下载包对比，并复制以下文件。<br><img src="/img/market/usage_path_info.png"></p><p>d. 编译以下脚本文件。有些文件不需要编译。<br><img src="/img/market/usage_build.png"></p><p>如果编译出错，请联系我。<br><img src="/img/market/usage_build_log.png"></p><p>e. 验证能否运行。可以用这3个脚本测试。<br><img src="/img/market/usage_verify.png"></p><p>查看是否正常输出log。<br><img src="/img/market/usage_verify_log.png"></p><p>f. 打开算法交易。</p><h3 id="模拟开单"><a href="#模拟开单" class="headerlink" title="模拟开单"></a>模拟开单</h3><p>a. 调整仓位比例为50% ~ 100%。默认100%。<br><img src="/img/review/review_20240613_set.png"></p><p><img src="/img/review/review_20240613_set_log.png"></p><p>b. 预览批量开单的仓位与价格<br><img src="/img/market/usage_test_open.png"></p><p>查看仓位是否合适，价格间隔是否合理。<br><img src="/img/market/usage_test_open_log.png"></p><p>c. 模拟开单<br><img src="/img/review/review_20240613_sel.png"></p><p><img src="/img/review/review_20240613_err.png"></p><p>d. 正式使用</p><h3 id="正式使用"><a href="#正式使用" class="headerlink" title="正式使用"></a>正式使用</h3><p><font color="#3232CD">准备工作</font>：<br>a. 切换到真实交易账号。<br>b. 使用更好的wifi信号。<br>c. 打开交易品种图表窗口。<br>可用LoadTemplate 脚本快速加载模板。<br>不过需要将脚本中的模板名称改为自己使用的模板名称。并移动模板到file位置。<br>d. 检查算法交易是否开启。切换账号默认会关闭算法交易。</p><p><font color="#3232CD">准备交易</font>：<br>a. 注意时间，设置电脑时间格式，显示秒数。<br>b. 集中精力，预估行情波动。它将影响交易结果。<br>c. 选择仓位比例、开单次数、是否带止损止赢。找到对应的脚本，准备点击。<br>d. 提前10秒用手机录像，并用电脑开单。时间自己控制。</p><p><font color="#3232CD">做记录</font>：<br>a. 记录行情波动，如何预测更准确。<br>b. 记录策略，如何选择最佳策略。</p>]]></content>
     
     
+    <summary type="html">&lt;p&gt;从下载到使用。&lt;/p&gt;</summary>
     
     
-    <category term="脚本" scheme="https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+    <category term="下载" scheme="https://seefs.github.io/categories/%E4%B8%8B%E8%BD%BD/"/>
+    
+    
+    <category term="下载" scheme="https://seefs.github.io/tags/%E4%B8%8B%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
-    <title>配套脚本下载</title>
-    <link href="https://seefs.github.io/2024/05/03/mt5_apply_1/"/>
-    <id>https://seefs.github.io/2024/05/03/mt5_apply_1/</id>
+    <title>其他</title>
+    <link href="https://seefs.github.io/2024/05/03/habit_market_other/"/>
+    <id>https://seefs.github.io/2024/05/03/habit_market_other/</id>
     <published>2024-05-03T10:00:00.000Z</published>
-    <updated>2024-10-17T10:51:46.417Z</updated>
+    <updated>2024-06-13T13:46:35.051Z</updated>
     
-    <content type="html"><![CDATA[<p>脚本说明与下载，以及如何修改。</p><span id="more"></span><h2 id="配套脚本下载"><a href="#配套脚本下载" class="headerlink" title="配套脚本下载"></a>配套脚本下载</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">配套脚本下载</font>：</p><h3 id="脚本说明与下载"><a href="#脚本说明与下载" class="headerlink" title="脚本说明与下载"></a>脚本说明与下载</h3><p><a href="https://seefs.github.io/2024/05/03/mt5_scripts"><font color="#99CC32">mt5脚本分类与功能说明➬</font></a></p><p>包括平仓、刷单、挂单、设置。</p><p><a href="https://seefs.github.io/2024/05/03/mt4_scripts"><font color="#99CC32">mt4脚本分类与功能说明➬</font></a></p><p>还没时间开发，待有时间再说。</p><p><a href="https://seefs.github.io/2024/05/03/habit_market_2"><font color="#99CC32">脚本下载与安装➬</font></a></p><p>如何使用我的脚本、论坛上的脚本。</p><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p><a href="https://seefs.github.io/2024/05/03/habit_market_test"><font color="#99CC32">测试脚本➬</font></a></p><p>单个模块测试。</p>]]></content>
+    <content type="html"><![CDATA[<p>备注上传视频中遇到的问题。</p><span id="more"></span><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><font color="#3232CD">其他</font>：<br>EA交易：<br>指标：<br>脚本：</p><h3 id="发布视频"><a href="#发布视频" class="headerlink" title="发布视频"></a>发布视频</h3><p><font color="#3232CD">其他</font>：<br>第1个url会变化，不建议用。如 v.kuaishou.com</p><p>&#x2F;&#x2F; 平仓视频<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/APCqxQ">https://v.kuaishou.com/APCqxQ</a><br>cmd_f:start chrome.exe <a href="https://www.kuaishou.com/short-video/3xgkd32gndx7w7m">https://www.kuaishou.com/short-video/3xgkd32gndx7w7m</a><br>&#x2F;&#x2F; 平铺开仓视频 cpi<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/ECJY0C">https://v.kuaishou.com/ECJY0C</a><br>cmd_f:start chrome.exe <a href="https://www.kuaishou.com/short-video/3xgbdjqyuu2u92g">https://www.kuaishou.com/short-video/3xgbdjqyuu2u92g</a></p><p>&#x2F;&#x2F; 大非农<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/F0jGML">https://v.kuaishou.com/F0jGML</a><br>cmd_f:start chrome.exe <a href="https://www.kuaishou.com/short-video/3xeija5a8jiqifm">https://www.kuaishou.com/short-video/3xeija5a8jiqifm</a><br>&#x2F;&#x2F; cpi<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/CVWWYo">https://v.kuaishou.com/CVWWYo</a><br>cmd_f:start chrome.exe <a href="https://www.kuaishou.com/short-video/3x8nacdxvyvq2sq">https://www.kuaishou.com/short-video/3x8nacdxvyvq2sq</a><br>&#x2F;&#x2F; 失业金<br>cmd_f:start chrome.exe <a href="https://v.kuaishou.com/CuqyE3">https://v.kuaishou.com/CuqyE3</a><br>cmd_f:start chrome.exe <a href="https://www.kuaishou.com/short-video/3xtzsi77aqcpqzs">https://www.kuaishou.com/short-video/3xtzsi77aqcpqzs</a></p>]]></content>
     
     
-    <summary type="html">&lt;p&gt;脚本说明与下载，以及如何修改。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;备注上传视频中遇到的问题。&lt;/p&gt;</summary>
     
     
     
