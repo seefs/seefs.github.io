@@ -11,7 +11,16 @@
   </url>
   
   <url>
-    <loc>https://seefs.github.io/2024/11/29/analyse_review_20241127/</loc>
+    <loc>https://seefs.github.io/2024/11/28/analyse_install/</loc>
+    
+    <lastmod>2024-11-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seefs.github.io/2024/11/28/analyse_review_20241127/</loc>
     
     <lastmod>2024-11-29</lastmod>
     
@@ -21,6 +30,15 @@
   
   <url>
     <loc>https://seefs.github.io/2023/11/17/habit_market/</loc>
+    
+    <lastmod>2024-11-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://seefs.github.io/2024/11/28/mt5_analyse_2/</loc>
     
     <lastmod>2024-11-29</lastmod>
     
@@ -342,6 +360,13 @@
   </url>
   
   <url>
+    <loc>https://seefs.github.io/tags/%E8%A7%86%E9%A2%91/</loc>
+    <lastmod>2024-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://seefs.github.io/tags/%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2024-11-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -349,7 +374,7 @@
   </url>
   
   <url>
-    <loc>https://seefs.github.io/tags/%E8%A7%86%E9%A2%91/</loc>
+    <loc>https://seefs.github.io/tags/%E4%B8%8B%E8%BD%BD/</loc>
     <lastmod>2024-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -370,21 +395,14 @@
   </url>
   
   <url>
-    <loc>https://seefs.github.io/tags/%E7%BB%9F%E8%AE%A1/</loc>
-    <lastmod>2024-11-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://seefs.github.io/tags/%E4%B8%8B%E8%BD%BD/</loc>
-    <lastmod>2024-11-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://seefs.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2024-11-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://seefs.github.io/tags/%E7%BB%9F%E8%AE%A1/</loc>
     <lastmod>2024-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -428,14 +446,14 @@
 
   
   <url>
-    <loc>https://seefs.github.io/categories/%E7%9B%AE%E5%BD%95/</loc>
+    <loc>https://seefs.github.io/categories/%E4%B8%8B%E8%BD%BD/</loc>
     <lastmod>2024-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://seefs.github.io/categories/%E4%B8%8B%E8%BD%BD/</loc>
+    <loc>https://seefs.github.io/categories/%E7%9B%AE%E5%BD%95/</loc>
     <lastmod>2024-11-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
